@@ -1,0 +1,20 @@
+@use "../../../../styles/variables" as v;
+@use "../../../../styles/mixins" as m;
+
+.middle-menu{
+
+
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    .logo{
+        width: 300px;
+        height: 100px;
+    }
+}
+
+
