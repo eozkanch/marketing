@@ -1,0 +1,15 @@
+/* header.scss */
+
+.header {
+    position: relative;
+  }
+  
+
+  
+  .sticky .middle-menu {
+    position: fixed;
+    top: 0;
+    background-color: rgb(247, 247, 247);
+    z-index: 100;
+  }
+  

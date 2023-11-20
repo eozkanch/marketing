@@ -5,24 +5,28 @@ import { FaRegEnvelope } from "react-icons/fa";
 import "./top-menu.scss"
 const TopMenu = () => {
   return (
-    <Container fluid>
-      <div className='d-flex justify-content-between gap-5 bg-primary text-black'>
-        <Col md={4} className='flex-start'>
+   
+      <div className='top-menu'>
+       <Container fluid className=' '>
+       <Row className='d-flex justify-content-between'>
+        <Col md={5} className=''>
             <Row className='d-flex'>
-            <Col md={6}><BsPhone /> (+41 44 444 44 44)</Col>
-            <Col md={6}><FaRegEnvelope /> lOg0H@example.com</Col>
+            <Col md={4} className='top-menu-left text-start'><BsPhone /> (+41 44 444 44 44)</Col>
+            <Col md={8} className='top-menu-left text-start'><FaRegEnvelope /> lOg0H@example.com</Col>
             </Row>  
         </Col>
-        <Col md={8} className='flex-end'>
+        <Col md={7} className=''>
               <Row className='d-flex'>
-              <Col md={5} className='text-end'>A prpops de nous</Col>
-              <Col md={2} >Communocation</Col>
-              <Col md={5} className='text-start'>Mon Compte</Col>
+              <Col md={8} className='top-menu-right text-end'>A propops de nous</Col>
+              <Col md={2}  className='top-menu-right text-end'>Communocation</Col>
+              <Col md={2} className='top-menu-right  text-end'>Mon Compte</Col>
               
               </Row>    
         </Col>
-      </div>
+        </Row>
+      
     </Container>
+    </div>
   )
 }
 
