@@ -1,0 +1,23 @@
+@use "../../../../styles/variables" as v;
+@use "../../../../styles/mixins" as m;
+
+$breakpointmd: 480px;
+.product-carousel {
+  width: 100%;
+  height: 100%;
+  font-family: '';
+
+
+  .slick-prev {
+    color:linear-gradient(145deg, var(--color8), black);;
+  
+    z-index: 1 ;
+  }
+
+  .slick-next {
+    color: linear-gradient(145deg, var(--color8), black); ;
+  
+  }
+
+  
+}

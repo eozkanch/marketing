@@ -1,0 +1,40 @@
+
+
+
+.swiper-slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.btn-slide{
+    background-color: rgb(111, 117, 49);
+    color: white;
+    padding: 1rem 2rem;
+  }
+  .content {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%);
+    text-align: center;
+    z-index: 5;
+    text-shadow: 0 0 30px black;
+
+    h2 {
+      color: black;
+      font-size: 3rem;
+    }
+  }
+}
+

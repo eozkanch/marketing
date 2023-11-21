@@ -1,0 +1,26 @@
+@use "../../../styles/variables" as v;
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+
+    h2 {
+        font-weight: bold;
+        font-size: 18px;
+      
+        color: black;
+        text-transform:capitalize;
+
+        span {
+            font-weight: 800;
+        }
+    }
+
+    p {
+        color: v.$color1;
+    }
+}

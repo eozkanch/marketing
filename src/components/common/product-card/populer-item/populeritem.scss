@@ -1,0 +1,57 @@
+@use "../../../../styles/variables" as v;
+@use "../../../../styles/mixins" as m;
+
+.contain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1 ;   
+
+  .card {
+    position: relative;
+    min-height: 400px;
+    max-width: 300px;
+
+    
+  
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(1px);
+    
+    
+    .img{
+      width: 100%;
+      
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+        margin-top: 1rem;
+        text-align: justify;
+      }
+
+      .btn {
+        background: linear-gradient(145deg, v.$color8, black);
+        color: white;
+      }
+    }
+  }
+}
