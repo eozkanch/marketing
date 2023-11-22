@@ -6,13 +6,13 @@ import { Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import SectionHeader from '../../section-header/section-header';
 import { FaArrowLeft, FaArrowRight, FaInfinity } from 'react-icons/fa';
-import PopulerItem from '../populer-item/populeritem';
-import "./populer-card.scss";
+import PopulerItem from '../../product-card/populer-item/populeritem';
+import "./soldes-products.scss";
 import  data  from '../../../../data/data';
 
 const { products } = data;
 
-const PopularCard = ({ sectionTitle }) => {
+const SoldesProducts = ({ sectionTitle }) => {
   const sliderSettings = {
     dots: false,
     infinite: false,
@@ -52,20 +52,15 @@ const PopularCard = ({ sectionTitle }) => {
 
   return (
     <Container className="product-carousel">
-      <SectionHeader title1={<FaInfinity />} title2="Produits Populaires" />
-      <Container className="slider-container">
-      <Button className='product-btn' variant="outline-light">DES NOISETTES</Button>
-      <Button className='product-btn' variant="outline-light">PETITS DÉJEUNERS</Button>
-      <Button className='product-btn' variant="outline-light">LÉGUMINEUSES</Button>
-      </Container>
+      <SectionHeader title1={<FaInfinity />} title2="En Soldes" />
+      
       <Slider {...sliderSettings}>
         {products.map((product) => (
           <Link to={`/usermodel/${product.id}`} key={product.id}>
             <PopulerItem
               name={product.name} // Replace with the correct property name
               backgroundImg={product.image_url} // Replace with the correct property name
-              projectUrl={product.details_link}
-              discountAmount={product.sale_title}
+              projectUrl={product.details_link} // Replace with the correct property name
             />
              
           </Link>
@@ -78,7 +73,7 @@ const PopularCard = ({ sectionTitle }) => {
   );
 };
 
-export default PopularCard;
+export default SoldesProducts;
 
 
 

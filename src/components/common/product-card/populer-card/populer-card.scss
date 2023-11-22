@@ -9,14 +9,37 @@ $breakpointmd: 480px;
 
 
   .slick-prev {
-    color:linear-gradient(145deg, var(--color8), black);;
-  
+    color: rgb(111, 117, 49);
     z-index: 1 ;
   }
 
   .slick-next {
-    color: linear-gradient(145deg, var(--color8), black); ;
-  
+color: rgb(111, 117, 49);
+    z-index: 1 ;
+
+
+
+  }
+  .slider-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    .product-btn{
+   border-color: black;
+      color: black;
+      padding: 0.5rem 1rem;
+      &:hover{
+        background-color: black;
+        color: white;
+      }
+      
+    }
+
   }
 
   

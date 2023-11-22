@@ -10,6 +10,7 @@ import ProductCard from "./common/product-card/product-card";
 import PopulerCard from "./common/product-card/populer-card/populer-card";
 import PopulerItem from "./common/product-card/populer-item/populeritem";
 import SectionHeader from "./common/section-header/section-header";
+import SoldesProducts from "./common/home/soldes-products/soldes-products";
 export {
     TopMenu,
     MiddleMenu,
@@ -22,5 +23,6 @@ export {
     ProductCard,
     PopulerCard,
     PopulerItem,
-    SectionHeader
+    SectionHeader,
+    SoldesProducts,
 }

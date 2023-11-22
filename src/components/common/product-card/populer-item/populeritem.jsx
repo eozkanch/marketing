@@ -33,7 +33,7 @@ class PopulerItem extends Component {
 
   render() {
     
-    const { name, backgroundImg, projectUrl } = this.props;
+    const { name, backgroundImg, projectUrl,discountAmount } = this.props;
     
 
     return (
@@ -49,7 +49,11 @@ class PopulerItem extends Component {
           />
           <div className="content">
             <h3>{name}</h3>
-           
+            {discountAmount && (
+                <p className="sale-title">
+                  {discountAmount}% OFF
+                </p>
+              )}
             <Button className="btn" variant="success" >
               More Info
             </Button>
