@@ -11,6 +11,9 @@ import PopulerCard from "./common/product-card/populer-card/populer-card";
 import PopulerItem from "./common/product-card/populer-item/populeritem";
 import SectionHeader from "./common/section-header/section-header";
 import SoldesProducts from "./common/home/soldes-products/soldes-products";
+import Categoriespopulers from "./common/home/categories-populers/categories-populers";
+import BottomFooter from "./common/footer/bottom-footer/ bottom-footer";
+
 export {
     TopMenu,
     MiddleMenu,
@@ -25,4 +28,6 @@ export {
     PopulerItem,
     SectionHeader,
     SoldesProducts,
+    Categoriespopulers,
+    BottomFooter,
 }

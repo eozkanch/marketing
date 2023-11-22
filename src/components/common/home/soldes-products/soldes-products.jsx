@@ -8,11 +8,16 @@ import SectionHeader from '../../section-header/section-header';
 import { FaArrowLeft, FaArrowRight, FaInfinity } from 'react-icons/fa';
 import PopulerItem from '../../product-card/populer-item/populeritem';
 import "./soldes-products.scss";
-import  data  from '../../../../data/data';
+import data from '../../../../data/data';
 
 const { products } = data;
 
 const SoldesProducts = ({ sectionTitle }) => {
+  // Filter and sort the products
+  const filteredAndSortedProducts = products
+    .filter(product => product.sale_title !== null)
+    .sort((a, b) => b.sale_title - a.sale_title);
+
   const sliderSettings = {
     dots: false,
     infinite: false,
@@ -53,27 +58,28 @@ const SoldesProducts = ({ sectionTitle }) => {
   return (
     <Container className="product-carousel">
       <SectionHeader title1={<FaInfinity />} title2="En Soldes" />
-      
+
       <Slider {...sliderSettings}>
-        {products.map((product) => (
+        {filteredAndSortedProducts.map((product) => (
           <Link to={`/usermodel/${product.id}`} key={product.id}>
             <PopulerItem
-              name={product.name} // Replace with the correct property name
-              backgroundImg={product.image_url} // Replace with the correct property name
-              projectUrl={product.details_link} // Replace with the correct property name
+              name={product.name}
+              backgroundImg={product.image_url}
+              projectUrl={product.details_link}
+              discountAmount={product.sale_title}
+              price={product.price}
+              oldPrice={product.old_price}
             />
-             
           </Link>
-        
-          
         ))}
       </Slider>
-      
     </Container>
   );
 };
 
 export default SoldesProducts;
+
+
 
 
 

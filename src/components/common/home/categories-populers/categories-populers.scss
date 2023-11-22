@@ -1,0 +1,59 @@
+.categories-populers {
+   
+    h1{
+        text-align: center;
+        color: rgb(111, 117, 49);
+        font-size: 2rem;
+        margin-bottom: 1rem ;
+    }
+    .categories-row {
+     
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .categories-col {
+      position: relative;
+      box-sizing: border-box;
+      border: 1px solid rgb(111, 117, 49);
+      overflow: hidden; /* This ensures the child elements won't overflow the container */
+     
+    }
+  
+    img {
+       
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      
+    }
+  
+    .img-fluid {
+        font-size: small;
+      background-color: rgb(111, 117, 49);
+      padding: 0.2rem;
+      position: absolute;
+      color: white;
+      top: 0; /* Align at the bottom of the container */
+      left: 0; /* Align at the left of the container */
+       /* Align at the right of the container */
+      text-align: center; /* Center the text horizontally */
+    }
+  
+    .cat-title {
+      display: inline-block;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out 0s;
+      opacity: 0; /* Initially hidden */
+      transform: translateY(100%); /* Move up by the height of the container */
+    }
+  
+    .categories-col:hover .cat-title {
+      opacity: 1; /* Make the title visible on hover */
+      transform: translateY(0); /* Reset the position on hover */
+    }
+  }
+  

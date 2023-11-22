@@ -4,6 +4,7 @@ import "./footer.scss"
 import { BsPhone } from 'react-icons/bs'
 import { FaRegEnvelope } from 'react-icons/fa'
 import { SiGooglemaps } from "react-icons/si";
+import BottomFooter from './bottom-footer/ bottom-footer'
 const Footer = () => {
   return (
     <div className='footer'>
@@ -44,6 +45,7 @@ const Footer = () => {
           <div>Communication</div></Col>
         </Row>
       </Container>
+  
     </div>
   )
 }

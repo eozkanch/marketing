@@ -4,6 +4,7 @@ import './style.scss'
 import { PopulerProducts, Slider, SoldesProducts, TopComponent } from '../../../components'
 import { Container, Row } from 'react-bootstrap'
 import PopularCard from '../../../components/common/product-card/populer-card/populer-card'
+import CategoriesPopulers from '../../../components/common/home/categories-populers/categories-populers'
 
 const HomePage = () => {
   return (
@@ -15,6 +16,8 @@ const HomePage = () => {
       <PopulerProducts />
       <Spacer height={10} />
       <SoldesProducts />
+      <Spacer height={100} />
+      <CategoriesPopulers />
       
     
        

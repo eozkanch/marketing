@@ -1,0 +1,40 @@
+.bottom-footer {
+    width: 100%;
+    background-color: rgb(111, 117, 49);
+    height: 50px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  
+    .copyright{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+    }
+    .payment-icon {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      
+    
+      text-decoration: none;
+      ul{
+        list-style-type: none;
+        display: flex;
+
+      }
+    }
+  
+    .payment-icon svg {
+      width: 38px;
+      height: auto;
+      margin-right: 5px;
+      display: inline-block;
+    }
+  
+    
+  }
+  
