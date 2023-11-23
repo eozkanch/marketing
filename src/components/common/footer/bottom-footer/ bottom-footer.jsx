@@ -1,35 +1,32 @@
 import React from 'react';
-import { Col, Row,Container } from 'react-bootstrap';
+import { Col, Row, Container } from 'react-bootstrap';
 import "./bottom-footer.scss";
 
 const BottomFooter = () => {
   return (
     <div className='bottom-footer'>
-    <Container>
-      <Row>
-        <Col md={5} className='copyright'> 
-        
-            <span>droits d'auteur2022 Bizimkiler.ch Tous droits réservés</span>
-        
-       
-        </Col>
-        <Col md={7} className="payment-icon">
-          <ul >
-            <li >
-              <img src="/pay/visa.svg" alt="Visa" width="38" height="24" />
-            </li>
-            <li>
-              <img src="/pay/google-pay.svg" alt="Google Pay" width="38" height="24" />
-            </li>
-            <li>
-              <img src="/pay/mastercard.svg" alt="Mastercard" width="38" height="24" />
-            </li>
-            <li>
-              <img src="/pay/american-express.svg" alt="American Express" width="38" height="24" />
-            </li>
-          </ul>
-        </Col>
-      </Row>
+      <Container fluid>
+        <Row className='d-flex justify-content-between'>
+          <Col md={4} className='copyright'>
+            <span>Droits d'auteur<span>&copy;</span>2022 Bizimkiler.ch Tous droits réservés</span>
+          </Col>
+          <Col md={8} className="payment-icon">
+            <ul>
+              <li>
+                <img src="/pay/visa.svg" alt="Visa" width="38" height="24" />
+              </li>
+              <li>
+                <img src="/pay/google-pay.svg" alt="Google Pay" width="38" height="24" />
+              </li>
+              <li>
+                <img src="/pay/mastercard.svg" alt="Mastercard" width="38" height="24" />
+              </li>
+              <li>
+                <img src="/pay/american-express.svg" alt="American Express" width="38" height="24" />
+              </li>
+            </ul>
+          </Col>
+        </Row>
       </Container>
     </div>
   );

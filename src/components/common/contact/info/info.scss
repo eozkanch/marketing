@@ -1,0 +1,30 @@
+@use "../../../../styles/variables" as v;
+@use "../../../../styles/mixins" as m;
+
+.contact-info {
+    @include m.reset-list;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding-left: 1rem;
+
+       padding-right: 1rem;
+        padding: 1rem;
+        
+    }
+    .icons {
+        svg {
+            font-size: 1.2rem;
+        }
+    }
+
+    a {
+        color: v.$color1;
+
+        &:hover {
+            color: v.$color2;
+        }
+    }
+}

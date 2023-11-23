@@ -3,7 +3,7 @@
 
 import HomePage from "../pages/home";
 import AboutPage from "../pages/about";
-
+import ContactPage from "../pages/contact";
 
 
 
@@ -11,7 +11,8 @@ import AboutPage from "../pages/about";
 
 
 export {
-    //Cpmmons Pages
+    //Commons Pages
     HomePage,
-    AboutPage
+    AboutPage,
+    ContactPage,
 }

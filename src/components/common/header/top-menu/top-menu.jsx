@@ -12,13 +12,13 @@ const TopMenu = () => {
         <Col md={5} className=''>
             <Row className='d-flex'>
             <Col md={4} className='top-menu-left text-start'><BsPhone /> (+41 44 444 44 44)</Col>
-            <Col md={8} className='top-menu-left text-start'><FaRegEnvelope /> lOg0H@example.com</Col>
+            <Col md={8} className='top-menu-left text-start'><FaRegEnvelope /> loghj@example.com</Col>
             </Row>  
         </Col>
         <Col md={7} className=''>
               <Row className='d-flex'>
-              <Col md={8} className='top-menu-right text-end'>A propops de nous</Col>
-              <Col md={2}  className='top-menu-right text-end'>Communocation</Col>
+              <Col md={8} className='top-menu-right text-end'><a href='/about'>A propops de nous</a></Col>
+              <Col md={2}  className='top-menu-right text-end'><a href='/contact'>Communocation</a></Col>
               <Col md={2} className='top-menu-right  text-end'>Mon Compte</Col>
               
               </Row>    

@@ -13,6 +13,9 @@ import SectionHeader from "./common/section-header/section-header";
 import SoldesProducts from "./common/home/soldes-products/soldes-products";
 import Categoriespopulers from "./common/home/categories-populers/categories-populers";
 import BottomFooter from "./common/footer/bottom-footer/ bottom-footer";
+import ContactInfo from "./common/contact/info/info";
+import ContactMap from "./common/contact/map/map";
+import ContactForm from "./common/contact/form/form";
 
 export {
     TopMenu,
@@ -30,4 +33,7 @@ export {
     SoldesProducts,
     Categoriespopulers,
     BottomFooter,
+    ContactInfo,
+    ContactMap,
+    ContactForm,
 }
