@@ -6,9 +6,9 @@ const PopulerProducts = () => {
     <div className='populer-products'>
         <Container className='image-container '>
           <Row className='image-col'>
-            <Col className='image-container'>
+            <Col className='image-container-left'>
               <img src='/banner17.jpg' />
-              <div class="banner-content text-left">
+              <div class="banner-content-left text-left">
 						
 						<span >NOIX FOLLES</span>
 						
@@ -21,7 +21,7 @@ const PopulerProducts = () => {
 					</div>
 
             </Col>
-            <Col className='image-container'>
+            <Col className='image-container-right'>
               <img src='/banner18.webp' />
               <div className="banner-content-right text-left">
 						

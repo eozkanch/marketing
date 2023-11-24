@@ -28,19 +28,24 @@
       width: 100%;
       height: auto;
       box-sizing: border-box;
+      padding-top: 10px;
       
     }
   
     .img-fluid {
-        font-size: small;
+      width: 100%;
+      font-size: small;
       background-color: rgb(111, 117, 49);
-      padding: 0.2rem;
+      padding: 0.4rem;
       position: absolute;
       color: white;
       top: 0; /* Align at the bottom of the container */
       left: 0; /* Align at the left of the container */
        /* Align at the right of the container */
       text-align: center; /* Center the text horizontally */
+      transform: translateY(-100%);
+      transition: all 0.2s ease-in-out 0s;
+      opacity: 0; /* Initially hidden */
     }
   
     .cat-title {
@@ -49,9 +54,10 @@
       transition: all 0.2s ease-in-out 0s;
       opacity: 0; /* Initially hidden */
       transform: translateY(100%); /* Move up by the height of the container */
+      color: rgb(111, 117, 49);
     }
   
-    .categories-col:hover .cat-title {
+    .categories-col:hover .cat-title, .categories-col:hover .img-fluid {
       opacity: 1; /* Make the title visible on hover */
       transform: translateY(0); /* Reset the position on hover */
     }

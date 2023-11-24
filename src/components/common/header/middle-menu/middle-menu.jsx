@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, Col, Container, Form, InputGroup, Row } from 'react-bootstrap';
 import Badge from '@mui/material/Badge';
-import { CiHeart } from 'react-icons/ci';
-import { IoBasketOutline } from 'react-icons/io5';
+import { FiHeart } from "react-icons/fi";
+import { MdShoppingBasket } from "react-icons/md";
 import { IoIosSearch } from 'react-icons/io';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './middle-menu.scss';
@@ -38,12 +38,12 @@ const MiddleMenu = () => {
             <Row>
               <Col className='text-end'>
                 <Badge badgeContent={0} showZero color="success">
-                  <CiHeart size={40} />
+                  <FiHeart size={35}  className='icon'/>
                 </Badge>
               </Col>
               <Col>
                 <Badge badgeContent={0} showZero color="success">
-                  <IoBasketOutline size={40} />
+                  <MdShoppingBasket size={40} className='icon'/>
                 </Badge>
               </Col>
             </Row>

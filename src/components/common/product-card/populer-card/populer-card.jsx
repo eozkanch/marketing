@@ -62,10 +62,12 @@ const PopularCard = ({ sectionTitle }) => {
         {products.map((product) => (
           <Link to={`/usermodel/${product.id}`} key={product.id}>
             <PopulerItem
-              name={product.name} // Replace with the correct property name
-              backgroundImg={product.image_url} // Replace with the correct property name
+             name={product.name}
+              backgroundImg={product.image_url}
               projectUrl={product.details_link}
               discountAmount={product.sale_title}
+              price={product.price}
+              oldPrice={product.old_price}
             />
              
           </Link>
