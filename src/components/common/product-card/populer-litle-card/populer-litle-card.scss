@@ -1,0 +1,111 @@
+.contain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  
+  }
+  
+  .card {
+    position: relative;
+    min-height: 200px;
+    max-width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+  
+  
+  }
+  
+  .card .img {
+    width: 100%;
+  }
+  
+  .card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  
+  }
+  
+  .card .content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .card .content h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .card .content .sale-title {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 15;
+    background-color: #e30514;
+    font-size: 13px;
+    padding: 2px 5px 2px 15px;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    text-align: center;
+    white-space: nowrap;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
+  }
+  
+  .card .content .price {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(111, 117, 49);
+  }
+  
+  .card .content .oldprice {
+    font-size: 14px;
+    text-decoration:2px  line-through black;
+    color: gray;
+    padding-left: 5px;
+    font-weight: 300;
+  }
+  
+  .card .content .btn {
+    border: 1px solid black;
+    padding: 2px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    color: rgb(111, 117, 49);
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out 0s;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100%); /* Move up by the height of the container */
+}
+
+.card .content:hover .btn {
+    opacity: 1; /* Show on hover */
+}
+
+.card .content:hover .btn:nth-child(1) {
+    transform: translateX(0); /* Move to the original position for the first button */
+}
+
+.card .content:hover .btn:nth-child(2) {
+    transform: translateX(50%); /* Move to the right for the second button */
+}
+
+.card .content:hover .btn:nth-child(3) {
+    transform: translateX(100%); /* Move to the right for the third button */
+}
+
+  
+  
+  

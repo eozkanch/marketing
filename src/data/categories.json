@@ -2,169 +2,169 @@
     "categories": [
       {
         "name": "Antep Baklavası",
-        "url": "/collections/baklava",
+        "url": "/baklava",
         "count": 2,
         "checked": true
       },
       {
         "name": "Baharatlar",
-        "url": "/collections/baharatlar",
+        "url": "/baharatlar",
         "count": 16,
         "checked": false
       },
       {
         "name": "Bakliyatlar",
-        "url": "/collections/bakliyatlar",
+        "url": "/bakliyatlar",
         "count": 9,
         "checked": false
       },
       {
         "name": "Bal",
-        "url": "/collections/bal",
+        "url": "/bal",
         "count": 1,
         "checked": false
       },
       {
         "name": "Bal-Tahin-Pekmez",
-        "url": "/collections/bal-tahin-pekmez",
+        "url": "/bal-tahin-pekmez",
         "count": 3,
         "checked": false
       },
       {
         "name": "Çaylar",
-        "url": "/collections/caylar",
+        "url": "/caylar",
         "count": 7,
         "checked": false
       },
       {
         "name": "Çok Satanlar",
-        "url": "/collections/cok-satanlar",
+        "url": "/cok-satanlar",
         "count": 3,
         "checked": false
       },
       {
         "name": "Helva",
-        "url": "/collections/helva",
+        "url": "/helva",
         "count": 1,
         "checked": false
       },
       {
         "name": "İçecekler",
-        "url": "/collections/i%CC%87cecekler",
+        "url": "/i%CC%87cecekler",
         "count": 8,
         "checked": false
       },
       {
         "name": "Kahvaltılıklar",
-        "url": "/collections/kahvaltiliklar",
+        "url": "/kahvaltiliklar",
         "count": 15,
         "checked": false
       },
       {
         "name": "Kahveler",
-        "url": "/collections/kahveler",
+        "url": "/kahveler",
         "count": 2,
         "checked": false
       },
       {
         "name": "Kek & Pasta",
-        "url": "/collections/kek-pasta",
+        "url": "/kek-pasta",
         "count": 8,
         "checked": false
       },
       {
         "name": "Kozmetik & Sağlık",
-        "url": "/collections/kozmetik-bakim",
+        "url": "/kozmetik-bakim",
         "count": 3,
         "checked": false
       },
       {
         "name": "Kurutulmuş Meyve",
-        "url": "/collections/kurutulmus-meyve",
+        "url": "/kurutulmus-meyve",
         "count": 6,
         "checked": false
       },
       {
         "name": "Kurutulmuş Sebze",
-        "url": "/collections/kurutulmus-sebze",
+        "url": "/kurutulmus-sebze",
         "count": 1,
         "checked": false
       },
       {
         "name": "Kuruyemişler",
-        "url": "/collections/kuruyemisler",
+        "url": "/kuruyemisler",
         "count": 23,
         "checked": false
       },
       {
         "name": "Lokum",
-        "url": "/collections/lokum",
+        "url": "/lokum",
         "count": 5,
         "checked": false
       },
       {
         "name": "Reçel",
-        "url": "/collections/recel",
+        "url": "/recel",
         "count": 7,
         "checked": false
       },
       {
         "name": "Salçalar",
-        "url": "/collections/salcalar",
+        "url": "/salcalar",
         "count": 4,
         "checked": false
       },
       {
         "name": "Şarküteri",
-        "url": "/collections/sarkuteri",
+        "url": "/sarkuteri",
         "count": 24,
         "checked": false
       },
       {
         "name": "Şekerlemeler",
-        "url": "/collections/sekerlemeler",
+        "url": "/sekerlemeler",
         "count": 1,
         "checked": false
       },
       {
         "name": "Soslar",
-        "url": "/collections/sos-nar-eksisi",
+        "url": "/sos-nar-eksisi",
         "count": 8,
         "checked": false
       },
       {
         "name": "Tatlılar",
-        "url": "/collections/tatlilar",
+        "url": "/tatlilar",
         "count": 3,
         "checked": false
       },
       {
         "name": "Tüm Ürünler",
-        "url": "/collections/tum-urunler",
+        "url": "/tum-urunler",
         "count": 108,
         "checked": false
       },
       {
         "name": "Turşu",
-        "url": "/collections/tursu",
+        "url": "/tursu",
         "count": 3,
         "checked": false
       },
       {
         "name": "Unlu Mamüller",
-        "url": "/collections/unlu-mamuller",
+        "url": "/unlu-mamuller",
         "count": 18,
         "checked": false
       },
       {
         "name": "Zeytin-Acuka-Ezme",
-        "url": "/collections/zeytin-peynir",
+        "url": "/zeytin-peynir",
         "count": 4,
         "checked": false
       },
       {
         "name": "Zeytinyağı",
-        "url": "/collections/zeytinyagi",
+        "url": "/zeytinyagi",
         "count": 1,
         "checked": false
       }

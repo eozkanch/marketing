@@ -30,11 +30,11 @@ const router = createBrowserRouter([
           path: 'collection',
           children: [
             {
-              path: 'true',
+              path: ':categoryId',
               element: <CollectionPage />,
             },
             {
-              path: ':ctagoryName',
+              path: ':catagoryName',
               element: <CollectionDetailsPage />,
             },
           ],

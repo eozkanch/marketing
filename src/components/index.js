@@ -16,6 +16,7 @@ import BottomFooter from "./common/footer/bottom-footer/ bottom-footer";
 import ContactInfo from "./common/contact/info/info";
 import ContactMap from "./common/contact/map/map";
 import ContactForm from "./common/contact/form/form";
+import PopulerLitleCard from "./common/product-card/populer-litle-card/populer-litle-card";
 
 export {
     TopMenu,
@@ -36,4 +37,5 @@ export {
     ContactInfo,
     ContactMap,
     ContactForm,
+    PopulerLitleCard,
 }
