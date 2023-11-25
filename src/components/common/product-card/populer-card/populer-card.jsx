@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -7,12 +7,41 @@ import { Link } from 'react-router-dom';
 import SectionHeader from '../../section-header/section-header';
 import { FaArrowLeft, FaArrowRight, FaInfinity } from 'react-icons/fa';
 import PopulerItem from '../populer-item/populeritem';
-import "./populer-card.scss";
-import  data  from '../../../../data/data';
-
-const { products } = data;
+import data from '../../../../data/allproduct.json';
+import './populer-card.scss';
 
 const PopularCard = ({ sectionTitle }) => {
+  const { allcategories } = data;
+  const products = allcategories.flatMap((category) => category.data);
+
+  const CategoryButtons = ({ selectedCategory, handleClick }) => {
+    return (
+      <Container className="slider-container">
+        <Button
+          className={`product-btn ${selectedCategory === 'DES NOISETTES' ? 'active' : ''}`}
+          variant="outline-light"
+          onClick={() => handleClick('DES NOISETTES')}
+        >
+          DES NOISETTES
+        </Button>
+        <Button
+          className={`product-btn ${selectedCategory === 'PETITS DÉJEUNERS' ? 'active' : ''}`}
+          variant="outline-light"
+          onClick={() => handleClick('PETITS DÉJEUNERS')}
+        >
+          PETITS DÉJEUNERS
+        </Button>
+        <Button
+          className={`product-btn ${selectedCategory === 'LÉGUMINEUSES' ? 'active' : ''}`}
+          variant="outline-light"
+          onClick={() => handleClick('LÉGUMINEUSES')}
+        >
+          LÉGUMINEUSES
+        </Button>
+      </Container>
+    );
+  };
+
   const sliderSettings = {
     dots: false,
     infinite: false,
@@ -50,40 +79,47 @@ const PopularCard = ({ sectionTitle }) => {
     ],
   };
 
+  const [selectedCategory, setSelectedCategory] = useState('DES NOISETTES');
+
+  const handleClick = (category) => {
+    setSelectedCategory(category);
+  };
+
+  const selectedCategoryData = allcategories.find((category) => {
+    if (selectedCategory === 'DES NOISETTES') {
+      return category.url === 'https://bizimkiler.ch/collections/kuruyemisler';
+    } else if (selectedCategory === 'PETITS DÉJEUNERS') {
+      return category.url === 'https://bizimkiler.ch/collections/kahvaltiliklar';
+    } else if (selectedCategory === 'LÉGUMINEUSES') {
+      return category.url === 'https://bizimkiler.ch/collections/bakliyatlar';
+    }
+
+    return false;
+  });
+
   return (
     <Container className="product-carousel">
       <SectionHeader title1={<FaInfinity />} title2="Produits Populaires" />
-      <Container className="slider-container">
-      <Button className='product-btn' variant="outline-light">DES NOISETTES</Button>
-      <Button className='product-btn' variant="outline-light">PETITS DÉJEUNERS</Button>
-      <Button className='product-btn' variant="outline-light">LÉGUMINEUSES</Button>
-      </Container>
+      <CategoryButtons selectedCategory={selectedCategory} handleClick={handleClick} />
       <Slider {...sliderSettings}>
-        {products.map((product) => (
-          <Link to={`/usermodel/${product.id}`} key={product.id}>
+        {selectedCategoryData.data.map((product, index) => (
+          <Link to={`/usermodel/${index}`} key={index}>
             <PopulerItem
-             name={product.name}
+              name={product.title}
               backgroundImg={product.image_url}
-              projectUrl={product.details_link}
-              discountAmount={product.sale_title}
+              projectUrl={product.url}
               price={product.price}
-              oldPrice={product.old_price}
+              discountAmount={product.sale_title || ''}
+              oldPrice={product.old_price || ''}
             />
-             
           </Link>
-        
-          
         ))}
       </Slider>
-      
     </Container>
   );
 };
 
 export default PopularCard;
-
-
-
 
 
 

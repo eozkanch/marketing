@@ -1,0 +1,173 @@
+{
+    "categories": [
+      {
+        "name": "Antep Baklavası",
+        "url": "/collections/baklava",
+        "count": 2,
+        "checked": true
+      },
+      {
+        "name": "Baharatlar",
+        "url": "/collections/baharatlar",
+        "count": 16,
+        "checked": false
+      },
+      {
+        "name": "Bakliyatlar",
+        "url": "/collections/bakliyatlar",
+        "count": 9,
+        "checked": false
+      },
+      {
+        "name": "Bal",
+        "url": "/collections/bal",
+        "count": 1,
+        "checked": false
+      },
+      {
+        "name": "Bal-Tahin-Pekmez",
+        "url": "/collections/bal-tahin-pekmez",
+        "count": 3,
+        "checked": false
+      },
+      {
+        "name": "Çaylar",
+        "url": "/collections/caylar",
+        "count": 7,
+        "checked": false
+      },
+      {
+        "name": "Çok Satanlar",
+        "url": "/collections/cok-satanlar",
+        "count": 3,
+        "checked": false
+      },
+      {
+        "name": "Helva",
+        "url": "/collections/helva",
+        "count": 1,
+        "checked": false
+      },
+      {
+        "name": "İçecekler",
+        "url": "/collections/i%CC%87cecekler",
+        "count": 8,
+        "checked": false
+      },
+      {
+        "name": "Kahvaltılıklar",
+        "url": "/collections/kahvaltiliklar",
+        "count": 15,
+        "checked": false
+      },
+      {
+        "name": "Kahveler",
+        "url": "/collections/kahveler",
+        "count": 2,
+        "checked": false
+      },
+      {
+        "name": "Kek & Pasta",
+        "url": "/collections/kek-pasta",
+        "count": 8,
+        "checked": false
+      },
+      {
+        "name": "Kozmetik & Sağlık",
+        "url": "/collections/kozmetik-bakim",
+        "count": 3,
+        "checked": false
+      },
+      {
+        "name": "Kurutulmuş Meyve",
+        "url": "/collections/kurutulmus-meyve",
+        "count": 6,
+        "checked": false
+      },
+      {
+        "name": "Kurutulmuş Sebze",
+        "url": "/collections/kurutulmus-sebze",
+        "count": 1,
+        "checked": false
+      },
+      {
+        "name": "Kuruyemişler",
+        "url": "/collections/kuruyemisler",
+        "count": 23,
+        "checked": false
+      },
+      {
+        "name": "Lokum",
+        "url": "/collections/lokum",
+        "count": 5,
+        "checked": false
+      },
+      {
+        "name": "Reçel",
+        "url": "/collections/recel",
+        "count": 7,
+        "checked": false
+      },
+      {
+        "name": "Salçalar",
+        "url": "/collections/salcalar",
+        "count": 4,
+        "checked": false
+      },
+      {
+        "name": "Şarküteri",
+        "url": "/collections/sarkuteri",
+        "count": 24,
+        "checked": false
+      },
+      {
+        "name": "Şekerlemeler",
+        "url": "/collections/sekerlemeler",
+        "count": 1,
+        "checked": false
+      },
+      {
+        "name": "Soslar",
+        "url": "/collections/sos-nar-eksisi",
+        "count": 8,
+        "checked": false
+      },
+      {
+        "name": "Tatlılar",
+        "url": "/collections/tatlilar",
+        "count": 3,
+        "checked": false
+      },
+      {
+        "name": "Tüm Ürünler",
+        "url": "/collections/tum-urunler",
+        "count": 108,
+        "checked": false
+      },
+      {
+        "name": "Turşu",
+        "url": "/collections/tursu",
+        "count": 3,
+        "checked": false
+      },
+      {
+        "name": "Unlu Mamüller",
+        "url": "/collections/unlu-mamuller",
+        "count": 18,
+        "checked": false
+      },
+      {
+        "name": "Zeytin-Acuka-Ezme",
+        "url": "/collections/zeytin-peynir",
+        "count": 4,
+        "checked": false
+      },
+      {
+        "name": "Zeytinyağı",
+        "url": "/collections/zeytinyagi",
+        "count": 1,
+        "checked": false
+      }
+    ]
+  }
+  
