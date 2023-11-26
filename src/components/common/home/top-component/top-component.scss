@@ -1,19 +1,33 @@
+
+
+  .top-component {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+
+
 .home-page-info {
-  
   justify-content: space-between;
-  align-items: center; /* Align items at the start vertically */
+  align-items: center;
   position: absolute;
-top: 44rem;
-left: 10rem;
-  width: 60%;
-  border: 1px solid   rgb(111, 117, 49);
-  padding:  20px ;
+  top: -3rem;
+  left: 12rem;
+
+  border: 1px solid rgb(111, 117, 49);
+  padding: 20px;
   background-color: white;
   z-index: 10;
   border-radius: 10px;
 
-  h3
-   {
+  h3 {
     color: rgb(111, 117, 49);
     font-size: 1rem;
     font-weight: bold;
@@ -24,18 +38,17 @@ left: 10rem;
   }
 
   .info-middle {
-    border-left: 1px solid  rgb(111, 117, 49);
-    border-right: 1px solid  rgb(111, 117, 49);
+    border-left: 1px solid rgb(111, 117, 49);
+    border-right: 1px solid rgb(111, 117, 49);
   }
 
   .info-col {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     text-align: center;
     row-gap: 10px;
-   
 
     &:hover {
       cursor: pointer;
@@ -62,4 +75,5 @@ left: 10rem;
     color: gray;
     transition: transform 0.5s ease;
   }
+}
 }

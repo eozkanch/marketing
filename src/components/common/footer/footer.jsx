@@ -9,7 +9,25 @@ const Footer = () => {
   return (
     <div className='footer'>
       <Container fluid>
-      <img src="/logo.svg" alt="logo" className='footer-logo' />
+      <div className='logo-div'>
+          <Row>
+          <Col>
+          <span>L</span>
+            <span>E</span>
+            <span>S</span>
+          </Col></Row>
+          <Row>
+          <Col>
+            <span>N</span>
+            <span>O</span>
+            <span>T</span>
+            <span>R</span>
+            <span>E</span>
+            </Col>
+            </Row>
+            
+            
+          </div>
         <Row>
           <Col md ={2}>       
          

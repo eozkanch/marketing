@@ -16,6 +16,20 @@ const theme = createTheme({
   },
 });
 
+const logoStyle = {
+  backgroundColor: 'rgb(111, 117, 49)',
+  width: '150px',
+  height: '150px',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  borderRadius: '8px',
+  color: '#fff',
+  fontSize: '24px',
+  fontWeight: 'bold',
+  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  border: '2px solid #fff',
+};
 const MiddleMenu = () => {
   return (
     <ThemeProvider theme={theme}>
@@ -24,7 +38,25 @@ const MiddleMenu = () => {
         
           <Col md={3}>
           <Link to='/'>
-            <img src="/logo.svg" alt="logo" className='logo' />
+          <div className='logo-div'>
+          <Row>
+          <Col>
+          <span>L</span>
+            <span>E</span>
+            <span>S</span>
+          </Col></Row>
+          <Row>
+          <Col>
+            <span>N</span>
+            <span>O</span>
+            <span>T</span>
+            <span>R</span>
+            <span>E</span>
+            </Col>
+            </Row>
+            
+            
+          </div>
             </Link>
           </Col>
       

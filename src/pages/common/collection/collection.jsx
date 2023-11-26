@@ -116,7 +116,7 @@ const CollectionPage = () => {
                 {sortedProducts.map((product, index) => (
                   <Link to={`/usermodel/${index}`} key={index}>
                     <Col>
-                      <PopulerLitleCard
+                      <PopulerItem
                         name={product.vendor_title}
                         backgroundImg={product.image_url}
                         projectUrl={product.details_link}
@@ -132,6 +132,7 @@ const CollectionPage = () => {
           </Col>
         </Row>
       </Container>
+      <Spacer height={100} />
     </div>
   );
 };

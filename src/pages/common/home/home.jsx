@@ -18,6 +18,7 @@ const HomePage = () => {
       <SoldesProducts />
       <Spacer height={100} />
       <CategoriesPopulers />
+      <Spacer height={100} />
       
     
        

@@ -8,6 +8,7 @@ const TopComponent = () => {
   return (
 
 
+<div className='top-component'>
     
       <Container className='home-page-info' >
         <Row >
@@ -28,8 +29,8 @@ const TopComponent = () => {
           <p>Avoir une question? Vous pouvez nous<br/>contacter et demander.</p></Col>
         </Row>
       </Container>
-  
-      
+
+      </div>
 
   )
 }
