@@ -21,6 +21,16 @@
     background-color: rgb(111, 117, 49);
     color: white;
     padding: 1rem 2rem;
+    opacity: 0;
+    transform: translateY(100%);
+
+    /* Animation for h2 */
+    animation: fadeInUp 0.5s forwards 1s; /* 3s delay before animation starts */
+    &:hover{
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+    }
   }
   .content {
     position: absolute;
@@ -34,6 +44,23 @@
     h2 {
       color: rgb(111, 117, 49);
       font-size: 3rem;
+      opacity: 0;
+      transform: translateY(100%);
+
+      /* Animation for h2 */
+      animation: fadeInUp 0.5s forwards 1s; /* 3s delay before animation starts */
+    }
+  }
+
+  /* Keyframes for the fadeInUp animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
