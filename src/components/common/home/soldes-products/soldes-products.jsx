@@ -22,7 +22,7 @@ const SoldesProducts = ({ sectionTitle }) => {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 4,
     initialSlide: 0,
     prevArrow: <FaArrowLeft className="slick-arrow slick-prev" />,
@@ -31,7 +31,7 @@ const SoldesProducts = ({ sectionTitle }) => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 5,
           slidesToScroll: 3,
           infinite: true,
           dots: true,

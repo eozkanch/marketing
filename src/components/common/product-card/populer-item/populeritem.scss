@@ -10,35 +10,27 @@
 }
 
 .populer-item-card {
-  position: relative;
-  min-height: 450px;
-  max-width: 200px;
-  background: rgba(255, 255, 255, 0.1);
+
+  border: 1px solid rgb(111, 117, 49);
+ 
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(1px);
+
+}
+.card-top{
+  position: relative;
+
+  max-width: 150px;
+  min-height: 150px;
+
 }
 
 .populer-item-img {
   width: 100%;
 }
-
-.populer-item-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.populer-item-content h3 {
-  font-size: 1rem;
-}
-
 .populer-item-sale-title {
   position: absolute;
   top: 5px;
@@ -55,24 +47,14 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
 }
 
-.populer-item-price {
-  font-size: 16px;
-  font-weight: 600;
-  color: rgb(111, 117, 49);
-}
 
-.populer-item-oldprice {
-  font-size: 14px;
-  text-decoration: line-through;
-  color: gray;
-  padding-left: 5px;
-  font-weight: 300;
-}
 
 .populer-item-buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 0.1rem;
-  margin-top: -4rem;
+  margin-top: -3rem;
 }
 
 .populer-item-btn {
@@ -93,6 +75,49 @@
   background-color: rgb(111, 117, 49);
  
 }
+
+
+.card-bottom {
+  max-width: 150px;
+  min-height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around; /* Apply space-between vertically */
+
+.populer-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; /* Align content at the bottom */
+  
+}
+
+.populer-item-content h3 {
+  font-size: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(111, 117, 49);
+
+}
+.populer-item-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(111, 117, 49);
+
+
+}
+
+.populer-item-oldprice {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: gray;
+  padding-left: 5px;
+  font-weight: 300;
+
+}
+
+}
+
 
 
 

@@ -11,6 +11,11 @@ import './style.scss';
 
 const { categories } = data;
 const { allcategories } = alldata;
+const styles = {
+  backgroundColor: 'rgb(111, 117, 49)',
+  border: '1px solid rgb(111, 117, 49)',
+  color: 'white', // Set your desired text color
+};
 
 const CollectionPage = () => {
   const [selectedCategoryUrl, setSelectedCategoryUrl] = useState('');
@@ -100,7 +105,7 @@ const CollectionPage = () => {
                     <LiaListUlSolid color="rgb(111, 117, 49)" size={20} />
                   </Col>
                   <Col md={4} className='d-flex justify-content-end align-items-center gap-3'>
-                    <Form.Select className='border-0 color-rgb(111, 117, 49)' onChange={handleSortingChange} value={sortingOption}>
+                    <Form.Select   className={styles} onChange={handleSortingChange} value={sortingOption}>
                     <option>Selected Sorting </option>
                       <option value="1">A-Z</option>
                       <option value="2">Prix: faible à élevé</option>
@@ -114,10 +119,10 @@ const CollectionPage = () => {
               <Spacer height={25} />
               <Row xs={1} md={3} lg={5} className='row-gap-5'>
                 {sortedProducts.map((product, index) => (
-                  <Link to={`/usermodel/${index}`} key={index}>
+                  <Link to={`${product.details_link}`} key={index}>
                     <Col>
                       <PopulerItem
-                        name={product.vendor_title}
+                        name={product.name}
                         backgroundImg={product.image_url}
                         projectUrl={product.details_link}
                         price={product.price}

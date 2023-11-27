@@ -4,7 +4,7 @@ import "./categories-populers.scss"
 const CategoriesPopulers = () => {
   return (
     <div className='categories-populers'>
-    <h1>Catégories populaires</h1>
+    <h1>Catégories Populaires</h1>
         <Container>
             <Row className='categories-row'>
                 <Col className='categories-col' md={2}>

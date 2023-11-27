@@ -9,7 +9,10 @@ import { FaArrowLeft, FaArrowRight, FaInfinity } from 'react-icons/fa';
 import PopulerItem from '../populer-item/populeritem';
 import data from '../../../../data/allproduct.json';
 import './populer-card.scss';
+import data2 from '../../../../data/data';
 
+
+const { products2 } = data2;
 const PopularCard = ({ sectionTitle }) => {
   const { allcategories } = data;
   const products = allcategories.flatMap((category) => category.data);
@@ -46,7 +49,7 @@ const PopularCard = ({ sectionTitle }) => {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 4,
     initialSlide: 0,
     prevArrow: <FaArrowLeft className="slick-arrow slick-prev" />,
@@ -103,9 +106,9 @@ const PopularCard = ({ sectionTitle }) => {
       <CategoryButtons selectedCategory={selectedCategory} handleClick={handleClick} />
       <Slider {...sliderSettings}>
         {selectedCategoryData.data.map((product, index) => (
-          <Link to={`/usermodel/${index}`} key={index}>
+          <Link to={`${product.details_link}`} key={index}>
             <PopulerItem
-              name={product.title}
+              name={product.name}
               backgroundImg={product.image_url}
               projectUrl={product.url}
               price={product.price}
