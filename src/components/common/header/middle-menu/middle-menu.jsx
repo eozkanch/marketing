@@ -8,7 +8,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './middle-menu.scss';
 import { Link } from 'react-router-dom';
 import MiniCart from '../../../common/mini-cart/mini-cart';
-
+import { useSelector, useDispatch } from 'react-redux';
 
 const theme = createTheme({
   palette: {
@@ -33,6 +33,9 @@ const logoStyle = {
   border: '2px solid #fff',
 };
 const MiddleMenu = () => {
+  const cartItems = useSelector(state => state.cart.items);
+  const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
+
   const [showMiniCart, setShowMiniCart] = useState(false);
 
   const handleShowMiniCart = () => setShowMiniCart(true);
@@ -80,7 +83,7 @@ const MiddleMenu = () => {
                 </Badge>
               </Col>
               <Col>
-                <Badge badgeContent={0} showZero color="success">
+                <Badge badgeContent={totalQuantity} showZero color="success">
                   <MdShoppingBasket onClick={handleShowMiniCart} size={40} className='icon'/>
                 </Badge>
               </Col>

@@ -8,6 +8,7 @@ import './populeritem.scss';
 import { Link } from 'react-router-dom';
 
 class PopulerItem extends Component {
+
   constructor(props) {
     super(props);
     this.state = {

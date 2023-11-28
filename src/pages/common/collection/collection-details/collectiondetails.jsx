@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, ButtonGroup, InputGroup, Button, Form } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
 import alldata from '../../../../data/allproduct.json';
@@ -10,11 +10,45 @@ import Spacer from '/Users/geneve/Desktop/marketing/marketing/src/components/com
 const { allcategories } = alldata;
 import SectionHeader from "../../../../components/common/section-header/section-header";
 import SimilarProducts from '../../../../components/common/collection/similar-products/similar-products';
+import { useSelector, useDispatch } from 'react-redux';
+import { addItem } from '../../../../store/slice/cart/cartSlice'; 
+import Swal from 'sweetalert2';
 
 const CollectionDetailsPage = () => {
   const { pathname } = useLocation();
+  const counter =useState(1);
   const pathParts = pathname.split('/');
   const productName = pathParts[pathParts.length - 1];
+
+
+
+  const dispatch = useDispatch();
+
+
+  const handleAddToCart = () => {
+    // Dispatch the addItem action with the selected product and counter value
+    dispatch(addItem({ product: productDetails, quantity: counter[0] }));
+  
+    // Use SweetAlert to display a success message
+    Swal.fire({
+      icon: 'success',
+      title: 'Ürün Sepete Eklendi!',
+      showConfirmButton: false,
+      timer: 2000, // Adjust the duration as needed
+    });
+  };
+  
+  const handleCounterPlus = () => { 
+
+    counter[1](counter[0] + 1);
+    
+
+  }
+  const handleCounterMinus = () => {
+    if (counter[0] > 1) {
+      counter[1](counter[0] - 1);
+    }
+  };
 
   const productDetails = allcategories
     .flatMap(category => category.data)
@@ -45,13 +79,13 @@ const CollectionDetailsPage = () => {
                         <div className='d-flex align-items-center justify-content-center gap-2'>Adet:</div>
                         <div>
                         <InputGroup className="mb-3">
-                          <Button variant="primary" id="button-addon1">
+                          <Button onClick={handleCounterMinus} variant="primary" id="button-addon1">
                            -
                           </Button>
-                          <Button variant="outline-primary" disabled id="button-addon1">
-                           1
+                          <Button variant="outline-primary"  id="button-addon1">
+                            {counter[0]}
                           </Button>
-                          <Button variant="primary" id="button-addon1">
+                          <Button onClick={handleCounterPlus} variant="primary" id="button-addon1">
                             +
                           </Button>
                         </InputGroup>
@@ -59,7 +93,7 @@ const CollectionDetailsPage = () => {
                 </span>
                 <ButtonGroup className='d-flex align-items-center justify-content-start gap-1 py-1'>
                   <Button variant="primary" >Favorilere Ekle</Button>
-                  <Button variant="primary">Sepete Ekle</Button>
+                  <Button onClick={handleAddToCart} variant="primary">Sepete Ekle</Button>
                   <Button variant="primary">Hemen Al</Button>
                 </ButtonGroup>
                 </div>

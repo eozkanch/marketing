@@ -106,7 +106,7 @@ const PopularCard = ({ sectionTitle }) => {
       <CategoryButtons selectedCategory={selectedCategory} handleClick={handleClick} />
       <Slider {...sliderSettings}>
         {selectedCategoryData.data.map((product, index) => (
-          <Link to={`${product.details_link}`} key={index}>
+         
             <PopulerItem
               name={product.name}
               backgroundImg={product.image_url}
@@ -116,7 +116,7 @@ const PopularCard = ({ sectionTitle }) => {
               discountAmount={product.sale_title || ''}
               oldPrice={product.old_price || ''}
             />
-          </Link>
+       
         ))}
       </Slider>
     </Container>
