@@ -17,7 +17,7 @@ const SoldesProducts = ({ sectionTitle }) => {
   const filteredAndSortedProducts = products
     .filter(product => product.sale_title !== null)
     .sort((a, b) => b.sale_title - a.sale_title);
-
+console.log(filteredAndSortedProducts);
   const sliderSettings = {
     dots: false,
     infinite: false,
@@ -61,7 +61,7 @@ const SoldesProducts = ({ sectionTitle }) => {
 
       <Slider {...sliderSettings}>
         {filteredAndSortedProducts.map((product) => (
-          <Link to={`/usermodel/${product.id}`} key={product.id}>
+          <Link to={`${product.details_link}`} key={product.id}>
             <PopulerItem
               name={product.name}
               backgroundImg={product.image_url}

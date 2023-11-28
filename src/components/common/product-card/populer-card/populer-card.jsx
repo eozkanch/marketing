@@ -90,11 +90,11 @@ const PopularCard = ({ sectionTitle }) => {
 
   const selectedCategoryData = allcategories.find((category) => {
     if (selectedCategory === 'DES NOISETTES') {
-      return category.url === 'https://bizimkiler.ch/collection/kuruyemisler';
+      return category.categories === '/kuruyemisler';
     } else if (selectedCategory === 'PETITS DÉJEUNERS') {
-      return category.url === 'https://bizimkiler.ch/collection/kahvaltiliklar';
+      return category.categories === '/kahvaltiliklar';
     } else if (selectedCategory === 'LÉGUMINEUSES') {
-      return category.url === 'https://bizimkiler.ch/collection/bakliyatlar';
+      return category.categories === '/bakliyatlar';
     }
 
     return false;
@@ -112,6 +112,7 @@ const PopularCard = ({ sectionTitle }) => {
               backgroundImg={product.image_url}
               projectUrl={product.url}
               price={product.price}
+              link={product.details_link}
               discountAmount={product.sale_title || ''}
               oldPrice={product.old_price || ''}
             />

@@ -1,7 +1,7 @@
 {
   "allcategories": [
     {
-      "url": "https://bizimkiler.ch/collection/baklava",
+      "categories":"/baklava",
       "data": [
         {
           "vendor_title": "Antepsan",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/baharatlar",
+      "categories":"/baharatlar",
       "data": [
         {
           "vendor_title": "Bizimkiler",
@@ -227,7 +227,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/bakliyatlar",
+      "categories":"/bakliyatlar",
       "data": [
         {
           "vendor_title": "Bizimkiler",
@@ -340,7 +340,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/bal",
+      "categories":"/bal",
       "data": [
         {
           "vendor_title": "Meray",
@@ -357,7 +357,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/bal-tahin-pekmez",
+      "categories":"/bal-tahin-pekmez",
       "data": [
         {
           "vendor_title": "Sebahat",
@@ -410,7 +410,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/caylar",
+      "categories":"/caylar",
       "data": [
         {
           "vendor_title": "Çaykur",
@@ -487,7 +487,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/cok-satanlar",
+      "categories":"/cok-satanlar",
       "data": [
         {
           "vendor_title": "Karia",
@@ -528,7 +528,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/helva",
+      "categories":"/helva",
       "data": [
         {
           "vendor_title": "Sebahat",
@@ -545,14 +545,14 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/i%CC%87cecekler",
+      "categories":"/i̇cecekler",
       "data": [
         {
           "vendor_title": "Çaykur",
           "name": "Çay 500g • Çaykur Altınbaş Çay",
           "price": "CHF 6.90",
           "old_price": "CHF 7.90",
-          "details_link": "/collection/i%CC%87cecekler/products/cay-500g-caykur-altinbas-cay",
+          "details_link": "/collection/i̇cecekler/products/cay-500g-caykur-altinbas-cay",
           "image_url": "//bizimkiler.ch/cdn/shop/products/59AF7FF5-20A7-4425-88E6-B29EFE87F442_390X468_crop_center.jpg?v=1672430532",
           "description": "",
           "sale_title": "-13%",
@@ -564,7 +564,7 @@
           "name": "Türk Kahvesi 200g • Taze kavrulmuş, çekilmiş ve %100 Doğal",
           "price": "CHF 3.50",
           "old_price": "CHF 4.00",
-          "details_link": "/collection/i%CC%87cecekler/products/turk-kahvesi-200g-taze-kavrulmus-cekilmis-ve-100-dogal",
+          "details_link": "/collection/i̇cecekler/products/turk-kahvesi-200g-taze-kavrulmus-cekilmis-ve-100-dogal",
           "image_url": "//bizimkiler.ch/cdn/shop/files/IMG-9975_390X468_crop_center.jpg?v=1696153984",
           "description": "",
           "sale_title": "-13%",
@@ -576,7 +576,7 @@
           "name": "Çay 125g • Çaykur Tomurcuk",
           "price": "CHF 2.90",
           "old_price": "CHF 3.90",
-          "details_link": "/collection/i%CC%87cecekler/products/cay-tomurcuk",
+          "details_link": "/collection/i̇cecekler/products/cay-tomurcuk",
           "image_url": "//bizimkiler.ch/cdn/shop/products/7B6863D4-E73F-4B08-9EFC-DE6CA947D642_390X468_crop_center.jpg?v=1672558862",
           "description": "",
           "sale_title": "-26%",
@@ -588,7 +588,7 @@
           "name": "Osmanlı Kahvesi 200g",
           "price": "CHF 6.90",
           "old_price": "CHF 7.90",
-          "details_link": "/collection/i%CC%87cecekler/products/kahve-osmanli",
+          "details_link": "/collection/i̇cecekler/products/kahve-osmanli",
           "image_url": "//bizimkiler.ch/cdn/shop/products/28B04977-F595-4A0E-B85F-8F00095E0265_390X468_crop_center.jpg?v=1672347007",
           "description": "",
           "sale_title": "-13%",
@@ -600,7 +600,7 @@
           "name": "Fıstık Parçacıklı Kahve 150g",
           "price": "CHF 3.90",
           "old_price": null,
-          "details_link": "/collection/i%CC%87cecekler/products/fistik-parcacikli-kahve-150g",
+          "details_link": "/collection/i̇cecekler/products/fistik-parcacikli-kahve-150g",
           "image_url": "//bizimkiler.ch/cdn/shop/products/FA35A605-0A5F-40E6-9046-B61FC51843AF_390X468_crop_center.jpg?v=1677878623",
           "description": "",
           "sale_title": null,
@@ -612,7 +612,7 @@
           "name": "Fındık Parçacıklı Kahve 150g",
           "price": "CHF 3.90",
           "old_price": null,
-          "details_link": "/collection/i%CC%87cecekler/products/findik-parcacikli-kahve-150g",
+          "details_link": "/collection/i̇cecekler/products/findik-parcacikli-kahve-150g",
           "image_url": "//bizimkiler.ch/cdn/shop/products/2F3A9999-9924-493A-8826-2915137F3705_390X468_crop_center.jpg?v=1677878295",
           "description": "",
           "sale_title": null,
@@ -624,7 +624,7 @@
           "name": "Çay 500g • Çaykur Tiryaki Çay",
           "price": "CHF 5.90",
           "old_price": "CHF 6.90",
-          "details_link": "/collection/i%CC%87cecekler/products/cay-500g-caykur-tiryaki-cay",
+          "details_link": "/collection/i̇cecekler/products/cay-500g-caykur-tiryaki-cay",
           "image_url": "//bizimkiler.ch/cdn/shop/products/1CBC6FAD-5453-42CF-AE71-DF45EFE886BE_390X468_crop_center.jpg?v=1673304242",
           "description": "",
           "sale_title": "-14%",
@@ -636,7 +636,7 @@
           "name": "Çay 500g • Çaykur Çay Çiçeği",
           "price": "CHF 5.90",
           "old_price": "CHF 6.90",
-          "details_link": "/collection/i%CC%87cecekler/products/cay-500g-caykur-cay-cicegi",
+          "details_link": "/collection/i̇cecekler/products/cay-500g-caykur-cay-cicegi",
           "image_url": "//bizimkiler.ch/cdn/shop/products/0FB8ED6F-F8DF-47C1-89D7-CA011385AAE8_390X468_crop_center.jpg?v=1672430390",
           "description": "",
           "sale_title": "-14%",
@@ -648,7 +648,7 @@
           "name": "Çay 500g • Çaykur Filiz Çay",
           "price": "CHF 5.90",
           "old_price": "CHF 6.90",
-          "details_link": "/collection/i%CC%87cecekler/products/cay-500g-caykur-filiz-cay",
+          "details_link": "/collection/i̇cecekler/products/cay-500g-caykur-filiz-cay",
           "image_url": "//bizimkiler.ch/cdn/shop/products/78E0BAC3-A733-4036-BE68-D03D6D757972_390X468_crop_center.jpg?v=1672430174",
           "description": "",
           "sale_title": "-14%",
@@ -658,7 +658,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/kahvaltiliklar",
+      "categories":"/kahvaltiliklar",
       "data": [
         {
           "vendor_title": "Köy Sefasi",
@@ -843,7 +843,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/kahveler",
+      "categories":"/kahveler",
       "data": [
         {
           "vendor_title": "AntepGourmet",
@@ -896,7 +896,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/kek-pasta",
+      "categories":"/kek-pasta",
       "data": [
         {
           "vendor_title": "Bizimkiler",
@@ -997,7 +997,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/kozmetik-bakim",
+      "categories":"/kozmetik-bakim",
       "data": [
         {
           "vendor_title": "Naturlife",
@@ -1038,7 +1038,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/kurutulmus-meyve",
+      "categories":"/kurutulmus-meyve",
       "data": [
         {
           "vendor_title": "Grand Bazaar",
@@ -1115,7 +1115,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/kurutulmus-sebze",
+      "categories":"/kurutulmus-sebze",
       "data": [
         {
           "vendor_title": "Bizimkiler",
@@ -1132,7 +1132,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/kuruyemisler",
+      "categories":"/kuruyemisler",
       "data": [
         {
           "vendor_title": "Bizimkiler",
@@ -1413,7 +1413,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/lokum",
+      "categories":"/lokum",
       "data": [
         {
           "vendor_title": "Keyifce",
@@ -1478,7 +1478,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/recel",
+      "categories":"/recel",
       "data": [
         {
           "vendor_title": "Bizimkiler",
@@ -1567,7 +1567,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/salcalar",
+      "categories":"/salcalar",
       "data": [
         {
           "vendor_title": "Bizimkiler",
@@ -1620,7 +1620,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/sarkuteri",
+      "categories":"/sarkuteri",
       "data": [
         {
           "vendor_title": "Bizimkiler",
@@ -1913,7 +1913,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/sekerlemeler",
+      "categories":"/sekerlemeler",
       "data": [
         {
           "vendor_title": "Hacı Kamil",
@@ -1930,7 +1930,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/sos-nar-eksisi",
+      "categories":"/sos-nar-eksisi",
       "data": [
         {
           "vendor_title": "Bizimkiler",
@@ -2031,7 +2031,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/tatlilar",
+      "categories":"/tatlilar",
       "data": [
         {
           "vendor_title": "Yenigün",
@@ -2072,7 +2072,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/tum-urunler",
+      "categories":"/tum-urunler",
       "data": [
         {
           "vendor_title": "Bizimkiler",
@@ -2365,7 +2365,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/tursu",
+      "categories":"/tursu",
       "data": [
         {
           "vendor_title": "Çiçek",
@@ -2406,7 +2406,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/unlu-mamuller",
+      "categories":"/unlu-mamuller",
       "data": [
         {
           "vendor_title": "Keyifce",
@@ -2627,7 +2627,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/zeytin-peynir",
+      "categories":"/zeytin-peynir",
       "data": [
         {
           "vendor_title": "Köy Sefasi",
@@ -2680,7 +2680,7 @@
       ]
     },
     {
-      "url": "https://bizimkiler.ch/collection/zeytinyagi",
+      "categories":"/zeytinyagi",
       "data": [
         {
           "vendor_title": "Yenigün",
@@ -2698,3 +2698,6 @@
     }
   ]
 }
+
+
+

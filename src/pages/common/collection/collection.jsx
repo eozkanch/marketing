@@ -22,16 +22,20 @@ const CollectionPage = () => {
   const { pathname } = useLocation();
   const pathParts = pathname.split('/');
   const lastPathSegment = decodeURIComponent(pathParts[pathParts.length - 1]);
-  
+  console.log(lastPathSegment);
+  console.log(selectedCategoryUrl);
 
 
   const filteredProducts = allcategories.reduce((acc, category) => {
-    const matchingCategory = category.url.includes(lastPathSegment);
+    const matchingCategory = category.categories && category.categories.includes(lastPathSegment);
+  
     if (matchingCategory) {
       return acc.concat(category.data);
     }
+  
     return acc;
   }, []);
+  
 
   const [sortingOption, setSortingOption] = useState("1");
   const navigate = useNavigate();
@@ -77,21 +81,18 @@ const CollectionPage = () => {
       <Spacer height={100} />
       <Container>
         <Row>
-          <Col md={3} className='collection-left'>
+        <Col md={3} className='collection-left'>
             <div className='category'>
-              <h4>Catégories</h4>
+              <h4>Categories</h4>
               {categories.map((category, index) => (
-             <div className={`category-item ${selectedCategoryUrl === category.url ? 'active' : ''}`} key={index}>
-              <Checkbox
-                className='checkbox'
-                checked={selectedCategoryUrl === category.url}
-                onChange={() => handleCategoryChange(category.url)}
-              />
-              
-                {category.name} ( {category.count})
-              
-            </div>
-
+                <div className={`category-item ${selectedCategoryUrl === category.url ? 'active' : ''}`} key={index}>
+                  <Checkbox
+                    className='checkbox'
+                    checked={selectedCategoryUrl === category.url}
+                    onChange={() => handleCategoryChange(category.url)}
+                  />
+                  {category.name} ({category.count})
+                </div>
               ))}
             </div>
           </Col>

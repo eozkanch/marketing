@@ -8,6 +8,8 @@ import { LuDollarSign } from "react-icons/lu";
 import { PiIdentificationCardDuotone } from "react-icons/pi";
 import Spacer from '/Users/geneve/Desktop/marketing/marketing/src/components/common/spacer/spacer.jsx';
 const { allcategories } = alldata;
+import SectionHeader from "../../../../components/common/section-header/section-header";
+import SimilarProducts from '../../../../components/common/collection/similar-products/similar-products';
 
 const CollectionDetailsPage = () => {
   const { pathname } = useLocation();
@@ -20,48 +22,56 @@ const CollectionDetailsPage = () => {
 
   return (
     <div className='text-center mt-5 text-red'>
-      <Container>
+      <Container >
         {productDetails && (
           <>
-            <Row>
-              <Col md={4}>
+            <Row className='gap-5'>
+              <Col md={4} className='product-image-container'>
+              <figure className="product_img_top">
                 <img src={productDetails.image_url} alt={productDetails.name} className="product-image" />
+                </figure>
               </Col>
-              <Col md={5} className="product-details">
-                <div>
+              <Col md={4} className="product-details">
+                <div className="product-info-left">
                   <h4>{productDetails.name}</h4>
                   <h5>Durum: <span>Stokta Var</span></h5>
                   <h5>{productDetails.description}</h5>
-                  <p>Price: {productDetails.price} {productDetails.old_price && <span>{productDetails.old_price}</span>} <span>{productDetails.sale_title}</span></p>
-                  <p>Acele et stokta sadece 11 ürün kaldı!</p>
-                  <p>Sipariş verdiğiniz 2 gün içinde paketlenerek kargoya verilir.</p>
-                  <h5>Taille: <span>1 KG</span></h5>
-                  <p>Vendor: {productDetails.vendor_title}</p>
-                </div>
-
-                <InputGroup className="mb-3">
-                  <Button variant="outline-primary" id="button-addon1">
-                    Button
-                  </Button>
-                  <Form.Control
-                    aria-label="Example text with button addon"
-                    aria-describedby="basic-addon1"
-                    variant="outline-primary"
-                  />
-                  <Button variant="outline-primary" id="button-addon1">
-                    Button
-                  </Button>
-                </InputGroup>
-
-                <ButtonGroup className='gap-1 py-5'>
+                  <h3>Price: {productDetails.price} {productDetails.old_price && <span>{productDetails.old_price}</span>} <span>{productDetails.sale_title}</span></h3>
+                  <h2>Acele et stokta sadece 11 ürün kaldı!</h2>
+                  <h1>Sipariş verdiğiniz 2 gün içinde paketlenerek kargoya verilir.</h1>
+                  <h3>Taille: <span>1 KG</span></h3>
+                  <div className='product-count'>
+                <span className='count d-flex align-items-left justify-content-start gap-2 py-2'>  
+                        <div className='d-flex align-items-center justify-content-center gap-2'>Adet:</div>
+                        <div>
+                        <InputGroup className="mb-3">
+                          <Button variant="primary" id="button-addon1">
+                           -
+                          </Button>
+                          <Button variant="outline-primary" disabled id="button-addon1">
+                           1
+                          </Button>
+                          <Button variant="primary" id="button-addon1">
+                            +
+                          </Button>
+                        </InputGroup>
+                        </div>
+                </span>
+                <ButtonGroup className='d-flex align-items-center justify-content-start gap-1 py-1'>
                   <Button variant="primary" >Favorilere Ekle</Button>
                   <Button variant="primary">Sepete Ekle</Button>
                   <Button variant="primary">Hemen Al</Button>
                 </ButtonGroup>
+                </div>
+                
+               <div className='d-flex flex-column text-start gap-2'>
                 <h5>SKU: BNP-AF1000</h5>
+                <h5>Vendor: {productDetails.vendor_title}</h5>
                 <h5>Paylas:</h5>
+                </div> 
+                </div>
               </Col>
-              <Col md={3} className="product-info">
+              <Col md={3} className="product-info-right">
                 <div>
                   <span  className='icon'><TfiTruck size={30} /></span>
                   <h5>TESLİMAT BİLGİSİ</h5>
@@ -81,6 +91,17 @@ const CollectionDetailsPage = () => {
             </Row>
           </>
         )}
+      </Container>
+      <Container>
+      <Spacer height={25} />
+        <Row>
+          <Col md={12}>
+            <SectionHeader
+              title2="Benzer Urunler"
+                         />
+          </Col>
+        </Row>
+        <SimilarProducts currentProductId={productName} />
       </Container>
       <Spacer height={100} />
     </div>

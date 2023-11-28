@@ -1,63 +1,165 @@
-// Add your existing styles here
+.product-image-container,
+.product_detail_img .product_img_top figure {
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgb(111, 117, 49);
+  position: relative;
+  cursor: zoom-in;
 
-.product-image {
-    width: 100%; // Make the image responsive within its container
-    border-radius: 8px; // Add a border-radius for a rounded appearance
+
+  &:hover {
+    .product-image,
+    img {
+      transform: scale(1.5);
+    }
   }
-  
-  .product-details {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Add a subtle box shadow
+}
+
+.product-image,
+.product_detail_img .product_img_top figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  transform-origin: 0 0; /* Set the transform origin to the top-left corner */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  &:active {
+    cursor: zoom-out;
   }
-  
-  .product-info {
-  
-   
-    border-radius: 8px;
+}
+
+
+
+.product-details {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgb(111, 117, 49);
+}
+
+.product-info-left {
+  text-align: left;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  padding: 1rem;
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    color: rgb(111, 117, 49);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(111, 117, 49);
+    text-align: left;
+  }
+
+  h5 {
+    font-size: 1rem;
+    color: rgb(111, 117, 49);
+    text-align: left;
+
+    span {
+      color: rgb(11, 237, 41);
+    }
+  }
+
+  p {
+    color: rgb(111, 117, 49);
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: rgb(111, 117, 49);
+
+    span {
+      font-weight: 500;
+      font-size: 1rem;
+      border-bottom: 2px solid;
+      color: black;
+    }
+
+    .product-cont {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: left;
+      text-align: left;
+
+      .count {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+      }
+    }
+  }
+}
+
+.product-info-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+
+
+  > div {
+    background-color: rgb(249, 249, 249);
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    height: 100%;
-    > div{
- background-color: rgb(249,249,249);
- width: 100%;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- gap: 0.5rem;
-
-    }
-    .icon{
-      
-      font-size: 3rem;
-      color: rgb(111, 117, 49);
-     background-color: #fff;
-   border-radius: 50%;
-   padding: 0 20px  0 20px ;
-  text-align: center;
-     
-    }
-    
-    h1 {
-      font-size:3rem;
-    }
-    p{
-      font-size: 1rem;
-    }
-}
-  
-  // Add media queries for responsiveness
-  @media (max-width: 767px) {
-    .product-details,
-    .product-info {
-      padding: 15px; // Adjust padding for smaller screens
-    }
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(111, 117, 49);
   }
-  
-  // Add more styles as needed
-  
+
+  .icon {
+    font-size: 3rem;
+    background-color: rgb(111, 117, 49);
+   color: #fff;
+    border-radius: 50%;
+    padding: 0 20px 0 20px;
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+}
+
+// Add media queries for responsiveness
+@media (max-width: 767px) {
+  .product-details,
+  .product-info {
+    padding: 15px;
+  }
+}
+
+// Add more styles as needed

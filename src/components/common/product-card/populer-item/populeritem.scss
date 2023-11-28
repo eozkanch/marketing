@@ -76,7 +76,13 @@
  
 }
 
-
+.popular-item-btn {
+  -webkit-transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
 .card-bottom {
   max-width: 150px;
   min-height: 175px;

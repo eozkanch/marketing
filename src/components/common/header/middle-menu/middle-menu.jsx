@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Col, Container, Form, InputGroup, Row } from 'react-bootstrap';
 import Badge from '@mui/material/Badge';
 import { FiHeart } from "react-icons/fi";
@@ -7,6 +7,8 @@ import { IoIosSearch } from 'react-icons/io';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './middle-menu.scss';
 import { Link } from 'react-router-dom';
+import MiniCart from '../../../common/mini-cart/mini-cart';
+
 
 const theme = createTheme({
   palette: {
@@ -31,6 +33,10 @@ const logoStyle = {
   border: '2px solid #fff',
 };
 const MiddleMenu = () => {
+  const [showMiniCart, setShowMiniCart] = useState(false);
+
+  const handleShowMiniCart = () => setShowMiniCart(true);
+  const handleHideMiniCart = () => setShowMiniCart(false);
   return (
     <ThemeProvider theme={theme}>
       <Container fluid>
@@ -75,13 +81,14 @@ const MiddleMenu = () => {
               </Col>
               <Col>
                 <Badge badgeContent={0} showZero color="success">
-                  <MdShoppingBasket size={40} className='icon'/>
+                  <MdShoppingBasket onClick={handleShowMiniCart} size={40} className='icon'/>
                 </Badge>
               </Col>
             </Row>
           </Col>
         </Row>
       </Container>
+      <MiniCart show={showMiniCart} handleClose={handleHideMiniCart} />
     </ThemeProvider>
   );
 };
