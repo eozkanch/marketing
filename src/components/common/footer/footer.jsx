@@ -29,38 +29,38 @@ const Footer = () => {
             
           </div>
         <Row>
-          <Col md ={2}>       
+          <Col className='footer-col' >       
          
           <div className='footer-header-title'>Adresse</div>
-          <div><BsPhone /> (+41 44 444 44 44)</div>
-          <div><FaRegEnvelope /> lOg0H@example.com</div>
-          <div><SiGooglemaps />1212 Grand-lancy Genève</div>
+          <div className='footer-link'><BsPhone /> (+41 44 444 44 44)</div>
+          <div className='footer-link'><FaRegEnvelope /> lOg0H@example.com</div>
+          <div className='footer-link'><SiGooglemaps />1212 Grand-lancy Genève</div>
           </Col>
-          <Col  md ={2}>
+          <Col  >
           <div className='footer-header-title'>Institutionnel</div>
-          <div>à propos de nous</div>
-          <div>imprimer</div>
-          <div>Communication</div>
+          <div className='footer-link'>à propos de nous</div>
+          <div className='footer-link'>imprimer</div>
+          <div className='footer-link'>Communication</div>
           </Col>
-          <Col  md ={3}>
+          <Col  >
           <div  className='footer-header-title'>Informations importantes</div>
-          <div>accord de confidentialité</div>
-          <div>Accord d'utilisation</div>
+          <div className='footer-link'>accord de confidentialité</div>
+          <div className='footer-link'>Accord d'utilisation</div>
           </Col>
          
-          <Col  md ={2}>
+          <Col  >
           <div  className='footer-header-title'>Mon compte</div>
-          <div>Connexion</div>
-          <div>Enregistrer</div>
-          <div>Panier</div>
-          <div>Historique des commandes</div>
-          <div>Liste de suivi</div>
+          <div className='footer-link'>Connexion</div>
+          <div className='footer-link'>Enregistrer</div>
+          <div className='footer-link'>Panier</div>
+          <div className='footer-link'>Historique des commandes</div>
+          <div className='footer-link'>Liste de suivi</div>
           </Col>
-          <Col md ={3}>
+          <Col >
            <div  className='footer-header-title'>Ne manquez pas les campagnes !</div>
-          <div>à propos de nous</div>
-          <div>imprimer</div>
-          <div>Communication</div></Col>
+          <div className='footer-link'>à propos de nous</div>
+          <div className='footer-link'>imprimer</div>
+          <div className='footer-link'>Communication</div></Col>
         </Row>
       </Container>
   

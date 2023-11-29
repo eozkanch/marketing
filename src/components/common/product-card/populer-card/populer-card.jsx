@@ -3,44 +3,35 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Button, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import SectionHeader from '../../section-header/section-header';
 import { FaArrowLeft, FaArrowRight, FaInfinity } from 'react-icons/fa';
 import PopulerItem from '../populer-item/populeritem';
-import data from '../../../../data/allproduct.json';
 import './populer-card.scss';
-import data2 from '../../../../data/data';
+import data from '../../../../data/allproduct.json';
 
+import SectionHeader from '../../section-header/section-header';
 
-const { products2 } = data2;
-const PopularCard = ({ sectionTitle }) => {
+const PopularCard = () => {
   const { allcategories } = data;
-  const products = allcategories.flatMap((category) => category.data);
-
+console.log("allcategories",allcategories);
   const CategoryButtons = ({ selectedCategory, handleClick }) => {
+    const specificCategories = [
+      { categories: "/kuruyemisler", label: "Kuruyemişler" },
+      { categories: "/kahvaltiliklar", label: "Kahvaltılıklar" },
+      { categories: "/bakliyatlar", label: "Bakliyatlar" },
+    ];
+
     return (
       <Container className="slider-container">
-        <Button
-          className={`product-btn ${selectedCategory === 'DES NOISETTES' ? 'active' : ''}`}
-          variant="outline-light"
-          onClick={() => handleClick('DES NOISETTES')}
-        >
-          DES NOISETTES
-        </Button>
-        <Button
-          className={`product-btn ${selectedCategory === 'PETITS DÉJEUNERS' ? 'active' : ''}`}
-          variant="outline-light"
-          onClick={() => handleClick('PETITS DÉJEUNERS')}
-        >
-          PETITS DÉJEUNERS
-        </Button>
-        <Button
-          className={`product-btn ${selectedCategory === 'LÉGUMINEUSES' ? 'active' : ''}`}
-          variant="outline-light"
-          onClick={() => handleClick('LÉGUMINEUSES')}
-        >
-          LÉGUMINEUSES
-        </Button>
+        {specificCategories.map(category => (
+          <Button
+            key={category.categories}
+            className={`product-btn ${selectedCategory === category.categories ? 'active' : ''}`}
+            variant="outline-light"
+            onClick={() => handleClick(category.categories)}
+          >
+            {category.label}
+          </Button>
+        ))}
       </Container>
     );
   };
@@ -82,41 +73,24 @@ const PopularCard = ({ sectionTitle }) => {
     ],
   };
 
-  const [selectedCategory, setSelectedCategory] = useState('DES NOISETTES');
+  const [selectedCategory, setSelectedCategory] = useState("/kuruyemisler");
 
   const handleClick = (category) => {
     setSelectedCategory(category);
   };
 
-  const selectedCategoryData = allcategories.find((category) => {
-    if (selectedCategory === 'DES NOISETTES') {
-      return category.categories === '/kuruyemisler';
-    } else if (selectedCategory === 'PETITS DÉJEUNERS') {
-      return category.categories === '/kahvaltiliklar';
-    } else if (selectedCategory === 'LÉGUMINEUSES') {
-      return category.categories === '/bakliyatlar';
-    }
-
-    return false;
-  });
-
+  const selectedCategoryData = allcategories.find(category => category.categories === selectedCategory);
+console.log("selectedCategoryData",selectedCategoryData);
   return (
     <Container className="product-carousel">
       <SectionHeader title1={<FaInfinity />} title2="Produits Populaires" />
       <CategoryButtons selectedCategory={selectedCategory} handleClick={handleClick} />
       <Slider {...sliderSettings}>
-        {selectedCategoryData.data.map((product, index) => (
-         
-            <PopulerItem
-              name={product.name}
-              backgroundImg={product.image_url}
-              projectUrl={product.url}
-              price={product.price}
-              link={product.details_link}
-              discountAmount={product.sale_title || ''}
-              oldPrice={product.old_price || ''}
-            />
-       
+        {selectedCategoryData?.data.map((product) => (
+          <PopulerItem
+            key={product.categories}
+            product={product}
+          />
         ))}
       </Slider>
     </Container>
@@ -124,6 +98,8 @@ const PopularCard = ({ sectionTitle }) => {
 };
 
 export default PopularCard;
+
+
 
 
 

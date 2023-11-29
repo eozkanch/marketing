@@ -123,12 +123,8 @@ const CollectionPage = () => {
                   <Link to={`${product.details_link}`} key={index}>
                     <Col>
                       <PopulerItem
-                        name={product.name}
-                        backgroundImg={product.image_url}
-                        projectUrl={product.details_link}
-                        price={product.price}
-                        discountAmount={product.sale_title || ''}
-                        oldPrice={product.old_price || ''}
+                         key={product.categories}
+            product={product}
                       />
                     </Col>
                   </Link>

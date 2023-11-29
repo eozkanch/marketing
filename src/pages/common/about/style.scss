@@ -89,21 +89,22 @@ $breakpoint: 992px;
         @include m.flexbox(column, space-between, center, 1rem);
 
         .who-we-are-info {
+            font-family: Poppins, sans-serif;
             > h1 {
-                font-size: 30px;
-                font-weight: 700;
+                font-size: 24px;
+                font-weight: 600;
                 color: rgb(0, 0, 0);
                 text-align: center;
             }
             > h5 {
-                font-size: 25px;
+                font-size: 20px;
                 font-weight: 400;
                 color: rgb(0, 0, 0);
                 text-align: center;
             }
             > p {
              
-                font-size: 22px;
+                font-size: 14px;
             }
 
            

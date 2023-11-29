@@ -1,0 +1,68 @@
+
+.mini-cart-header{
+   font-size: 12px;
+}
+.mini-cart{
+   
+   
+    border-top: 1px solid rgb(111, 117, 49);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+ 
+    z-index: 1;
+    img{
+        width: 50%;
+        object-fit: cover;
+     
+    }
+ul{
+  
+    list-style-type: none;
+    height: 700px; /* Veya istediğiniz bir yükseklik%; /* Veya istediğiniz bir maksimum yükseklik */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        border-bottom: 1px solid rgb(111, 117, 49);
+        padding: 1rem;
+        font-size: 14px;
+    }
+    .scroll-to-top {
+        position: absolute;
+        bottom: 10px; /* İstediğiniz bir değeri ayarlayın */
+        right: 10px; /* İstediğiniz bir değeri ayarlayın */
+        cursor: pointer;
+      }
+}
+
+
+ .mini-cart-btn{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+ }
+ p {
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Elemanları arasında boşluk bırak */
+    align-items: center; /* Dikey hizalamayı ortala */
+    border-bottom: 1px solid rgb(111, 117, 49);
+    border-top: 1px solid rgb(111, 117, 49);
+  }
+  
+  span {
+    color: rgb(111, 117, 49);
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+
+}

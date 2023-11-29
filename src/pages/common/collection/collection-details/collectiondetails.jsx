@@ -28,7 +28,7 @@ const CollectionDetailsPage = () => {
   const handleAddToCart = () => {
     // Dispatch the addItem action with the selected product and counter value
     dispatch(addItem({ product: productDetails, quantity: counter[0] }));
-  
+
     // Use SweetAlert to display a success message
     Swal.fire({
       icon: 'success',

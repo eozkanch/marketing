@@ -61,15 +61,10 @@ console.log(filteredAndSortedProducts);
 
       <Slider {...sliderSettings}>
         {filteredAndSortedProducts.map((product) => (
-          <Link to={`${product.details_link}`} key={product.id}>
-            <PopulerItem
-              name={product.name}
-              backgroundImg={product.image_url}
-              projectUrl={product.details_link}
-              discountAmount={product.sale_title}
-              price={product.price}
-              oldPrice={product.old_price}
-            />
+          <Link to={`${product.details_link}`} key={product}>
+         
+            <PopulerItem product={product} key={product} />
+         
           </Link>
         ))}
       </Slider>

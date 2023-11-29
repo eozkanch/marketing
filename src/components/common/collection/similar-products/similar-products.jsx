@@ -66,12 +66,8 @@ const SimilarProducts = ({ currentProductId }) => {
         {similarProducts.map(product => (
             <Link to={`${product.details_link}`} key={product.id}>
             <PopulerItem
-              name={product.name}
-              backgroundImg={product.image_url}
-              projectUrl={product.url}
-              price={product.price}
-              discountAmount={product.sale_title || ''}
-              oldPrice={product.old_price || ''}
+              key={product.id}
+              product={product}
             />
           </Link>
         ))}
