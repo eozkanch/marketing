@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import { Button, Col, Container, Form, InputGroup, Row } from 'react-bootstrap';
+import { Button, Col, Container, Form, InputGroup, Offcanvas, Row } from 'react-bootstrap';
 import Badge from '@mui/material/Badge';
-import { FiHeart } from "react-icons/fi";
-import { MdShoppingBasket } from "react-icons/md";
+import { FiHeart } from 'react-icons/fi';
+import { MdShoppingBasket } from 'react-icons/md';
 import { IoIosSearch } from 'react-icons/io';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import './middle-menu.scss';
 import { Link } from 'react-router-dom';
 import MiniCart from '../../../common/mini-cart/mini-cart';
-import { useSelector, useDispatch } from 'react-redux';
-
+import { useSelector } from 'react-redux';
+import './middle-menu.scss';
 const theme = createTheme({
   palette: {
     success: {
@@ -18,20 +17,6 @@ const theme = createTheme({
   },
 });
 
-const logoStyle = {
-  backgroundColor: 'rgb(111, 117, 49)',
-  width: '150px',
-  height: '150px',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  borderRadius: '8px',
-  color: '#fff',
-  fontSize: '24px',
-  fontWeight: 'bold',
-  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  border: '2px solid #fff',
-};
 const MiddleMenu = () => {
   const cartItems = useSelector(state => state.cart.items);
   const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
@@ -40,60 +25,78 @@ const MiddleMenu = () => {
 
   const handleShowMiniCart = () => setShowMiniCart(true);
   const handleHideMiniCart = () => setShowMiniCart(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <ThemeProvider theme={theme}>
-      <Container fluid>
+     
+    
+     <div>
+        <Container>
+      
         <Row className='middle-menu'>
-        
-          <Col md={3}>
-          <Link to='/'>
-          <div className='logo-div'>
-          <Row>
-          <Col>
-          <span>L</span>
-            <span>E</span>
-            <span>S</span>
-          </Col></Row>
-          <Row>
-          <Col>
-            <span>N</span>
-            <span>O</span>
-            <span>T</span>
-            <span>R</span>
-            <span>E</span>
-            </Col>
-            </Row>
-            
-            
-          </div>
+          <Col xs={4} md={2} className='logo-col' >
+            <Link to='/'>
+              <img src='/logo.svg' alt='logo' className='logo' />
             </Link>
           </Col>
-      
-          <Col md={7}>
+          <Col xs={4} md={8} className='search-col '>
+          <Row className='search-icon'>
+          <Offcanvas placement='top' show={show} onHide={handleClose} className='search-offcanvas' style={{  height: '150px' }}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Body>
+          <div className='search-container-offcanvas'>
             <InputGroup>
-              <Form.Control placeholder="Rechercher dans la boutique" aria-label="Dollar amount (with dot and two decimal places)" />
-              <Button className='search-btn'><IoIosSearch color='white' size={20} /></Button>
+            
+              <Form.Control placeholder='Rechercher dans la boutique' aria-label='Rechercher dans la boutique' />
+              <Button className='search-btn'>
+              <IoIosSearch color='black' size={20} />
+               
+              </Button>
             </InputGroup>
+            </div>
+            </Offcanvas.Body>
+        </Offcanvas.Header>
+        </Offcanvas>
+        <IoIosSearch   size={40} onClick={handleShow} />
+          </Row>
+          
+
+          <div className='search-container'>
+            <InputGroup>
+            
+              <Form.Control placeholder='Rechercher dans la boutique' aria-label='Rechercher dans la boutique' />
+              <Button className='search-btn'>
+              <IoIosSearch color='black' size={20} />
+               
+              </Button>
+            </InputGroup>
+            </div>
+        
+            
           </Col>
-          <Col md={2}>
-            <Row>
-              <Col className='text-end'>
-                <Badge badgeContent={0} showZero color="success">
-                  <FiHeart size={35}  className='icon'/>
-                </Badge>
-              </Col>
-              <Col>
-                <Badge badgeContent={totalQuantity} showZero color="success">
-                  <MdShoppingBasket onClick={handleShowMiniCart} size={40} className='icon'/>
-                </Badge>
-              </Col>
-            </Row>
+          <Col xs={4} md={2} className='icon-col '>
+            <Badge badgeContent={0} showZero color='success'>
+              <FiHeart size={40} className='icon' />
+            </Badge>
+            <Badge badgeContent={totalQuantity} showZero color='success'>
+              <MdShoppingBasket onClick={handleShowMiniCart} size={40} className='icon' />
+            </Badge>
           </Col>
         </Row>
-      </Container>
-      <MiniCart show={showMiniCart} handleClose={handleHideMiniCart} />
+      
+        </Container>
+       </div>
+       
+     
+     
+      <MiniCart show={showMiniCart} handleClose={handleHideMiniCart} style={{ width: '80%' }}/>
     </ThemeProvider>
   );
 };
 
 export default MiddleMenu;
+

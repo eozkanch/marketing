@@ -29,7 +29,18 @@ const website = {
     linkedin: "https://www.linkedin.com",
     youtube: "https://www.youtube.com"
 };
+const slider = [
+    {
+        id: 1,
+        image: "Bizimkiler-Slide.webp",
+        title: "Bizimkiler",
+        desc: "Bizimkiler",
+        
+    }
+];
+
 
 export const constants = {
-    website
+    website,
+    slider,
 }

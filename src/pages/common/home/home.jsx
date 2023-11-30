@@ -11,6 +11,8 @@ const HomePage = () => {
  
        <>
       <Slider className="home-page-slider" />
+      <TopComponent />
+      <Spacer height={100} />
       <PopularCard sectionTitle="Popular Products" />
       <Spacer height={100} />
       <PopulerProducts />

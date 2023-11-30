@@ -8,26 +8,26 @@ import BottomFooter from './bottom-footer/ bottom-footer'
 const Footer = () => {
   return (
     <div className='footer'>
-      <Container fluid>
-      <div className='logo-div'>
-          <Row>
-          <Col>
-          <span>L</span>
-            <span>E</span>
-            <span>S</span>
-          </Col></Row>
-          <Row>
-          <Col>
-            <span>N</span>
-            <span>O</span>
-            <span>T</span>
-            <span>R</span>
-            <span>E</span>
-            </Col>
-            </Row>
-            
-            
-          </div>
+      <Container >
+            <div className='logo-div'>
+                <Row>
+                <Col>
+                <span>L</span>
+                  <span>E</span>
+                  <span>S</span>
+                </Col></Row>
+                <Row>
+                <Col>
+                  <span>N</span>
+                  <span>O</span>
+                  <span>T</span>
+                  <span>R</span>
+                  <span>E</span>
+                  </Col>
+                  </Row>
+                  
+                  
+            </div>
         <Row>
           <Col className='footer-col' >       
          

@@ -1,91 +1,88 @@
-/* slider.scss */
 
-.swiper-slide {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
- 
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
+$breakpoint: 576px;
 
-  .btn-slide {
-    background-color: rgb(111, 117, 49);
-    color: white;
-    padding: 1rem 2rem;
-    opacity: 0;
-    transform: translateY(100%);
-    animation: fadeInUp 0.5s forwards 1s;
+.slider {
+    .swiper-wrapper {
+        .swiper-slide {
+            position: relative;
 
-    &:hover {
-      background-color: black;
-      color: white;
-      font-weight: bolder;
-    }
-  }
+            &::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+               
+                width: 100%;
+                height: 50vh;
+                opacity: 0.3;
+                
+            }
 
-  .content {
-    position: absolute;
-    top: 20%;
-    left: 25%;
-    transform: translateX(-50%);
-    text-align: center;
-    z-index: 5;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 50vh;
+            }
+            
 
-    h2 {
-      color: rgb(111, 117, 49);
-      font-size: 3rem;
-      opacity: 0;
-      transform: translateY(100%);
-      animation: fadeInUp 0.5s forwards 1s;
-    }
- 
-  }
+            .content {
+               
+                position: absolute;
+                top: 25%;
+                left: 25%;
+                transform: translate(-50%);
+                text-align: center;
+                z-index: 5;
+              
 
-  /* Keyframes for the fadeInUp animation */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .content {
-      top: 10%;
+                h2 {
+                   
+                    font-size: 3rem;
+                  
+                   
+                }
+                p{
+                    color:white;
+                    font-size: 2rem;
+                   
+                }
+                .btn-slide {
+                  padding: 1rem;
+                  &:hover{
+                    background-color: red;
+                  }
+                  
+                }
+            }
+            
+        }
     }
 
-    h2 {
-      font-size: 2rem;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .content {
-      top: 5%;
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+      
     }
 
-    h2 {
-      font-size: 1.5rem;
-    }
+    @media (max-width: $breakpoint) {
+        .swiper-wrapper {
+            .swiper-slide {
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 25vh;
+                }
+    
+                .content {
+                    h2 {
+                        font-size: 1.5rem;
+                    }
 
-    .btn-slide {
-      padding: 0.8rem 1.5rem;
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
     }
-  }
 }
-
