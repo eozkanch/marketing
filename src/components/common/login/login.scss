@@ -1,0 +1,198 @@
+/* login-form.scss */
+.login-form{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+        justify-content: flex-start;
+        
+    }
+}
+.login-form-container {
+   text-align: start;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 50px 60px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        
+    }
+  }
+  
+  .login-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title-text {
+    text-align: center;
+    margin-bottom: 20px;
+  
+    h2 {
+      color: var(--color-primary); /* Define or replace with actual color */
+      font-size: 24px;
+      font-weight: var(--font-weight-header); /* Define or replace with actual font weight */
+      margin-bottom: 10px;
+      text-align: start;
+    }
+  
+    p {
+      color: var(--color-secondary); /* Define or replace with actual color */
+      font-size: 14px;
+      text-align: start;
+    }
+  }
+  
+  .fill-form {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+    li {
+      margin-bottom: 20px;
+  
+      label {
+        display: block;
+        font-size: 14px;
+        font-weight: var(--font-weight-body--bold); /* Define or replace with actual font weight */
+        color: var(--color-primary); /* Define or replace with actual color */
+        margin-bottom: 8px;
+      }
+  
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        box-sizing: border-box;
+        font-size: 14px;
+        background-color: none;
+      }
+    }
+  }
+  
+  .form-toggle-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .form-action-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+     
+
+      button {
+        width: 100%;
+        padding: 10px 20px;
+        background-color: var(--bs-primary); /* Define or replace with actual color */
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+  
+      a {
+        color: var(--bs-primary); /* Define or replace with actual color */
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 500;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  /* side-form.scss */
+  
+  .side-form-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    width: 60%;
+    padding: 30px 0px;
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        
+    }
+ 
+  
+    .acc-title {
+      h6 {
+        color: var(--color-primary); /* Define or replace with actual color */
+        font-size: 18px;
+        font-weight: 500; /* Define or replace with actual font weight */
+        margin-bottom: 30px;
+        text-align: center;
+      }
+  
+      .account-optional-action {
+        a {
+          color: var(--bs-primary); /* Define or replace with actual color */
+          text-decoration: none;
+          font-size: 14px;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .btn-style2 {
+            width: 100%;
+            padding: 10px 20px;
+           
+           
+            border: 2px solid var(--bs-primary); /* Define or replace with actual color */
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+
+
+            &:hover {
+                background-color: var(--bs-primary); /* Define or replace with actual color */
+                color: white;
+              }
+            
+        }
+      }
+    }
+  
+    .term-privacy {
+      margin-top: 20px;
+  
+      .term-con,
+      .pri-pol {
+        span { font-size: 14px;
+          sup {
+            color: var(--bs-primary); /* Define or replace with actual color */
+          }
+  
+          a {
+            color: var(--bs-primary); /* Define or replace with actual color */
+            text-decoration: none;
+            font-size: 14px;
+  
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  

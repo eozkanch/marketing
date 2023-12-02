@@ -19,6 +19,8 @@ import ContactForm from "./common/contact/form/form";
 import PopulerLitleCard from "./common/product-card/populer-litle-card/populer-litle-card";
 import SmilarProducts from "./common/collection/similar-products/similar-products";
 import MiniCart from "./common/mini-cart/mini-cart";
+import Login from "./common/login/login";
+import Register from "./common/register/register";
 
 export {
     TopMenu,
@@ -42,4 +44,6 @@ export {
     PopulerLitleCard,
     SmilarProducts,
     MiniCart,
+    Login,
+    Register,
 }

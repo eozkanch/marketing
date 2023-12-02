@@ -6,6 +6,8 @@ import AboutPage from "../pages/common/about/about";
 import ContactPage  from "../pages/common/contact/contact";
 import CollectionPage from "../pages/common/collection/collection";
 import CollectionDetailsPage from "../pages/common/collection/collection-details/collectiondetails";
+import LoginPage from "../pages/common/login/login";
+import RegisterPage from "../pages/common/register/register";
 
 const router = createBrowserRouter([
 
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
           element: <ContactPage />,
         },
         {
+          path: "login",
+          element: <LoginPage/>,
+      },
+      {
+          path: "register",
+          element: <RegisterPage />,
+      },
+        {
           path: 'collection',
           children: [
             {
@@ -41,7 +51,8 @@ const router = createBrowserRouter([
         },
       ],
     },
-
+    
+   
 ]);
 
 export default function AppRouter() {
