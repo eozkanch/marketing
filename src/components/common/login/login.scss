@@ -13,8 +13,8 @@
     width: 70%;
     box-sizing: border-box;
     padding: 50px 60px;
-    background-color: #fff;
-    border: 1px solid #eee;
+
+    border: 1px solid rgb(111, 117, 49);
     border-radius: 3px;
     @media screen and (max-width: 768px) {
         width: 100%;
@@ -39,6 +39,9 @@
       font-weight: var(--font-weight-header); /* Define or replace with actual font weight */
       margin-bottom: 10px;
       text-align: start;
+
+    
+
     }
   
     p {
@@ -98,6 +101,10 @@
         border-radius: 3px;
         cursor: pointer;
         font-size: 16px;
+
+        &:hover {
+          background-color: rgb(150, 4, 4);
+        }
       }
   
       a {
@@ -110,7 +117,8 @@
         font-weight: 500;
   
         &:hover {
-          text-decoration: underline;
+         
+          color: rgb(175, 56, 9);
         }
       }
     }
@@ -147,9 +155,11 @@
           text-decoration: none;
           font-size: 14px;
   
-          &:hover {
-            text-decoration: underline;
-          }
+         
+        &:hover {
+         
+          color: rgb(175, 56, 9);
+        }
         }
         .btn-style2 {
             width: 100%;
@@ -187,9 +197,11 @@
             text-decoration: none;
             font-size: 14px;
   
-            &:hover {
-              text-decoration: underline;
-            }
+           
+        &:hover {
+         
+          color: rgb(175, 56, 9);
+        }
           }
         }
       }

@@ -29,7 +29,7 @@ const Login = () => {
                     <div className="form-action-button">
                       <button className="btn btn-style1 w-100" type="submit">Se connecter</button>
                       
-                      <a href="#recover" id="RecoverPassword">Mot de passe oublié?</a>
+                      <a href="/recover-password" id="RecoverPassword">Mot de passe oublié?</a>
                       
                     </div>
                   </li>
@@ -47,7 +47,7 @@ const Login = () => {
               <div className="term-privacy">
                 <p className="term-con">
                   <span><sup>*</sup>
-                  <a href="pages/kullanim-sozlesmesi" target="_blank">Accord d'utilisation</a>
+                  <a href="/use-agreement" target="_blank">Accord d'utilisation</a>
                   </span>
                 </p>
                 <p className="pri-pol">
@@ -55,7 +55,7 @@ const Login = () => {
                 </p>
                 <p className="term-con">
                   <span>
-                  <a href="pages/gizlilik-sozlesmesi" target="_blank">Accord de confidentialité</a>
+                  <a href="/confidentiality-agreement" target="_blank">Accord de confidentialité</a>
                   </span>
                 </p>
               </div>

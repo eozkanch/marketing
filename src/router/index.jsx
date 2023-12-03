@@ -8,6 +8,10 @@ import CollectionPage from "../pages/common/collection/collection";
 import CollectionDetailsPage from "../pages/common/collection/collection-details/collectiondetails";
 import LoginPage from "../pages/common/login/login";
 import RegisterPage from "../pages/common/register/register";
+import UseAgreementPage from "../pages/common/use-agreement/use-agreement";
+import ConfidentialityAgreementPage from "../pages/common/confidentiality-agreement/confidentiality-agreement";
+import RecoverPasswordPage from "../pages/common/recoverPassword/recoverPassword";
+
 
 const router = createBrowserRouter([
 
@@ -31,24 +35,36 @@ const router = createBrowserRouter([
         {
           path: "login",
           element: <LoginPage/>,
-      },
-      {
-          path: "register",
-          element: <RegisterPage />,
-      },
-        {
-          path: 'collection',
-          children: [
-            {
-              path: ':categoryId',
-              element: <CollectionPage />,
-            },
-            {
-              path: ':categoryId/products/:categoryName',
-              element: <CollectionDetailsPage />,
-            },
-          ],
         },
+        {
+          path: "recover-password",
+          element: <RecoverPasswordPage/>,
+        },
+        {
+          path: "use-agreement",
+          element: <UseAgreementPage/>,
+        },
+        {
+          path: "confidentiality-agreement",
+          element: <ConfidentialityAgreementPage/>,
+        },
+        {
+            path: "register",
+            element: <RegisterPage />,
+        },
+          {
+            path: 'collection',
+            children: [
+              {
+                path: ':categoryId',
+                element: <CollectionPage />,
+              },
+              {
+                path: ':categoryId/products/:categoryName',
+                element: <CollectionDetailsPage />,
+              },
+            ],
+          },
       ],
     },
     
