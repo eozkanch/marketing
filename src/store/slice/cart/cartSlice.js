@@ -1,5 +1,13 @@
-// cartSlice.js
+// redux/actions.js
+
 import { createSlice } from '@reduxjs/toolkit';
+import { persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
+
+const cartPersistConfig = {
+  key: 'cart',
+  storage,
+};
 
 const cartSlice = createSlice({
   name: 'cart',
@@ -20,12 +28,48 @@ const cartSlice = createSlice({
         });
       }
     },
-    // ... other reducers
+    removeItem: (state, action) => {
+      const itemNameToRemove = action.payload;
+      state.items = state.items.filter(item => item.name !== itemNameToRemove);
+    },
+    removeAllItems: (state) => {
+      state.items = [];
+    },
+    increaseItemQuantity: (state, action) => {
+      const itemNameToIncrease = action.payload;
+      const existingItem = state.items.find((item) => item.name === itemNameToIncrease);
+
+      if (existingItem) {
+        existingItem.quantity += 1;
+      }
+    },
+    decreaseItemQuantity: (state, action) => {
+      const itemNameToDecrease = action.payload;
+      const existingItem = state.items.find((item) => item.name === itemNameToDecrease);
+
+      if (existingItem && existingItem.quantity > 1) {
+        existingItem.quantity -= 1;
+      }
+    },
+    // ... diğer reducer'lar
   },
 });
 
-export const { addItem } = cartSlice.actions;
-export default cartSlice.reducer;
+const persistedCartReducer = persistReducer(cartPersistConfig, cartSlice.reducer);
+
+export const {
+  addItem,
+  removeItem,
+  removeAllItems,
+  increaseItemQuantity,
+  decreaseItemQuantity,
+} = cartSlice.actions;
+export default persistedCartReducer;
+
+
+
+
+
 
 
 

@@ -1,11 +1,17 @@
+// Varsayalım ki configureStore.js veya store.js adında bir dosyanız var
 
 import { configureStore } from '@reduxjs/toolkit';
-import cartReducer from './slice/cart/cartSlice';
+import persistedCartReducer from './slice/cart/cartSlice';
 
-const store = configureStore({
+import { persistStore } from 'redux-persist';
+
+export const store = configureStore({
   reducer: {
-    cart: cartReducer,
+    cart: persistedCartReducer,
+    // ... diğer reducer'lar
   },
 });
 
-export default store;
+export const persistor = persistStore(store);
+
+

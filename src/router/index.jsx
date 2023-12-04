@@ -11,6 +11,7 @@ import RegisterPage from "../pages/common/register/register";
 import UseAgreementPage from "../pages/common/use-agreement/use-agreement";
 import ConfidentialityAgreementPage from "../pages/common/confidentiality-agreement/confidentiality-agreement";
 import RecoverPasswordPage from "../pages/common/recoverPassword/recoverPassword";
+import CartPage  from "../pages/common/cart/cart";
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
         {
           path: "contact",
           element: <ContactPage />,
+        },
+        {
+          path: "cart",
+          element: <CartPage />,
         },
         {
           path: "login",

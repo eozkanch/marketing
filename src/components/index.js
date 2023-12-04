@@ -21,6 +21,7 @@ import SmilarProducts from "./common/collection/similar-products/similar-product
 import MiniCart from "./common/mini-cart/mini-cart";
 import Login from "./common/login/login";
 import Register from "./common/register/register";
+import Cart from "./common/cart/cart";
 
 export {
     TopMenu,
@@ -46,4 +47,5 @@ export {
     MiniCart,
     Login,
     Register,
+    Cart,
 }

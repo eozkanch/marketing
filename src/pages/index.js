@@ -8,7 +8,7 @@ import CollectionPage from "../pages/common/collection/collection";
 import CollectionDetailsPage from "../pages/common/collection/collection-details/collectiondetails";
 import UseAgreementPage from "../pages/common/use-agreement/use-agreement";
 import RecoverPasswordPage from "./common/recoverPassword/recoverPassword";
-
+import CartPage from "../pages/common/cart/cart";
 
 
 
@@ -22,5 +22,6 @@ export {
     UseAgreementPage,
     ConfidentialityAgreementPage,
     RecoverPasswordPage,
+    CartPage,
   
 }

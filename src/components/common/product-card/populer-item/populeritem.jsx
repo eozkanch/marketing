@@ -5,7 +5,8 @@ import { addItem } from '../../../../store/slice/cart/cartSlice';
 import { FaEye, FaHeart } from 'react-icons/fa';
 import { AiFillShopping } from 'react-icons/ai';
 import './populeritem.scss';
-import Swal from 'sweetalert2';
+
+import { utils } from '../../../../utils';
 
 const  PopulerItem = ({ product }) => {
   const [imageError, setImageError] = useState(false);
@@ -16,14 +17,10 @@ const  PopulerItem = ({ product }) => {
   };
 
   const handleAddToCart = async () => {
+    
     dispatch(addItem({ product, quantity: 1 }));
-
-    Swal.fire({
-      icon: 'success',
-      title: 'Ürün Sepete Eklendi!',
-      showConfirmButton: false,
-      timer: 2000, // Gerekirse süreyi ayarlayın
-    });
+    utils.functions.swalToast('Urun sepete eklendi', 'success');
+ 
   };
 const { image_url, details_link, name, old_price, price, sale_title,  } = product;
 
