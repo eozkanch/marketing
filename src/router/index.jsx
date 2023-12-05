@@ -12,6 +12,8 @@ import UseAgreementPage from "../pages/common/use-agreement/use-agreement";
 import ConfidentialityAgreementPage from "../pages/common/confidentiality-agreement/confidentiality-agreement";
 import RecoverPasswordPage from "../pages/common/recoverPassword/recoverPassword";
 import CartPage  from "../pages/common/cart/cart";
+import ErrorPage  from "../pages/common/error/error";
+import FavoriPage from "../pages/common/favori/favori";
 
 
 const router = createBrowserRouter([
@@ -32,6 +34,10 @@ const router = createBrowserRouter([
         {
           path: "contact",
           element: <ContactPage />,
+        },
+        {
+          path: "favori",
+          element: <FavoriPage />,
         },
         {
           path: "cart",
@@ -72,6 +78,18 @@ const router = createBrowserRouter([
           },
       ],
     },
+    {
+      path: "/forbidden",
+      element: <ErrorPage />,
+      
+      },
+  
+  
+      {
+      path: "*",
+      element: <ErrorPage />,
+    
+      },
     
    
 ]);

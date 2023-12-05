@@ -1,0 +1,83 @@
+@use "../../../styles/mixins" as m;
+@use "../../../styles/variables" as v;
+
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  
+    .error-row{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+      position: relative;
+    }
+    .error-content {
+      
+      padding: 300px ;
+      background-color:v.$color8;  /* İçerik arka plan rengi */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+      border-radius: 8px; /* Kenar yuvarlatma */
+      
+     
+      display: flex;
+      flex-direction: column;
+       align-items: center;
+    
+      .logo {
+        max-width: 200px; /* Logo boyutu */
+        margin-bottom: 10px;
+     position: absolute;
+     top: 5%;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+       
+      }
+      .error-image{
+        width: 100%;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   
+  
+      }
+  
+  
+      .error-info {
+        position: absolute;
+        top: 80%;
+        left: 5%;
+       
+   
+      
+
+        font-size: 24px;
+       margin-top:10px;
+        margin-bottom: 20px;
+     
+        span{
+          color: red;
+        }
+      }
+  
+      .back-link {
+        position: absolute;
+        top: 80%;
+        right: 5%;
+        font-size: 26px;
+   
+       
+        span{
+          color: v.$color6;
+        }
+      }
+    }
+  }
+  

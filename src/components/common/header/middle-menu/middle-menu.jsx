@@ -20,7 +20,7 @@ const theme = createTheme({
 const MiddleMenu = () => {
   const cartItems = useSelector(state => state.cart.items);
   const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
-
+const favoriItems = useSelector(state => state.favori.items);
   const [showMiniCart, setShowMiniCart] = useState(false);
 
   const handleShowMiniCart = () => setShowMiniCart(true);
@@ -79,9 +79,11 @@ const MiddleMenu = () => {
             
           </Col>
           <Col xs={4} md={2} className='icon-col '>
-            <Badge badgeContent={0} showZero color='success'>
-              <FiHeart size={40} className='icon' />
+              <Link to='/favori'>
+            <Badge  badgeContent={favoriItems.length} showZero color='success'>
+              <FiHeart  size={40} className='icon' />
             </Badge>
+            </Link>
             <Badge badgeContent={totalQuantity} showZero color='success'>
               <MdShoppingBasket onClick={handleShowMiniCart} size={40} className='icon' />
             </Badge>

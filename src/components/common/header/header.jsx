@@ -23,17 +23,20 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`header ${isSticky ? 'sticky' : ''}`}>
-    <Container>
+
+  
+    <div  className='header-container'>
+      <div className={`header ${isSticky ? 'sticky' : ''}`}>
     <Row >
-    <Col xs={12} lg={12} >  <TopMenu /></Col>
+    <Col xs={12} lg={12}  >  <TopMenu /></Col>
     <Col xs={10} md={11}  lg={12}> <MiddleMenu className="middle-menu"/></Col>
     <Col xs={2} md={1}  lg={12}>     <BottomMenu /></Col>
     </Row>
     
      
  
-      </Container>
+      </div>
+
     </div>
   );
 }

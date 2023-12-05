@@ -10,9 +10,11 @@ import Spacer from '/Users/geneve/Desktop/marketing/marketing/src/components/com
 const { allcategories } = alldata;
 import SectionHeader from "../../../../components/common/section-header/section-header";
 import SimilarProducts from '../../../../components/common/collection/similar-products/similar-products';
-import { useSelector, useDispatch } from 'react-redux';
+import {  useDispatch } from 'react-redux';
 import { addItem } from '../../../../store/slice/cart/cartSlice'; 
 import Swal from 'sweetalert2';
+import { utils } from '../../../../utils';
+import { addFavorite } from '../../../../store/slice/favori/favoriSlice';
 
 const CollectionDetailsPage = () => {
   const { pathname } = useLocation();
@@ -24,18 +26,17 @@ const CollectionDetailsPage = () => {
 
   const dispatch = useDispatch();
 
+const handleAddToFavori = () => {
 
+  dispatch(addFavorite({ product: productDetails }));
+  utils.functions.swalToast('Urun favorilere eklendi', 'success');
+}
   const handleAddToCart = () => {
     // Dispatch the addItem action with the selected product and counter value
     dispatch(addItem({ product: productDetails, quantity: counter[0] }));
 
     // Use SweetAlert to display a success message
-    Swal.fire({
-      icon: 'success',
-      title: 'Ürün Sepete Eklendi!',
-      showConfirmButton: false,
-      timer: 2000, // Adjust the duration as needed
-    });
+   utils.functions.swalToast('Urun sepete eklendi', 'success');
   };
   
   const handleCounterPlus = () => { 
@@ -92,7 +93,7 @@ const CollectionDetailsPage = () => {
                         </div>
                 </span>
                 <ButtonGroup className='d-flex align-items-center justify-content-start gap-1 py-1'>
-                  <Button variant="primary" >Favorilere Ekle</Button>
+                  <Button onClick={handleAddToFavori} variant="primary" >Favorilere Ekle</Button>
                   <Button onClick={handleAddToCart} variant="primary">Sepete Ekle</Button>
                   <Button variant="primary">Hemen Al</Button>
                 </ButtonGroup>

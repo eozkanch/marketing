@@ -7,6 +7,7 @@ import { AiFillShopping } from 'react-icons/ai';
 import './populeritem.scss';
 
 import { utils } from '../../../../utils';
+import { addFavorite } from '../../../../store/slice/favori/favoriSlice';
 
 const  PopulerItem = ({ product }) => {
   const [imageError, setImageError] = useState(false);
@@ -20,6 +21,12 @@ const  PopulerItem = ({ product }) => {
     
     dispatch(addItem({ product, quantity: 1 }));
     utils.functions.swalToast('Urun sepete eklendi', 'success');
+ 
+  };
+  const handleAddToFavori = async () => {
+    
+    dispatch(addFavorite({ product }));
+    utils.functions.swalToast('Urun favorilere eklendi', 'success');
  
   };
 const { image_url, details_link, name, old_price, price, sale_title,  } = product;
@@ -48,16 +55,20 @@ const { image_url, details_link, name, old_price, price, sale_title,  } = produc
             >
               <AiFillShopping color="white" size={20} />
             </Button>
-            <Button className="populer-item-btn" size="sm" variant="success">
+            <Button 
+            onClick={handleAddToFavori}
+            className="populer-item-btn" 
+            size="sm" 
+            variant="success">
               <FaHeart size={20} color="white" />
             </Button>
             <Button
-              href={product.details_link}
+              
               className="populer-item-btn"
               size="sm"
               variant="success"
             >
-              <FaEye color="white" size={20} />
+              <FaEye href={product.details_link} color="white" size={20} />
             </Button>
           </div>
         </div>

@@ -5,7 +5,7 @@ import "./bottom-footer.scss";
 const BottomFooter = () => {
   return (
     <div className='bottom-footer'>
-      <Container fluid>
+      <Container >
         <Row className='d-flex justify-content-between'>
           <Col md={4} className='copyright'>
             <span>Droits d'auteur<span>&copy;</span>2022 Bizimkiler.ch Tous droits réservés</span>

@@ -7,7 +7,7 @@ import {constants} from "../../../../constant";
 const { slider } = constants;
 const Slider = () => {
   return (
- 
+    <div className="slider-container">
     <Container>
     <Swiper
             effect="fade"
@@ -36,7 +36,7 @@ const Slider = () => {
         </Swiper>
        
       </Container>
- 
+      </div>
   );
 };
 

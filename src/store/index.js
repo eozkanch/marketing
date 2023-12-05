@@ -2,12 +2,13 @@
 
 import { configureStore } from '@reduxjs/toolkit';
 import persistedCartReducer from './slice/cart/cartSlice';
-
+import persistedFavoriteReducer from './slice/favori/favoriSlice';
 import { persistStore } from 'redux-persist';
 
 export const store = configureStore({
   reducer: {
     cart: persistedCartReducer,
+    favori: persistedFavoriteReducer,
     // ... diğer reducer'lar
   },
 });

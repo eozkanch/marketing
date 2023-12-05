@@ -22,6 +22,7 @@ import MiniCart from "./common/mini-cart/mini-cart";
 import Login from "./common/login/login";
 import Register from "./common/register/register";
 import Cart from "./common/cart/cart";
+import Favori from "./common/favori/favori";
 
 export {
     TopMenu,
@@ -48,4 +49,5 @@ export {
     Login,
     Register,
     Cart,
+    Favori,
 }

@@ -9,7 +9,8 @@ import CollectionDetailsPage from "../pages/common/collection/collection-details
 import UseAgreementPage from "../pages/common/use-agreement/use-agreement";
 import RecoverPasswordPage from "./common/recoverPassword/recoverPassword";
 import CartPage from "../pages/common/cart/cart";
-
+import ErrorPage from "../pages/common/error/error";
+import FavoriPage from "../pages/common/favori/favori";
 
 
 export {
@@ -23,5 +24,6 @@ export {
     ConfidentialityAgreementPage,
     RecoverPasswordPage,
     CartPage,
-  
+    ErrorPage,
+    FavoriPage,
 }
