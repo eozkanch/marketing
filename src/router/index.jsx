@@ -14,6 +14,7 @@ import RecoverPasswordPage from "../pages/common/recoverPassword/recoverPassword
 import CartPage  from "../pages/common/cart/cart";
 import ErrorPage  from "../pages/common/error/error";
 import FavoriPage from "../pages/common/favori/favori";
+import PaymentPage from "../pages/common/paymet/payment";
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         {
           path: "cart",
           element: <CartPage />,
+        },
+        {
+          path: "payment",
+          element: <PaymentPage />,
         },
         {
           path: "login",

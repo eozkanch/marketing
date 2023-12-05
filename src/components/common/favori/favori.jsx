@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Table, Button, Image } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFavorite, removeAllFavorites } from '../../../store/slice/favori/favoriSlice';
+import { addItem } from '../../../store/slice/cart/cartSlice';
 import { utils } from '../../../utils';
 import './favori.scss';
 import { MdDelete } from 'react-icons/md';
@@ -34,27 +35,37 @@ const Favori = () => {
       });
   };
 
+  const handleSendAllToCart = () => {
+    favoriItems.forEach((item) => {
+      dispatch(addItem({ product: item, quantity: 1 }));
+    });
+
+    dispatch(removeAllFavorites());
+
+    utils.functions.swalToast('All favori items added to the cart successfully!', 'success');
+  };
+
   return (
     <div>
       {favoriItems.length === 0 ? (
         <h4 className='cart-empty'>Votre panier de favori est vide!</h4>
       ) : (
         <Container>
-          <Row>
-            <Col md={8}>
-              <Table >
-             
+          <Row className='favori gap-5'>
+            <h1 className='favori-title'>List de Favori</h1>
+            <Col md={7} className='favori-table-col'>
+              <Table>
                 <tbody>
                   {favoriItems.map((item, index) => (
                     <tr key={index}>
-                    <td style={{ width: '200px' }}><Image src={item.image_url} alt={item.name} width={100} thumbnail /></td>
+                      <td style={{ width: '200px' }}>
+                        <Image src={item.image_url} alt={item.name} width={100} thumbnail />
+                      </td>
                       <td>{item.name}</td>
                       <td>{item.price}</td>
-                   
-                   
                       <td>
                         <Button variant='danger' onClick={() => handleFavoriDelete(item)}>
-                        <MdDelete size={30} color="white"/>
+                          <MdDelete size={30} color="white" />
                         </Button>
                       </td>
                     </tr>
@@ -62,14 +73,13 @@ const Favori = () => {
                 </tbody>
               </Table>
             </Col>
-            <Col md={4}>
-              <div className='favori-btn-container'>
+            <Col md={4} className='favori-btn-col'>
               <Button className='favori-btn' variant='danger' onClick={handleAllFavoriDelete}>
                 Delete All
               </Button>
-              <Button  className='favori-btn' variant='primary'>Send All To The Cart</Button>
-              </div>
-             
+              <Button className='favori-btn' variant='primary' onClick={handleSendAllToCart}>
+                Send All To The Cart
+              </Button>
             </Col>
           </Row>
         </Container>

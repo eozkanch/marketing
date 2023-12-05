@@ -34,7 +34,7 @@ const TopMenu = () => {
                                         <NavDropdown.Item href='/register'>S'inscrire</NavDropdown.Item>
                                         <NavDropdown.Item href='/login'>Se connecter</NavDropdown.Item>
                                         <NavDropdown.Item href='/payment'>Paiement</NavDropdown.Item>
-                                        <NavDropdown.Item href='/followers'>Abonnés</NavDropdown.Item>
+                                        <NavDropdown.Item href='/favori'>Favoris</NavDropdown.Item>
                                         <NavDropdown.Item href='/order-history'>Historique des commandes</NavDropdown.Item>
                                         <NavDropdown.Item href='/cart'>Panier</NavDropdown.Item>
                                 
