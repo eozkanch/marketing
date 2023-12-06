@@ -6,8 +6,8 @@ const PopulerProducts = () => {
   return (
     <div className='populer-products'>
         <Container className='image-container '>
-          <Row className='image-col'>
-            <Col className='image-container-left'>
+          <Row  className='image-col '>
+            <Col xs={12} md={12} lg={6} className='image-container-left'>
       
               <img src='/banner17.jpg' />
               <div class="banner-content-left text-left">
@@ -15,7 +15,7 @@ const PopulerProducts = () => {
 						<span >NOIX FOLLES</span>
 						
 						
-						<h3 >Délicieux et frais</h3>
+						<h4 >Délicieux et frais</h4>
 						
 						
 						<Button href="/collection/kuruyemisler" className="populer-products-btn ">Acheter</Button>
@@ -23,15 +23,15 @@ const PopulerProducts = () => {
 					</div>
  
             </Col>
-            <Col className='image-container-right'>
+            <Col  xs={12} md={12} lg={6} className='image-container-left'>
         
               <img src='/banner18.webp' />
-              <div className="banner-content-right text-left">
+              <div className="banner-content-left ">
 						
 						<span >PETIT-DÉJEUNER</span>
 						
 						
-						<h3 >Pour des tables nature !</h3>
+						<h4 >Pour des tables nature !</h4>
 						
 						
 						<Button href="/collection/kahvaltiliklar" className="populer-products-btn ">Acheter</Button>

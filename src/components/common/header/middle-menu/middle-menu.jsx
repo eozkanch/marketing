@@ -40,7 +40,7 @@ const favoriItems = useSelector(state => state.favori.items);
         <Row className='middle-menu'>
           <Col xs={4} md={2} className='logo-col' >
             <Link to='/'>
-              <img src='/logo.svg' alt='logo' className='logo' />
+              <img src='/notre.svg' alt='logo' className='logo' color='green' />
             </Link>
           </Col>
           <Col xs={4} md={8} className='search-col '>

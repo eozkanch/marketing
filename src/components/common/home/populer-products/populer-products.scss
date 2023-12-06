@@ -7,11 +7,13 @@
     justify-content: space-between;
   }
 
-  .image-container-left,
-  .image-container-right {
+  .image-container-left
+   {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s;
+
+ 
 
     img {
       width: 100%;
@@ -24,20 +26,21 @@
       transform: scale(1.1);
     }
 
-    .banner-content-left,
-    .banner-content-right {
+    .banner-content-left
+     {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: start;
+      align-items: center;
       position: absolute;
       top: 50%;
-      left: 30%;
+      left: 35%;
       transform: translate(-50%, -50%);
       color: #333333;
       gap: 1rem;
     }
   }
+  
 
   .populer-products-btn {
     display: inline-block;
@@ -60,6 +63,7 @@
       color: white;
       transition: color 2s ease-in-out;
     }
+
   }
 
   .image-container-left:hover .banner-content-left,
