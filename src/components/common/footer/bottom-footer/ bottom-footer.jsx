@@ -7,10 +7,10 @@ const BottomFooter = () => {
     <div className='bottom-footer'>
       <Container >
         <Row className='d-flex justify-content-between'>
-          <Col md={4} className='copyright'>
+          <Col xs={12} md={4} className='copyright'>
             <span>Droits d'auteur<span>&copy;</span>2022 Bizimkiler.ch Tous droits réservés</span>
           </Col>
-          <Col md={8} className="payment-icon">
+          <Col xs={12} md={8} className="payment-icon">
             <ul>
               <li>
                 <img src="/pay/visa.svg" alt="Visa" width="38" height="24" />

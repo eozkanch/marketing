@@ -22,7 +22,7 @@ console.log(filteredAndSortedProducts);
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 7,
+    slidesToShow: 6,
     slidesToScroll: 4,
     initialSlide: 0,
     prevArrow: <FaArrowLeft className="slick-arrow slick-prev" />,
@@ -31,7 +31,7 @@ console.log(filteredAndSortedProducts);
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
           slidesToScroll: 3,
           infinite: true,
           dots: true,
@@ -40,7 +40,7 @@ console.log(filteredAndSortedProducts);
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -48,7 +48,7 @@ console.log(filteredAndSortedProducts);
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -56,6 +56,7 @@ console.log(filteredAndSortedProducts);
   };
 
   return (
+    <div className='soldes-products'>
     <Container className="product-carousel">
       <SectionHeader title1={<FaInfinity />} title2="En Soldes" />
 
@@ -69,6 +70,7 @@ console.log(filteredAndSortedProducts);
         ))}
       </Slider>
     </Container>
+    </div>
   );
 };
 

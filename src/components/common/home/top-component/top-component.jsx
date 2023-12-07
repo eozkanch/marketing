@@ -12,17 +12,17 @@ const TopComponent = () => {
     
       <Container className='home-page-info' >
         <Row >
-          <Col className='info-col' md={4}>
+          <Col className='info-col' sm={12} md={4}>
           <div className='icon-div'><BsBoxSeam size={30} className='icon'/></div>
           <h3>Achats 100 % Sécurisés</h3>
           <p>Notre protection produit couvre votre achat du <br/> clic à la livraison.</p>
           </Col>
-          <Col className='info-col info-middle' md={4}>
+          <Col className='info-col info-middle' sm={12} md={4}>
           <div className='icon-div'><HiOutlineHome size={30} className='icon'/></div>
         
           <h3>Livraison Rapide</h3>
           <p>Après votre commande, nos produits sont<br/>expédiés sous 2 jours ouvrés.</p></Col>
-          <Col className='info-col' md={4}>
+          <Col className='info-col' sm={12} md={4}>
           <div className='icon-div'><ImHeadphones size={30} className='icon'/></div>
      
           <h3>Centre D'aide 24h/24 Et 7j/7</h3>
