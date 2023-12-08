@@ -3,10 +3,10 @@ import ContactMap from '../../../components/common/contact/map/map'
 import ContactForm from '../../../components/common/contact/form/form'
 import { Col, Row } from 'react-bootstrap'
 import { ContactInfo, SectionHeader, Spacer } from '../../../components'
-
+import "./style.scss"
 const ContactPage = () => {
   return (
-    <div>
+    <div className='contact-page'>
     <Row>
 
         <Col md={12}>
@@ -18,9 +18,9 @@ const ContactPage = () => {
         </Col>
         <Col md={12}><ContactMap /></Col>
         <Spacer />
-        <div className='d-flex justify-content-center gap-5'>
-        <Col md={4}><ContactForm /></Col>
-        <Col md={4}><ContactInfo /></Col>
+        <div className='contact-div'>
+        <Col xs={12} md={4}><ContactForm /></Col>
+        <Col  xs={12} md={4}><ContactInfo /></Col>
         </div>
         
         <Spacer />

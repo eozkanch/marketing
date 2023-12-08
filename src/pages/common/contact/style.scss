@@ -1,0 +1,23 @@
+
+.contact-page{
+
+    @media screen and (max-width: 768px) {
+        margin-top: -8rem;
+        
+    }
+.contact-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 2rem;
+        
+        
+    }
+ 
+}
+}

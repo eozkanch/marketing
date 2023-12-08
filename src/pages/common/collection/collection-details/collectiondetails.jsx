@@ -76,26 +76,26 @@ const handleAddToFavori = () => {
                   <h1>Sipariş verdiğiniz 2 gün içinde paketlenerek kargoya verilir.</h1>
                   <h3>Taille: <span>1 KG</span></h3>
                   <div className='product-count'>
-                <span className='count d-flex align-items-left justify-content-start gap-2 py-2'>  
-                        <div className='d-flex align-items-center justify-content-center gap-2'>Adet:</div>
-                        <div>
-                        <InputGroup className="mb-3">
-                          <Button onClick={handleCounterMinus} variant="primary" id="button-addon1">
+                <span className='count'>  
+                        <div >Adet:</div>
+                    
+                        <div className=" input-roup">
+                          <button  className="btn " onClick={handleCounterMinus} variant="primary" >
                            -
-                          </Button>
-                          <Button variant="outline-primary"  id="button-addon1">
+                          </button>
+                          <button className="btn " variant="outline-primary"  >
                             {counter[0]}
-                          </Button>
-                          <Button onClick={handleCounterPlus} variant="primary" id="button-addon1">
+                          </button>
+                          <button  className="btn "onClick={handleCounterPlus} variant="primary" >
                             +
-                          </Button>
-                        </InputGroup>
+                          </button>
                         </div>
+                       
                 </span>
                 <ButtonGroup className='d-flex align-items-center justify-content-start gap-1 py-1'>
-                  <Button onClick={handleAddToFavori} variant="primary" >Favorilere Ekle</Button>
-                  <Button onClick={handleAddToCart} variant="primary">Sepete Ekle</Button>
-                  <Button variant="primary">Hemen Al</Button>
+                  <Button className='btn1' onClick={handleAddToFavori} variant="primary" >Favorilere Ekle</Button>
+                  <Button className='btn1' onClick={handleAddToCart} variant="primary">Sepete Ekle</Button>
+                  <Button className='btn1' variant="primary">Hemen Al</Button>
                 </ButtonGroup>
                 </div>
                 

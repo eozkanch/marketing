@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./bottom-menu.scss"
-import {  Accordion, Col, Container,  NavDropdown,  Offcanvas, Row } from 'react-bootstrap'
-import { GiHamburgerMenu } from "react-icons/gi";
+import {  Accordion, Col, Container,  NavDropdown,   Row } from 'react-bootstrap'
+
 const BottomMenu = () => {
 
   return (
@@ -9,7 +9,7 @@ const BottomMenu = () => {
      
     <div className='bottom-menu-row'>
     <Container>
-    <Row >
+    <Row  >
         <Col className='bottom-col'> 
              <NavDropdown title="Produits De Boulangerie" id="basic-nav-dropdown">
               <NavDropdown.Item href={`/collection/${encodeURIComponent("baklava")}`}> Antep Baklavası</NavDropdown.Item>

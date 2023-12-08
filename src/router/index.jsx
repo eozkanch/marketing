@@ -15,6 +15,7 @@ import CartPage  from "../pages/common/cart/cart";
 import ErrorPage  from "../pages/common/error/error";
 import FavoriPage from "../pages/common/favori/favori";
 import PaymentPage from "../pages/common/paymet/payment";
+import SearchResultsPage from "../pages/common/search-results/search-results";
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         {
           path: "favori",
           element: <FavoriPage />,
+        },
+        {
+          path: "searchresults",
+          element: <SearchResultsPage />,
         },
         {
           path: "cart",

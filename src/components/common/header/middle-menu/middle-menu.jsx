@@ -11,6 +11,7 @@ import { useSelector } from 'react-redux';
 import './middle-menu.scss';
 import { GiHamburgerMenu } from "react-icons/gi";
 
+
 const theme = createTheme({
   palette: {
     success: {
@@ -20,6 +21,15 @@ const theme = createTheme({
 });
 
 const MiddleMenu = () => {
+  const [searchText, setSearchText] = useState('');
+  const handleSearch = (event) => {
+    const searchTextValue = event?.target?.value || '';
+    setSearchText(searchTextValue);
+  };
+  
+
+
+
   const cartItems = useSelector(state => state.cart.items);
   const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
   const favoriItems = useSelector(state => state.favori.items);
@@ -57,10 +67,18 @@ const MiddleMenu = () => {
                     <Offcanvas.Body>
                       <div className='search-container-offcanvas'>
                         <InputGroup>
-                          <Form.Control placeholder='Rechercher dans la boutique' aria-label='Rechercher dans la boutique' />
-                          <Button className='search-btn'>
-                            <IoIosSearch color='black' size={20} />
-                          </Button>
+                          <Form.Control placeholder='Rechercher dans la boutique' aria-label='Rechercher dans la boutique'
+                          value={searchText}
+          onChange={handleSearch}/>
+       
+                      <Link to={`/searchresults?query=${encodeURIComponent(searchText ? searchText.trim() : '')}`}>
+                            <Button className='search-btn' disabled={!searchText.trim()}>
+                              <IoIosSearch color='black' size={20} onClick={handleSearch}/>
+                            </Button>
+                      </Link>
+
+
+                        
                         </InputGroup>
                       </div>
                     </Offcanvas.Body>
@@ -70,10 +88,16 @@ const MiddleMenu = () => {
             
               <div className='search-container'>
                 <InputGroup>
-                  <Form.Control placeholder='Rechercher dans la boutique' aria-label='Rechercher dans la boutique' />
-                  <Button className='search-btn'>
-                    <IoIosSearch color='black' size={25} />
-                  </Button>
+                  <Form.Control placeholder='Rechercher dans la boutique' aria-label='Rechercher dans la boutique' 
+                     value={searchText}
+          onChange={handleSearch}/>
+                 
+                 <Link to={`/searchresults?query=${encodeURIComponent(searchText ? searchText.trim() : '')}`}>
+                    <Button className='search-btn' disabled={!searchText.trim()}>
+                      <IoIosSearch color='black' size={20} onClick={handleSearch}/>
+                    </Button>
+                  </Link>
+
                 </InputGroup>
               </div>
           

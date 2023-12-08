@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Dropdown, DropdownButton, NavDropdown, Row } from 'react-bootstrap';
+import { Col, Container, NavDropdown, Row } from 'react-bootstrap';
 import { BsPhone } from 'react-icons/bs';
 import { FaRegEnvelope } from 'react-icons/fa';
 import './top-menu.scss';
@@ -7,40 +7,37 @@ import './top-menu.scss';
 const TopMenu = () => {
     return (
         <div className='top-menu'>
-            <Container >
-                <Row className='d-flex justify-content-between'>
-                    <Col lg={5}>
-                        <Row className='d-flex justify-content-between align-items-center'>
-                            <Col className='top-menu-left text-start'>
+            <Container>
+                <Row className='top-menu-row'>
+                    <Col xs={12} md={6} lg={6} className='top-menu-left'>
+                        <ul>
+                            <li>
                                 <BsPhone /> (+41 44 444 44 44)
-                            </Col>
-                            <Col className='top-menu-left text-start'>
+                            </li>
+                            <li>
                                 <FaRegEnvelope /> loghj@example.com
-                            </Col>
-                        </Row>
+                            </li>
+                        </ul>
                     </Col>
-                    <Col  lg={7} >
-                        <Row className='d-flex'>
-                            <Col className='top-menu-right '>
+                    <Col xs={12} md={6} lg={6} className='top-menu-right'>
+                        <ul>
+                            <li>
                                 <a href='/about'>À Propos De Nous</a>
-                            </Col>
-                            <Col className='top-menu-right '>
+                            </li>
+                            <li>
                                 <a href='/contact'>Communocation</a>
-                            </Col>
-                            <Col className='top-menu-right '>
-                                <NavDropdown title=" Mon Compte" a>
-                                    
-                                   
-                                        <NavDropdown.Item href='/register'>S'inscrire</NavDropdown.Item>
-                                        <NavDropdown.Item href='/login'>Se connecter</NavDropdown.Item>
-                                        <NavDropdown.Item href='/payment'>Paiement</NavDropdown.Item>
-                                        <NavDropdown.Item href='/favori'>Favoris</NavDropdown.Item>
-                                        <NavDropdown.Item href='/order-history'>Historique des commandes</NavDropdown.Item>
-                                        <NavDropdown.Item href='/cart'>Panier</NavDropdown.Item>
-                                
+                            </li>
+                            <li>
+                                <NavDropdown title="Mon Compte">
+                                    <NavDropdown.Item href='/register'>S'inscrire</NavDropdown.Item>
+                                    <NavDropdown.Item href='/login'>Se connecter</NavDropdown.Item>
+                                    <NavDropdown.Item href='/payment'>Paiement</NavDropdown.Item>
+                                    <NavDropdown.Item href='/favori'>Favoris</NavDropdown.Item>
+                                    <NavDropdown.Item href='/order-history'>Historique des commandes</NavDropdown.Item>
+                                    <NavDropdown.Item href='/cart'>Panier</NavDropdown.Item>
                                 </NavDropdown>
-                            </Col>
-                        </Row>
+                            </li>
+                        </ul>
                     </Col>
                 </Row>
             </Container>
@@ -49,4 +46,5 @@ const TopMenu = () => {
 };
 
 export default TopMenu;
+
 

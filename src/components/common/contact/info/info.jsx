@@ -42,7 +42,7 @@ const ContactInfo = () => {
                         href={item.direct}
                         target="_blank"
                         rel="noreferrer noopener">
-                        {item.icon} {item.text}
+                        <p><span>{item.icon}</span> {item.text}</p>
                     </a>
                 </div>
             ))}

@@ -12,6 +12,7 @@ import CartPage from "../pages/common/cart/cart";
 import ErrorPage from "../pages/common/error/error";
 import FavoriPage from "../pages/common/favori/favori";
 import PaymentPage from "../pages/common/payment/payment";
+import SearchResultsPage from "../pages/common/search-results/search-results";
 
 export {
     //Commons Pages
@@ -27,4 +28,5 @@ export {
     ErrorPage,
     FavoriPage,
     PaymentPage,
+    SearchResultsPage,
 }

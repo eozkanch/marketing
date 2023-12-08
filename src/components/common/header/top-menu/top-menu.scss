@@ -2,7 +2,7 @@
 @use "../../../../styles/mixins" as m;
 
 .top-menu {
-    background-color: rgb(247, 247, 247);
+    background-color:rgb(247, 247, 247) ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,71 +10,108 @@
     height: 40px;
     font-size: 14px;
 
-    .top-menu-right,
-    .top-menu-left {
-        color: black;
 
-        &:hover {
-            color: rgb(111, 117, 49);
-        }
-    }
 
     .top-menu-left {
         display: flex;
-     
+        flex-direction: row;
+        justify-content: flex-start;
+
+        align-items: center;
+        ul{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            gap: 1rem;
+            li{
+                list-style: none;
+                font-weight: 500;
+                &:hover {
+                    color: rgb(111, 117, 49);
+                }
+            }
+        }
+        
+
+        @media (min-width: 0) {
+            display: none;
+        }
     }
 
     .top-menu-right {
-        display: flex;
-        justify-content: flex-end;
-        flex: 1;
-    }
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1rem;
+            padding: 0;
+            margin: 0;
+       
 
-    // Küçük ekranlardan (min-width: 0) başlayarak XL ekranlara kadar artan media sorguları
-    @media (min-width: 0) { // Küçük ekranlardan başlayarak
-   
-        .top-menu-left {
-            display: flex;
-          display: none;
+            li {
+                text-align: end;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+             
+
+                a {
+                    margin: 0;
+                    padding: 0;
+                    text-decoration:none;
+                    text-transform: uppercase; 
+                    font-weight: 500;
+                    &:hover {
+                        color: rgb(111, 117, 49);
+                    }
+                }
+            }
         }
-        .top-menu-right {
+
+        @media (min-width: 0) {
             display: flex;
-            justify-content:center;
+            justify-content: flex-end;
             align-items: center;
             font-size: 10px;
 
+            a {
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                
+                
+
+                &:hover {
+                    color: rgb(111, 117, 49);
+                }
+            }
         }
     }
 
-    @media (min-width: 576px) { // SM (Small) ekranlardan başlayarak
-      
+    // Media queries
+    @media (min-width: 576px) {
+        // SM (Small) screen styles
     }
 
-    @media (min-width: 768px) { // MD (Medium) ekranlardan başlayarak
-        
+    @media (min-width: 768px) {
+        // MD (Medium) screen styles
     }
 
-    @media (min-width: 992px) { // LG (Large) ekranlardan başlayarak
-        .top-menu {
-            height: 40px;
-            font-size: 14px;
-            
-        }
+    @media (min-width: 992px) {
+        // LG (Large) screen styles
         .top-menu-left {
-            display: flex;
-          display: block;
+            display: block;
         }
         .top-menu-right {
-            display: flex;
-            justify-content: flex-end;
             flex: 1;
             font-size: 14px;
         }
-        
     }
 
-    @media (min-width: 1200px) { // XL (Extra Large) ekranlardan başlayarak
-        
+    @media (min-width: 1200px) {
+        // XL (Extra Large) screen styles
     }
 }
 

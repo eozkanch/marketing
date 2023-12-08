@@ -1,0 +1,52 @@
+// style.scss
+
+
+
+// Özelleştirmelerinizi ekleyin
+
+h3{
+   
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+p{
+  
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    }
+.serch-result-col {
+
+  padding: 50px;
+
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.card-text {
+  color: #6c757d;
+  text-align: center;
+}
+
+.btn-primary {
+
+    width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}

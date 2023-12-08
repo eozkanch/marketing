@@ -39,6 +39,7 @@
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid rgb(111, 117, 49);
+  
 }
 
 .product-info-left {
@@ -49,11 +50,19 @@
   justify-content: flex-start;
   align-items: left;
   padding: 1rem;
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+    
+  }
 
   h1 {
     font-size: 1rem;
     font-weight: 300;
     text-align: left;
+    @media screen and (max-width: 768px) {
+      font-size: 0.9rem;
+      
+    }
   }
 
   h2 {
@@ -67,12 +76,24 @@
     padding-bottom: 1rem;
     border-bottom: 1px solid rgb(111, 117, 49);
     text-align: left;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      text-align: left;
+      color: black;
+      
+    }
   }
 
   h5 {
     font-size: 1rem;
     color: rgb(111, 117, 49);
     text-align: left;
+    @media screen and (max-width: 768px) {
+     
+      text-align: left;
+      color: black;
+      
+    }
 
     span {
       color: rgb(11, 237, 41);
@@ -82,11 +103,20 @@
   p {
     color: rgb(111, 117, 49);
   }
-
+.btn{
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
   h3 {
     font-weight: 600;
     font-size: 1.1rem;
     color: rgb(111, 117, 49);
+    @media screen {
+      text-align: left;
+      color: black;
+      font-size: 1rem;
+    }
 
     span {
       font-weight: 500;
@@ -104,14 +134,44 @@
 
       .count {
         display: flex;
-        flex-direction: column;
+        flex-direction:column ;
+       
         justify-content: center;
         align-items: center;
-        width: 80%;
+        .input-roup {
+          display: flex;
+          flex-direction: row;    
+
+          
+          
+          }
+          
+        }
+        
+        
+      }
+      
+      .btn-group {
+        @media screen and (max-width: 768px) {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          gap: 1rem;
+          
+        }
+      }
+      .btn1 {
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          margin-top: 1rem;
+
+        }
       }
     }
   }
-}
+
 
 .product-info-right {
   display: flex;
