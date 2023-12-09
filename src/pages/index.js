@@ -13,7 +13,7 @@ import ErrorPage from "../pages/common/error/error";
 import FavoriPage from "../pages/common/favori/favori";
 import PaymentPage from "../pages/common/payment/payment";
 import SearchResultsPage from "../pages/common/search-results/search-results";
-
+import LoadinPage from "../pages/common/loading/loading";
 export {
     //Commons Pages
     HomePage,
@@ -29,4 +29,5 @@ export {
     FavoriPage,
     PaymentPage,
     SearchResultsPage,
+    LoadinPage,
 }

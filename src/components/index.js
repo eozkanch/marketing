@@ -23,6 +23,7 @@ import Login from "./common/login/login";
 import Register from "./common/register/register";
 import Cart from "./common/cart/cart";
 import Favori from "./common/favori/favori";
+import Loading from "./common/loading/loading";
 
 export {
     TopMenu,
@@ -50,4 +51,5 @@ export {
     Register,
     Cart,
     Favori,
+    Loading,
 }

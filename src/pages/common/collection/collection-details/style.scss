@@ -39,6 +39,8 @@
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid rgb(111, 117, 49);
+ 
+
   
 }
 
@@ -51,42 +53,15 @@
   align-items: left;
   padding: 1rem;
   @media screen and (max-width: 768px) {
-    padding: 0px;
+    padding: 1rem;
     
   }
 
-  h1 {
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: left;
-    @media screen and (max-width: 768px) {
-      font-size: 0.9rem;
-      
-    }
-  }
+  
 
-  h2 {
+  h6 {
     font-size: 1rem;
-    text-align: left;
-  }
-
-  h4 {
-    font-size: 1.5rem;
-    color: rgb(111, 117, 49);
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgb(111, 117, 49);
-    text-align: left;
-    @media screen and (max-width: 768px) {
-      font-size: 1rem;
-      text-align: left;
-      color: black;
-      
-    }
-  }
-
-  h5 {
-    font-size: 1rem;
-    color: rgb(111, 117, 49);
+    font-weight: 400;
     text-align: left;
     @media screen and (max-width: 768px) {
      
@@ -96,9 +71,26 @@
     }
 
     span {
-      color: rgb(11, 237, 41);
+      color: #60A781;
     }
   }
+  h5{
+  font-weight: 200;
+  font-size: 1rem;
+
+ 
+}
+h4{
+  font-weight: 600;
+  font-size: 1rem;
+  span{
+     color: #60A781;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+ 
+ 
+}
 
   p {
     color: rgb(111, 117, 49);
@@ -130,25 +122,7 @@
       flex-direction: column;
       justify-content: start;
       align-items: left;
-      text-align: left;
-
-      .count {
-        display: flex;
-        flex-direction:column ;
-       
-        justify-content: center;
-        align-items: center;
-        .input-roup {
-          display: flex;
-          flex-direction: row;    
-
-          
-          
-          }
-          
-        }
-        
-        
+      text-align: left;           
       }
       
       .btn-group {

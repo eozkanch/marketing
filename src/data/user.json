@@ -1,0 +1,64 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John",
+            "username": "John",
+            "password": "password",
+            "email": "LX8pS@example.com",
+            "role": "admin",
+            "created_at": "2022-01-01T00:00:00.000Z",
+            "updated_at": "2022-01-01T00:00:00.000Z",
+            "deleted_at": null,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+        },
+        {
+            "id": 2,
+            "name": "Alice",
+            "username": "Alice",
+            "password": "alice123",
+            "email": "alice@example.com",
+            "role": "user",
+            "created_at": "2022-01-02T00:00:00.000Z",
+            "updated_at": "2022-01-02T00:00:00.000Z",
+            "deleted_at": null,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkFsaWNlIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5d"
+        },
+        {
+            "id": 3,
+            "name": "Bob",
+            "username": "Bob",
+            "password": "bob456",
+            "email": "bob@example.com",
+            "role": "user",
+            "created_at": "2022-01-03T00:00:00.000Z",
+            "updated_at": "2022-01-03T00:00:00.000Z",
+            "deleted_at": null,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkJvYiIsImlhdCI6MTUxNjIzOTAyMn0.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5e"
+        },
+        {
+            "id": 4,
+            "name": "Eva",
+            "username": "Eva",
+            "password": "eva789",
+            "email": "eva@example.com",
+            "role": "user",
+            "created_at": "2022-01-04T00:00:00.000Z",
+            "updated_at": "2022-01-04T00:00:00.000Z",
+            "deleted_at": null,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkV2YSIsImlhdCI6MTUxNjIzOTAyMn0.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5f"
+        },
+        {
+            "id": 5,
+            "name": "Chris",
+            "username": "Chris",
+            "password": "chris101",
+            "email": "chris@example.com",
+            "role": "user",
+            "created_at": "2022-01-05T00:00:00.000Z",
+            "updated_at": "2022-01-05T00:00:00.000Z",
+            "deleted_at": null,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkNocmlzIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5g"
+        }
+    ]
+}
