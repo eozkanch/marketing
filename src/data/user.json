@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "John",
-            "username": "John",
+            "surname": "Doe",
             "password": "password",
             "email": "LX8pS@example.com",
             "role": "admin",
@@ -15,7 +15,7 @@
         {
             "id": 2,
             "name": "Alice",
-            "username": "Alice",
+            "surname": "Wonder",
             "password": "alice123",
             "email": "alice@example.com",
             "role": "user",
@@ -27,7 +27,7 @@
         {
             "id": 3,
             "name": "Bob",
-            "username": "Bob",
+            "surname": "Smith",
             "password": "bob456",
             "email": "bob@example.com",
             "role": "user",
@@ -39,7 +39,7 @@
         {
             "id": 4,
             "name": "Eva",
-            "username": "Eva",
+            "surname": "Green",
             "password": "eva789",
             "email": "eva@example.com",
             "role": "user",
@@ -51,7 +51,7 @@
         {
             "id": 5,
             "name": "Chris",
-            "username": "Chris",
+            "surname": "Johnson",
             "password": "chris101",
             "email": "chris@example.com",
             "role": "user",
