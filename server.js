@@ -1,41 +1,56 @@
-// server.js
 const express = require('express');
-const fs = require('fs').promises;
+const jwt = require('jsonwebtoken');
 
 const app = express();
-const port = 5173;
+const PORT = 5173;
 
 app.use(express.json());
 
-const usersFilePath = 'src/api/users.json';
+// JWT Secret Key
+const secretKey = 'your-secret-key';
 
-// Mevcut kullanıcıları getiren endpoint
-app.get('/users', async (req, res) => {
-  try {
-    const usersData = await fs.readFile(usersFilePath, 'utf-8');
-    const users = JSON.parse(usersData);
-    res.json(users);
-  } catch (error) {
-    res.status(500).json({ error: 'Internal Server Error' });
+// Örnek kullanıcı verisi
+const users = [
+  { id: 1, username: 'john', password: 'password' },
+  { id: 2, username: 'jane', password: 'secure123' },
+];
+
+// JWT Oluşturma Fonksiyonu
+function generateToken(user) {
+  return jwt.sign({ id: user.id, username: user.username }, secretKey, { expiresIn: '1h' });
+}
+
+// Kullanıcı Girişi
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+
+  const user = users.find(u => u.username === username && u.password === password);
+
+  if (user) {
+    const token = generateToken(user);
+    res.json({ token });
+  } else {
+    res.status(401).json({ error: 'Invalid credentials' });
   }
 });
 
-// Yeni kullanıcı ekleyen endpoint
-app.post('/users', async (req, res) => {
-    try {
-      const newUser = req.body;
-      const usersData = await fs.readFile(usersFilePath, 'utf-8');
-      const existingUsers = JSON.parse(usersData);
-      const updatedUsers = [...existingUsers, newUser];
-      await fs.writeFile(usersFilePath, JSON.stringify(updatedUsers, null, 2));
-      res.json(updatedUsers);
-    } catch (error) {
-      res.status(500).json({ error: 'Internal Server Error' });
-    }
-  });
+// Korumalı Rota
+app.get('/protected', (req, res) => {
+  const token = req.headers.authorization;
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+  if (!token) {
+    return res.status(401).json({ error: 'Token missing' });
+  }
+
+  jwt.verify(token, secretKey, (err, decoded) => {
+    if (err) {
+      return res.status(401).json({ error: 'Invalid token' });
+    }
+
+    res.json({ message: 'Protected route', user: decoded });
+  });
 });
 
-  
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
