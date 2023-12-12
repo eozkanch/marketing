@@ -1,6 +1,6 @@
 import AppRouter from "./router";
 import { useEffect, useState } from "react";
-import LoadingPage from "./pages/common/loading";
+import LoadingPage from "./pages/common/loading/page";
 import { useDispatch } from "react-redux";
 import { loginFailure, loginSuccess } from './store/slice/auth/auth-slice';
 import { services } from "./services";
