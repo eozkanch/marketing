@@ -1,19 +1,20 @@
 
 //Common Pages
 
-import HomePage from "../pages/common/home/home";
-import AboutPage from "../pages/common/about/about";
-import ContactPage  from "../pages/common/contact/contact";
-import CollectionPage from "../pages/common/collection/collection";
-import CollectionDetailsPage from "../pages/common/collection/collection-details/collectiondetails";
-import UseAgreementPage from "../pages/common/use-agreement/use-agreement";
-import RecoverPasswordPage from "./common/recoverPassword/recoverPassword";
-import CartPage from "../pages/common/cart/cart";
-import ErrorPage from "../pages/common/error/error";
-import FavoriPage from "../pages/common/favori/favori";
-import PaymentPage from "../pages/common/payment/payment";
-import SearchResultsPage from "../pages/common/search-results/search-results";
-import LoadinPage from "../pages/common/loading/loading";
+import HomePage from "./common/home/page";
+import AboutPage from "./common/about/page";
+import ContactPage  from "./common/contact/page";
+import CollectionPage from "./common/collection/page";
+import CollectionDetailsPage from "./common/collection/collection-details/page";
+import ConfidentialityAgreementPage from "./common/confidentiality-agreement/page";
+import UseAgreementPage from "./common/use-agreement/page";
+import RecoverPasswordPage from "./common/recoverPassword/page";
+import CartPage from "./common/cart/page";
+import ErrorPage from "./common/error/page";
+import FavoriPage from "./common/favori/page";
+import PaymentPage from "./common/paymet/page";
+import SearchResultsPage from "./common/search-results/page";
+import LoadinPage from "./common/loading/page";
 export {
     //Commons Pages
     HomePage,

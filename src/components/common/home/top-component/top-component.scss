@@ -49,16 +49,17 @@
   }
 
   .info-middle {
-    border-top: 1px solid rgb(111, 117, 49);
-    border-bottom: 1px solid rgb(111, 117, 49);
+    border-left: 1px solid rgb(111, 117, 49);
+    border-right: 1px solid rgb(111, 117, 49);
 
 @media screen and (max-width: 768px) {
 
-  border-left: 1px solid rgb(111, 117, 49);
-  border-right: 1px solid rgb(111, 117, 49);
+  border-top: 1px solid rgb(111, 117, 49);
+  border-bottom: 1px solid rgb(111, 117, 49);
   border-left:none;
   border-right:none;
 }
+
 
   }
 
