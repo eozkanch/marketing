@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, ButtonGroup, Button, InputGroup } from 'react-bootstrap';
+import { Container, Row, Col, ButtonGroup, Button,  } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
 import { TfiTruck } from "react-icons/tfi";
 import { LuDollarSign } from "react-icons/lu";
@@ -11,7 +11,7 @@ import { addItem } from '../../../../store/slice/cart/cartSlice';
 import { addFavorite } from '../../../../store/slice/favori/favoriSlice';
 import SectionHeader from '../../../../components/common/section-header/section-header';
 import SimilarProducts from '../../../../components/common/collection/similar-products/similar-products';
-import Swal from 'sweetalert2';
+
 import { utils } from '../../../../utils';
 import './style.scss';
 import { FaFacebook, FaHeart, FaInstagram, FaShopify, FaShoppingBag, FaShoppingBasket, FaTwitter } from 'react-icons/fa';

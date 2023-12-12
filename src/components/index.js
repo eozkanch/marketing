@@ -52,4 +52,5 @@ export {
     Cart,
     Favori,
     Loading,
+ 
 }
