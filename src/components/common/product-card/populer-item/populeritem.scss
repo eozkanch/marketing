@@ -55,6 +55,8 @@
   align-items: center;
   gap: 0.1rem;
   margin-top: -3rem;
+
+
 }
 
 .populer-item-btn {
@@ -62,7 +64,7 @@
   color: rgb(111, 117, 49);
   display: inline-block;
   text-decoration: none;
-  transition: all 0.5s ease-in-out 1s;
+  transition: all 0.5s ease-in-out 0s;
   opacity: 0; /* Initially hidden */
   transform: translateY(100%); /* Move up by the height of the container */
 
@@ -76,13 +78,7 @@
  
 }
 
-.popular-item-btn {
-  -webkit-transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  -moz-transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  -ms-transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
+
 .card-bottom {
   max-width: 150px;
   min-height: 175px;

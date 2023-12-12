@@ -8,6 +8,7 @@ import './populeritem.scss';
 
 import { utils } from '../../../../utils';
 import { addFavorite } from '../../../../store/slice/favori/favoriSlice';
+import { Link } from 'react-router-dom';
 
 const  PopulerItem = ({ product }) => {
   const [imageError, setImageError] = useState(false);
@@ -68,7 +69,7 @@ const { image_url, details_link, name, old_price, price, sale_title,  } = produc
               size="sm"
               variant="success"
             >
-              <FaEye href={product.details_link} color="white" size={20} />
+                <Link to={product.details_link}><FaEye  color="white" size={20} /></Link>
             </Button>
           </div>
         </div>
