@@ -55,12 +55,14 @@ const MiddleMenu = () => {
       <div>
         <Container>
           <Row className='middle-menu'>
-            <Col xs={4} md={2} className='logo-col'>
+            <Col xs={4} md={3} className='logo-col'>
               <Link to='/'>
+      
                 <img src='/Resim1Q.png' alt='logo' className='logo' color='green' />
+               
               </Link>
             </Col>
-            <Col xs={1}  md={8} className='search-col'>
+            <Col xs={1}  md={6} className='search-col'>
               <Row className='search-icon'>
                 <Offcanvas placement='top' show={isSearchOffcanvasVisible} onHide={hideSearchOffcanvas} className='search-offcanvas' style={{ height: '100px' }}>
                   <Offcanvas.Header closeButton>
@@ -72,7 +74,7 @@ const MiddleMenu = () => {
           onChange={handleSearch}/>
        
                       <Link to={`/searchresults?query=${encodeURIComponent(searchText ? searchText.trim() : '')}`}>
-                            <Button className='search-btn' disabled={!searchText.trim()}>
+                            <Button   className='search-btn' disabled={!searchText.trim()}>
                               <IoIosSearch color='black' size={20} onClick={handleSearch}/>
                             </Button>
                       </Link>
@@ -93,7 +95,7 @@ const MiddleMenu = () => {
           onChange={handleSearch}/>
                  
                  <Link to={`/searchresults?query=${encodeURIComponent(searchText ? searchText.trim() : '')}`}>
-                    <Button className='search-btn' disabled={!searchText.trim()}>
+                    <Button   className='search-btn' disabled={!searchText.trim()}>
                       <IoIosSearch color='white' size={20} onClick={handleSearch}/>
                     </Button>
                   </Link>
@@ -102,19 +104,40 @@ const MiddleMenu = () => {
               </div>
           
             </Col>
-            <Col xs={6} md={2} className='icon-col'>
+            <Col xs={6} md={3} className='icon-col'>
               
-              <Link to='/favori'>
-                <Badge badgeContent={favoriItems.length} showZero color='success'>
-                  <FiHeart className='icon' color='rgb(111, 117, 49)' />
+              <Link  to='/favori'>
+              <Button className='favori-btn' variant="primary">
+                <Badge badgeContent={favoriItems.length} showZero >
+                  <FiHeart className='icon' color='white' />
                 </Badge>
+                </Button>
               </Link>
-              <Badge badgeContent={totalQuantity} showZero color='success'>
+
+              <Link to='/favori'>              
+                <Badge badgeContent={favoriItems.length} showZero color='success' className='favori-badge'>
+                  <FiHeart className='icon' color='rgb(111, 117, 49)' />
+                </Badge>             
+              </Link>
+
+              <Button className='favori-btn' variant="primary" onClick={showMiniCart} >
+              <Badge badgeContent={totalQuantity} showZero >
                 <MdShoppingBasket onClick={showMiniCart}   className='icon' />
               </Badge>
+              </Button>
+
+              <Badge badgeContent={totalQuantity} showZero  color='success' className='favori-badge'>
+                <MdShoppingBasket onClick={showMiniCart}   className='icon' />
+              </Badge>
+
               <IoIosSearch className='icon '  id='search' onClick={showSearchOffcanvas} />
+              <Button className='favori-btn' variant="primary" onClick={showSearchOffcanvas}>
+              <IoIosSearch className='icon '  id='search' onClick={showSearchOffcanvas} />
+              </Button>
               <div className='bottom-menu-offcanvas'>
-                <GiHamburgerMenu color="rgb(111, 117, 49)"  className='icon'   onClick={showHamburgerMenuOffcanvas} />
+              <Button  className='favori-btn'variant="primary"  onClick={showHamburgerMenuOffcanvas}>
+                <GiHamburgerMenu color="white"  className='icon'   onClick={showHamburgerMenuOffcanvas} />
+                </Button>
                 <Offcanvas show={isHamburgerMenuOffcanvasVisible} onHide={hideHamburgerMenuOffcanvas} style={{ width: '80%' }}>
                   <Offcanvas.Header closeButton></Offcanvas.Header>
                   <Offcanvas.Body>

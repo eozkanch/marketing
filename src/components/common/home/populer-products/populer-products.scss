@@ -5,7 +5,7 @@
   .image-col {
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
     gap: 1rem;
       
     }
@@ -45,31 +45,33 @@
       transform: translate(-50%, -50%);
       color: #333333;
       gap: 1rem;
+
+      .populer-products-btn {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        background-color: rgb(111, 117, 49);
+        border: 1px solid transparent;
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        border-radius: 1px;
+        position: relative;
+        overflow: hidden;
+        transition: color 0.3s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
+        &:hover {
+          background: red;
+          color: white;
+          transition: color 2s ease-in-out;
+        }
     }
   }
   
 
-  .populer-products-btn {
-    display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    background-color: rgb(111, 117, 49);
-    border: 1px solid transparent;
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    border-radius: 1px;
-    position: relative;
-    overflow: hidden;
-    transition: color 0.3s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-    &:hover {
-      background: red;
-      color: white;
-      transition: color 2s ease-in-out;
-    }
 
   }
 

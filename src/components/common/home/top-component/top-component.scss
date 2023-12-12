@@ -19,6 +19,12 @@
         margin-top: 1rem;
     }
 
+    @media screen and (max-width: 1024px) {
+        padding: 0 1rem;
+        height: 100%;
+        margin-top: 1rem;
+    }
+
 
 .home-page-info {
   justify-content: space-between;
@@ -43,11 +49,16 @@
   }
 
   .info-middle {
-    border-left: 1px solid rgb(111, 117, 49);
-    border-right: 1px solid rgb(111, 117, 49);
-    @media screen and (max-width: 768px) {
-     border: none;
-  }
+    border-top: 1px solid rgb(111, 117, 49);
+    border-bottom: 1px solid rgb(111, 117, 49);
+
+@media screen and (max-width: 768px) {
+
+  border-left: 1px solid rgb(111, 117, 49);
+  border-right: 1px solid rgb(111, 117, 49);
+  border-left:none;
+  border-right:none;
+}
 
   }
 

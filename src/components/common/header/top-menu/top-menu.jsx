@@ -84,10 +84,7 @@ const TopMenu = () => {
                                         <NavDropdown title="Mon Compte">
                                             <NavDropdown.Item as={Link} to='/register'>S'inscrire</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to='/login'>Se connecter</NavDropdown.Item>
-                                            <NavDropdown.Item as={Link} to='/payment'>Paiement</NavDropdown.Item>
-                                            <NavDropdown.Item as={Link} to='/favori'>Favoris</NavDropdown.Item>
-                                            <NavDropdown.Item as={Link} to='/order-history'>Historique des commandes</NavDropdown.Item>
-                                            <NavDropdown.Item as={Link} to='/cart'>Panier</NavDropdown.Item>
+                                        
                                         </NavDropdown>
                                     </li>
                                 </>

@@ -7,7 +7,7 @@ const CategoriesPopulers = () => {
     <div className='categories-populers'>
     <h1>Catégories Populaires</h1>
         <Container>
-            <Row xs={1} sm={2} md={5} lg={6} className='categories-row '>
+            <Row xs={1}  md={6}  className='categories-row '>
            
                 <Col className='categories-col' >
                 <Link to="/collection/kurutulmus-meyve">
