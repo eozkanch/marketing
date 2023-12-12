@@ -146,60 +146,60 @@ const MiddleMenu = () => {
       <Accordion.Item eventKey="1" style={{ border: 'none' }}>
         <Accordion.Header >Produits De Boulangerie</Accordion.Header>
         <Accordion.Body>
-              <NavDropdown.Item href={`/collection/${encodeURIComponent("baklava")}`}> Antep Baklavası</NavDropdown.Item>
-              <NavDropdown.Item href={`/collection/${encodeURIComponent("lokum")}`}> Lokum</NavDropdown.Item>
-              <NavDropdown.Item href={`/collection/${encodeURIComponent("kek-pasta")}`}> Kek & Pasta</NavDropdown.Item>
-              <NavDropdown.Item href={`/collection/${encodeURIComponent("sekerlemeler")}`}>Şekerlemeler</NavDropdown.Item>   
+              <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("baklava")}`}> Antep Baklavası</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("lokum")}`}> Lokum</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("kek-pasta")}`}> Kek & Pasta</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("sekerlemeler")}`}>Şekerlemeler</NavDropdown.Item>   
          
         </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2" style={{ border: 'none' }}>
         <Accordion.Header> Épicerie Fine</Accordion.Header>
         <Accordion.Body>
-        <NavDropdown.Item href={`/collection/${encodeURIComponent("baharatlar")}`}> Épices</NavDropdown.Item>
-              <NavDropdown.Item href={`/collection/${encodeURIComponent("kurutulmus-sebze")}`}> Légumes séchés</NavDropdown.Item>
-              <NavDropdown.Item href={`/collection/${encodeURIComponent("sos-nar-eksisi")}`}> Sauces</NavDropdown.Item>
-              <NavDropdown.Item href={`/collection/${encodeURIComponent("salcalar")}`}>pâte de tomate</NavDropdown.Item>   
-              <NavDropdown.Item href={`/collection/${encodeURIComponent("tursu")}`}>Turşu</NavDropdown.Item>   
+        <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("baharatlar")}`}> Épices</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("kurutulmus-sebze")}`}> Légumes séchés</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("sos-nar-eksisi")}`}> Sauces</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("salcalar")}`}>pâte de tomate</NavDropdown.Item>   
+              <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("tursu")}`}>Turşu</NavDropdown.Item>   
          
         </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="3" style={{ border: 'none' }}>
         <Accordion.Header>Boisson</Accordion.Header>
         <Accordion.Body>
-        <NavDropdown.Item href={`/collection/${encodeURIComponent("caylar")}`}>Thés</NavDropdown.Item>
-              <NavDropdown.Item href={`/collection/${encodeURIComponent("kahveler")}`}> Cafés</NavDropdown.Item>  
+        <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("caylar")}`}>Thés</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("kahveler")}`}> Cafés</NavDropdown.Item>  
          
         </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="4" style={{ border: 'none' }}>
         <Accordion.Header>Des Noisettes</Accordion.Header>
         <Accordion.Body>
-        <NavDropdown.Item href={`/collection/${encodeURIComponent("kuruyemisler")}`}> Des Noisettes</NavDropdown.Item>
-              <NavDropdown.Item href={`/collection/${encodeURIComponent("kurutulmus-meyve")}`}> Fruit Sec</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("kuruyemisler")}`}> Des Noisettes</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("kurutulmus-meyve")}`}> Fruit Sec</NavDropdown.Item>
          
         </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="5" style={{ border: 'none' }}>
         <Accordion.Header>Deujeuner</Accordion.Header>
         <Accordion.Body>
-        <NavDropdown.Item href={`/collection/${encodeURIComponent("zeytin-peynir")}`}> Fromage aux olives</NavDropdown.Item>
-              <NavDropdown.Item href={`/collection/${encodeURIComponent("recel")}`}> Confiture</NavDropdown.Item>
-              <NavDropdown.Item href={`/collection/${encodeURIComponent("bal-tahin-pekmez")}`}>Miel-Tahini-Mélasse</NavDropdown.Item> 
+        <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("zeytin-peynir")}`}> Fromage aux olives</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("recel")}`}> Confiture</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("bal-tahin-pekmez")}`}>Miel-Tahini-Mélasse</NavDropdown.Item> 
          
         </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="6" style={{ border: 'none' }}>
         <Accordion.Header>Légumineuses</Accordion.Header>
         <Accordion.Body>
-        <NavDropdown.Item href={`/collection/${encodeURIComponent("bakliyatlar")}`}> Légumineuses</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("bakliyatlar")}`}> Légumineuses</NavDropdown.Item>
          
         </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="7" style={{ border: 'none' }}>
         <Accordion.Header>Cosmétiques et Santé</Accordion.Header>
         <Accordion.Body>
-        <NavDropdown.Item href={`/collection/${encodeURIComponent("kozmetik-bakim")}`}> Cosmétiques et Santé</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to={`/collection/${encodeURIComponent("kozmetik-bakim")}`}> Cosmétiques et Santé</NavDropdown.Item>
          
         </Accordion.Body>
       </Accordion.Item>

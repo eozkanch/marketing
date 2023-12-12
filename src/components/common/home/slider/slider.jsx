@@ -4,6 +4,7 @@ import "./slider.scss";
 import { Button, Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {constants} from "../../../../constant";
+import { Link } from "react-router-dom";
 const { slider } = constants;
 const Slider = () => {
   return (
@@ -23,7 +24,9 @@ const Slider = () => {
                 <SwiperSlide key={slide.id}>
                     <div className="content">
                     <h2>Authenticité et <br/>Saveur à portée de <br/>clic</h2>
-                    <Button href="/collection/tum-urunler" className="btn-slide">TEMPETE</Button>
+                   <Link to="/collection/tum-urunler">
+                    <Button  className="btn-slide">TEMPETE</Button>
+                    </Link>
                     </div>
                     <img
                        src="/Bizimkiler-Slide.webp"
