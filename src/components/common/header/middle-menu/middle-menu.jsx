@@ -128,54 +128,54 @@ const MiddleMenu = () => {
                       <Accordion.Item eventKey="1" style={{ border: 'none' }}>
                         <Accordion.Header >Produits De Boulangerie</Accordion.Header>
                         <Accordion.Body>
-                          <NavDropdown.Item as={Link} to={`/collection/baklava`}> Antep Baklavası</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} to={`/collection/lokum`}> Lokum</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} to={`/collection/kek-pasta`}> Kek & Pasta</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} to={`/collection/sekerlemeler`}>Şekerlemeler</NavDropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/baklava`}> Antep Baklavası</Dropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/lokum`}> Lokum</Dropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/kek-pasta`}> Kek & Pasta</Dropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/sekerlemeler`}>Şekerlemeler</Dropdown.Item>
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="2" style={{ border: 'none' }}>
                         <Accordion.Header> Épicerie Fine</Accordion.Header>
                         <Accordion.Body>
-                          <NavDropdown.Item as={Link} to={`/collection/baharatlar`}> Épices</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} to={`/collection/kurutulmus-sebze`}> Légumes séchés</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} to={`/collection/sos-nar-eksisi`}> Sauces</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} to={`/collection/salcalar`}>pâte de tomate</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} to={`/collection/tursu`}>Turşu</NavDropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/baharatlar`}> Épices</Dropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/kurutulmus-sebze`}> Légumes séchés</Dropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/sos-nar-eksisi`}> Sauces</Dropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/salcalar`}>pâte de tomate</Dropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/tursu`}>Turşu</Dropdown.Item>
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="3" style={{ border: 'none' }}>
                         <Accordion.Header>Boisson</Accordion.Header>
                         <Accordion.Body>
-                          <NavDropdown.Item as={Link} to={`/collection/caylar`}>Thés</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} to={`/collection/kahveler`}> Cafés</NavDropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/caylar`}>Thés</Dropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/kahveler`}> Cafés</Dropdown.Item>
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="4" style={{ border: 'none' }}>
                         <Accordion.Header>Des Noisettes</Accordion.Header>
                         <Accordion.Body>
-                          <NavDropdown.Item as={Link} to={`/collection/kuruyemisler`}> Des Noisettes</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} to={`/collection/kurutulmus-meyve`}> Fruit Sec</NavDropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/kuruyemisler`}> Des Noisettes</Dropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/kurutulmus-meyve`}> Fruit Sec</Dropdown.Item>
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="5" style={{ border: 'none' }}>
                         <Accordion.Header>Deujeuner</Accordion.Header>
                         <Accordion.Body>
-                          <NavDropdown.Item as={Link} to={`/collection/zeytin-peynir`}> Fromage aux olives</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} to={`/collection/recel`}> Confiture</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} to={`/collection/bal-tahin-pekmez`}>Miel-Tahini-Mélasse</NavDropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/zeytin-peynir`}> Fromage aux olives</Dropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/recel`}> Confiture</Dropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/bal-tahin-pekmez`}>Miel-Tahini-Mélasse</Dropdown.Item>
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="6" style={{ border: 'none' }}>
                         <Accordion.Header>Légumineuses</Accordion.Header>
                         <Accordion.Body>
-                          <NavDropdown.Item as={Link} to={`/collection/bakliyatlar`}> Légumineuses</NavDropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/bakliyatlar`}> Légumineuses</Dropdown.Item>
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="7" style={{ border: 'none' }}>
                         <Accordion.Header>Cosmétiques et Santé</Accordion.Header>
                         <Accordion.Body>
-                          <NavDropdown.Item as={Link} to={`/collection/kozmetik-bakim`}> Cosmétiques et Santé</NavDropdown.Item>
+                          <Dropdown.Item as={Link} to={`/collection/kozmetik-bakim`}> Cosmétiques et Santé</Dropdown.Item>
                         </Accordion.Body>
                       </Accordion.Item>
                     </Accordion>
