@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { TfiTruck } from "react-icons/tfi";
 import { LuDollarSign } from "react-icons/lu";
 import { PiIdentificationCardDuotone } from "react-icons/pi";
-import Spacer from '/Users/geneve/Desktop/marketing/marketing/src/components/common/spacer/spacer.jsx';
+import Spacer from '../../../../components/common/spacer/spacer';
 import alldata from '../../../../data/allproduct.json';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../../../../store/slice/cart/cartSlice';
