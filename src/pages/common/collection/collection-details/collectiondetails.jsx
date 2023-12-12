@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { TfiTruck } from "react-icons/tfi";
 import { LuDollarSign } from "react-icons/lu";
 import { PiIdentificationCardDuotone } from "react-icons/pi";
-import Spacer from '../../../../components/common/spacer/spacer';
+
 import alldata from '../../../../data/allproduct.json';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../../../../store/slice/cart/cartSlice';
@@ -129,7 +129,7 @@ const CollectionDetailsPage = () => {
         )}
       </Container>
       <Container>
-        <Spacer height={25} />
+   
         <Row>
           <Col md={12}>
             <SectionHeader title2="Benzer Urunler" />
@@ -137,7 +137,7 @@ const CollectionDetailsPage = () => {
         </Row>
         <SimilarProducts currentProductId={productName} />
       </Container>
-      <Spacer height={100} />
+   
     </div>
   );
 };
