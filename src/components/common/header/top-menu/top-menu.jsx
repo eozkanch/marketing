@@ -42,7 +42,7 @@ const TopMenu = () => {
                     <Col xs={12} md={6} lg={6} className='top-menu-right'>
                         <ul>
                             <li>
-                                <Link href='/about'>À Propos De Nous</Link>
+                                <Link to='/about'>À Propos De Nous</Link>
                             </li>
                             {isLoggedIn ? (
                                 <Dropdown align="end">
@@ -78,7 +78,7 @@ const TopMenu = () => {
                             ) : (
                                 <>
                                     <li>
-                                        <Link href='/contact'>Communocation</Link>
+                                        <Link to='/contact'>Communocation</Link>
                                     </li>
                                     <li>
                                         <NavDropdown title="Mon Compte">
