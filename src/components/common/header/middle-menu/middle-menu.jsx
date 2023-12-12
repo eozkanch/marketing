@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { Accordion, Badge, Button, Col, Container, Dropdown, Form, InputGroup, NavDropdown, Offcanvas, Row } from 'react-bootstrap';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Accordion, Button, Col, Container, Form, InputGroup, NavDropdown, Offcanvas, Row } from 'react-bootstrap';
+import Badge from '@mui/material/Badge';
 import { FiHeart } from 'react-icons/fi';
-import { IoIosSearch } from 'react-icons/io';
 import { MdShoppingBasket } from 'react-icons/md';
-import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { IoIosSearch } from 'react-icons/io';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Link } from "react-router-dom";
 import MiniCart from '../../../common/mini-cart/mini-cart';
+import { useSelector } from 'react-redux';
 import './middle-menu.scss';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const theme = createTheme({
   palette: {
@@ -25,9 +26,9 @@ const MiddleMenu = () => {
     setSearchText(searchTextValue);
   };
 
-  const cartItems = useSelector((state) => state.cart.items);
+  const cartItems = useSelector(state => state.cart.items);
   const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
-  const favoriItems = useSelector((state) => state.favori.items);
+  const favoriItems = useSelector(state => state.favori.items);
 
   // For MiniCart
   const [isMiniCartVisible, setMiniCartVisibility] = useState(false);
@@ -48,34 +49,24 @@ const MiddleMenu = () => {
     <ThemeProvider theme={theme}>
       <div>
         <Container>
-          <Row className="middle-menu">
-            <Col xs={4} md={3} className="logo-col">
-              <Link to="/">
-                <img src="/Resim1Q.png" alt="logo" className="logo" color="green" />
+          <Row className='middle-menu'>
+            <Col xs={4} md={3} className='logo-col'>
+              <Link to='/'>
+                <img src='/Resim1Q.png' alt='logo' className='logo' color='green' />
               </Link>
             </Col>
-            <Col xs={1} md={6} className="search-col">
-              <Row className="search-icon">
-                <Offcanvas
-                  placement="top"
-                  show={isSearchOffcanvasVisible}
-                  onHide={hideSearchOffcanvas}
-                  className="search-offcanvas"
-                  style={{ height: '100px' }}
-                >
+            <Col xs={1} md={6} className='search-col'>
+              <Row className='search-icon'>
+                <Offcanvas placement='top' show={isSearchOffcanvasVisible} onHide={hideSearchOffcanvas} className='search-offcanvas' style={{ height: '100px' }}>
                   <Offcanvas.Header closeButton>
                     <Offcanvas.Body>
-                      <div className="search-container-offcanvas">
+                      <div className='search-container-offcanvas'>
                         <InputGroup>
-                          <Form.Control
-                            placeholder="Rechercher dans la boutique"
-                            aria-label="Rechercher dans la boutique"
-                            value={searchText}
-                            onChange={handleSearch}
-                          />
+                          <Form.Control placeholder='Rechercher dans la boutique' aria-label='Rechercher dans la boutique'
+                            value={searchText} onChange={handleSearch} />
                           <Link to={`/searchresults?query=${encodeURIComponent(searchText ? searchText.trim() : '')}`}>
-                            <Button className="search-btn" disabled={!searchText.trim()}>
-                              <IoIosSearch color="black" size={20} onClick={handleSearch} />
+                            <Button className='search-btn' disabled={!searchText.trim()}>
+                              <IoIosSearch color='black' size={20} onClick={handleSearch} />
                             </Button>
                           </Link>
                         </InputGroup>
@@ -85,63 +76,115 @@ const MiddleMenu = () => {
                 </Offcanvas>
               </Row>
 
-              <div className="search-container">
+              <div className='search-container'>
                 <InputGroup>
-                  <Form.Control
-                    placeholder="Rechercher dans la boutique"
-                    aria-label="Rechercher dans la boutique"
-                    value={searchText}
-                    onChange={handleSearch}
-                  />
+                  <Form.Control placeholder='Rechercher dans la boutique' aria-label='Rechercher dans la boutique'
+                    value={searchText} onChange={handleSearch} />
                   <Link to={`/searchresults?query=${encodeURIComponent(searchText ? searchText.trim() : '')}`}>
-                    <Button className="search-btn" disabled={!searchText.trim()}>
-                      <IoIosSearch color="white" size={20} onClick={handleSearch} />
+                    <Button className='search-btn' disabled={!searchText.trim()}>
+                      <IoIosSearch color='white' size={20} onClick={handleSearch} />
                     </Button>
                   </Link>
                 </InputGroup>
               </div>
             </Col>
-            <Col xs={6} md={3} className="icon-col">
-              <Dropdown>
-                <Dropdown.Toggle variant="primary" id="favori-dropdown">
-                  <Badge badgeContent={favoriItems.length} showZero>
-                    <FiHeart className="icon" color="white" />
+            <Col xs={6} md={3} className='icon-col'>
+              <Link to='/favori'>
+                <Button className='favori-btn' variant="primary">
+                  <Badge badgeContent={favoriItems.length} showZero >
+                    <FiHeart className='icon' color='white' />
                   </Badge>
-                </Dropdown.Toggle>
+                </Button>
+              </Link>
 
-                <Dropdown.Menu>
-                  <Dropdown.Item as={Link} to="/favori">
-                    Favori Ürünler
-                  </Dropdown.Item>
-                  {/* Diğer favori ürünleri ekleyebilirsiniz */}
-                </Dropdown.Menu>
-              </Dropdown>
+              <Link to='/favori'>
+                <Badge badgeContent={favoriItems.length} showZero color='success' className='favori-badge'>
+                  <FiHeart className='icon' color='rgb(111, 117, 49)' />
+                </Badge>
+              </Link>
 
-              <Dropdown>
-                <Dropdown.Toggle variant="primary" id="cart-dropdown">
-                  <Badge badgeContent={totalQuantity} showZero>
-                    <MdShoppingBasket className="icon" />
-                  </Badge>
-                </Dropdown.Toggle>
+              <Button className='favori-btn' variant="primary" onClick={showMiniCart} >
+                <Badge badgeContent={totalQuantity} showZero >
+                  <MdShoppingBasket onClick={showMiniCart} className='icon' />
+                </Badge>
+              </Button>
 
-                <Dropdown.Menu>
-                  <Dropdown.Item onClick={showMiniCart}>Sepetim</Dropdown.Item>
-                  {/* Diğer sepet içeriğini ekleyebilirsiniz */}
-                </Dropdown.Menu>
-              </Dropdown>
+              <Badge badgeContent={totalQuantity} showZero color='success' className='favori-badge'>
+                <MdShoppingBasket onClick={showMiniCart} className='icon' />
+              </Badge>
 
-              <IoIosSearch className="icon" id="search" onClick={showSearchOffcanvas} />
-
-              <Dropdown>
-                <Dropdown.Toggle variant="primary" id="hamburger-menu-dropdown">
-                  <GiHamburgerMenu color="white" className="icon" />
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  <Dropdown.Item onClick={showHamburgerMenuOffcanvas}>Hamburger Menü</Dropdown.Item>
-                  {/* Diğer menü öğelerini ekleyebilirsiniz */}
-                </Dropdown.Menu>
-              </Dropdown>
+              <IoIosSearch className='icon ' id='search' onClick={showSearchOffcanvas} />
+              <Button className='favori-btn' variant="primary" onClick={showSearchOffcanvas}>
+                <IoIosSearch className='icon ' id='search' onClick={showSearchOffcanvas} />
+              </Button>
+              <div className='bottom-menu-offcanvas'>
+                <Button className='favori-btn' variant="primary" onClick={showHamburgerMenuOffcanvas}>
+                  <GiHamburgerMenu color="white" className='icon' onClick={showHamburgerMenuOffcanvas} />
+                </Button>
+                <Offcanvas show={isHamburgerMenuOffcanvasVisible} onHide={hideHamburgerMenuOffcanvas} style={{ width: '80%' }}>
+                  <Offcanvas.Header closeButton></Offcanvas.Header>
+                  <Offcanvas.Body>
+                    <Accordion defaultActiveKey="0" style={{ border: 'none' }}>
+                      <Accordion.Item eventKey="1" style={{ border: 'none' }}>
+                        <Accordion.Header >Produits De Boulangerie</Accordion.Header>
+                        <Accordion.Body>
+                          <NavDropdown.Item as={Link} to={`/collection/baklava`}> Antep Baklavası</NavDropdown.Item>
+                          <NavDropdown.Item as={Link} to={`/collection/lokum`}> Lokum</NavDropdown.Item>
+                          <NavDropdown.Item as={Link} to={`/collection/kek-pasta`}> Kek & Pasta</NavDropdown.Item>
+                          <NavDropdown.Item as={Link} to={`/collection/sekerlemeler`}>Şekerlemeler</NavDropdown.Item>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                      <Accordion.Item eventKey="2" style={{ border: 'none' }}>
+                        <Accordion.Header> Épicerie Fine</Accordion.Header>
+                        <Accordion.Body>
+                          <NavDropdown.Item as={Link} to={`/collection/baharatlar`}> Épices</NavDropdown.Item>
+                          <NavDropdown.Item as={Link} to={`/collection/kurutulmus-sebze`}> Légumes séchés</NavDropdown.Item>
+                          <NavDropdown.Item as={Link} to={`/collection/sos-nar-eksisi`}> Sauces</NavDropdown.Item>
+                          <NavDropdown.Item as={Link} to={`/collection/salcalar`}>pâte de tomate</NavDropdown.Item>
+                          <NavDropdown.Item as={Link} to={`/collection/tursu`}>Turşu</NavDropdown.Item>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                      <Accordion.Item eventKey="3" style={{ border: 'none' }}>
+                        <Accordion.Header>Boisson</Accordion.Header>
+                        <Accordion.Body>
+                          <NavDropdown.Item as={Link} to={`/collection/caylar`}>Thés</NavDropdown.Item>
+                          <NavDropdown.Item as={Link} to={`/collection/kahveler`}> Cafés</NavDropdown.Item>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                      <Accordion.Item eventKey="4" style={{ border: 'none' }}>
+                        <Accordion.Header>Des Noisettes</Accordion.Header>
+                        <Accordion.Body>
+                          <NavDropdown.Item as={Link} to={`/collection/kuruyemisler`}> Des Noisettes</NavDropdown.Item>
+                          <NavDropdown.Item as={Link} to={`/collection/kurutulmus-meyve`}> Fruit Sec</NavDropdown.Item>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                      <Accordion.Item eventKey="5" style={{ border: 'none' }}>
+                        <Accordion.Header>Deujeuner</Accordion.Header>
+                        <Accordion.Body>
+                          <NavDropdown.Item as={Link} to={`/collection/zeytin-peynir`}> Fromage aux olives</NavDropdown.Item>
+                          <NavDropdown.Item as={Link} to={`/collection/recel`}> Confiture</NavDropdown.Item>
+                          <NavDropdown.Item as={Link} to={`/collection/bal-tahin-pekmez`}>Miel-Tahini-Mélasse</NavDropdown.Item>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                      <Accordion.Item eventKey="6" style={{ border: 'none' }}>
+                        <Accordion.Header>Légumineuses</Accordion.Header>
+                        <Accordion.Body>
+                          <NavDropdown.Item as={Link} to={`/collection/bakliyatlar`}> Légumineuses</NavDropdown.Item>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                      <Accordion.Item eventKey="7" style={{ border: 'none' }}>
+                        <Accordion.Header>Cosmétiques et Santé</Accordion.Header>
+                        <Accordion.Body>
+                          <NavDropdown.Item as={Link} to={`/collection/kozmetik-bakim`}> Cosmétiques et Santé</NavDropdown.Item>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                    </Accordion>
+                    <Container>
+                      {/* Buraya eklemeler yapabilirsiniz */}
+                    </Container>
+                  </Offcanvas.Body>
+                </Offcanvas>
+              </div>
             </Col>
           </Row>
         </Container>
@@ -153,5 +196,4 @@ const MiddleMenu = () => {
 };
 
 export default MiddleMenu;
-
 
