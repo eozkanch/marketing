@@ -71,7 +71,8 @@
             }
           }
           .accordion-body{
-            
+            display: flex;
+            flex-direction: column;
             padding: 0;
          
             font-size: 0.777778rem;
@@ -115,8 +116,8 @@
     display: block;
     font-size: 1rem;
     font-weight: 700;
-    line-height: 1.7;
-    margin-bottom: 10px;
+    line-height: 2.2;
+   
     font-family: Frutiger, Helvetica, sans-serif;
   }
 
@@ -125,9 +126,16 @@
     font-size: 0.777778rem;
     font-weight: 400;
     line-height: 1.7;
+    &:hover {
+      color: rgb(111, 117, 49);
+    }
   }
 
   .footer-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
     text-align: inherit;
     word-spacing: inherit;
     padding-right: 0.833333rem;
@@ -167,6 +175,8 @@
   @media (min-width: 769px) {
     .footer-col {
       width: 100%;
+     
+
     }
   }
 }

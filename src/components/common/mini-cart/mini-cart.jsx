@@ -7,6 +7,7 @@ import { utils } from '../../../utils';
 
 // Eksik olan import ifadelerini ekleyin
 import { removeItem, increaseItemQuantity, decreaseItemQuantity } from '../../../store/slice/cart/cartSlice';
+import { Link } from 'react-router-dom';
 
 const MiniCart = React.memo(({ show, handleClose }) => {
   const dispatch = useDispatch();
@@ -81,10 +82,10 @@ const MiniCart = React.memo(({ show, handleClose }) => {
 
           <Row className='gap-1'>
             <p> Toplam Fiyat: <span>{totalPrice.toFixed(2)} CHF</span></p>
-            <Button className='mini-cart-btn' variant="primary" href='/cart'>
+            <Button className='mini-cart-btn' variant="primary" as={Link} to='/cart'>
               Sepeti Göster
             </Button>
-            <Button className='mini-cart-btn' variant="primary" >
+            <Button className='mini-cart-btn' variant="primary" as={Link} to='/payment' >
               Ödeme Yap
             </Button>
           </Row>
