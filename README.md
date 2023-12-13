@@ -1,6 +1,6 @@
 <h1>Marketing - Professional Website</h1>
 
-<h4>This project aims to create a professional website that reflects the unique flavors and mission of Sultan Kebab, a burger restaurant. Built using React, this application offers the following features:</h4>
+<<h4>This project aims to create a professional website that reflects the unique product range and mission of Notre People, a shopping destination. Developed using React, this application offers the following features:</h4>
 <img src="https://github.com/eozkanch/marketing/blob/main/public/github1.jpeg"  witdth ="400px">
 <h3>Features:</h3>
 
