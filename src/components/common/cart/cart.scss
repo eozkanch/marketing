@@ -9,9 +9,19 @@
 }
 
 .cart{
-
+    p{
+        font-size: 0.9rem;
+    }
+    td {
+        text-align: center;
+        vertical-align: middle;
+      }
         img{
             width: 50%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                
+            }
         }
     .cart-header{
         display: flex;

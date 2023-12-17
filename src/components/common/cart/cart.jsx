@@ -65,15 +65,14 @@ const Cart = () => {
               </Row>
               <Row>
                 {cartItems.map((item, index) => (
-                  <Table key={index}>
+                  <Table  key={index}>
                     <tbody>
                       <tr>
-                        <td style={{ width: '200px' }}><Image src={item.image_url} alt={item.name} width={50} thumbnail /></td>
-                        <td style={{ width: '200px' }}>
-                          <div>
+                        <td><Image src={item.image_url} alt={item.name} width={100} thumbnail /></td>
+                        <td>
+                     
                             <p>{item.name}</p>
-                            <p>{item.price}</p>
-                          </div>
+                        
                         </td>
                         <td>
                           <ButtonGroup>
