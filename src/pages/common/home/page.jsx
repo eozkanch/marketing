@@ -12,9 +12,9 @@ const HomePage = () => {
        <>
       <Slider className="home-page-slider" />
       <TopComponent />
-      <Spacer height={100} />
+      <Spacer height={50} />
       <PopularCard sectionTitle="Popular Products" />
-      <Spacer height={100} />
+      <Spacer height={50} />
       <PopulerProducts />
       <Spacer height={10} />
       <SoldesProducts />

@@ -13,6 +13,8 @@ import SectionHeader from '../../section-header/section-header';
 const PopularCard = () => {
   const { allcategories } = data;
 console.log("allcategories",allcategories);
+
+
   const CategoryButtons = ({ selectedCategory, handleClick }) => {
     const specificCategories = [
       { categories: "/kuruyemisler", label: "Kuruyemişler" },
