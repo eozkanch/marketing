@@ -2,13 +2,11 @@
 
   .top-component {
  
-  padding: 0 20rem ;
+
   margin-top: -5rem;
-    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-   
+    align-items: center;   
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
    
@@ -27,33 +25,33 @@
 
 
 .home-page-info {
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
 
 
   border: 1px solid rgb(111, 117, 49);
-  padding: 20px;
+
   background-color: white;
   z-index: 10;
   border-radius: 10px;
 
-  h3 {
+  span {
     color: rgb(111, 117, 49);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: bold;
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 
   .info-middle {
     border-left: 1px solid rgb(111, 117, 49);
     border-right: 1px solid rgb(111, 117, 49);
-
+    margin: 15px 0;
 @media screen and (max-width: 768px) {
-
+ 
   border-top: 1px solid rgb(111, 117, 49);
   border-bottom: 1px solid rgb(111, 117, 49);
   border-left:none;
@@ -69,7 +67,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    row-gap: 10px;
+   padding:0  15px;
+   gap: 1rem;
+   @media screen and (max-width: 768px) {
+    padding: 15px 0;
+    
+   }
 
     &:hover {
       cursor: pointer;
@@ -78,9 +81,10 @@
   }
 
   .icon-div {
-    padding: 10px;
+    padding: 14px;
     background-color: rgb(232, 232, 227);
-    border-radius: 10px;
+    border-radius: 5px;
+    line-height: 1;
 
     &:hover {
       background-color: rgb(111, 117, 49);

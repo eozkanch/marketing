@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 const { slider } = constants;
 const Slider = () => {
   return (
-    <div className="slider-container">
-    <Container>
+ 
+ 
     <Swiper
             effect="fade"
          
@@ -23,10 +23,10 @@ const Slider = () => {
             {slider.map((slide) => (
                 <SwiperSlide key={slide.id}>
                     <div className="content">
-                    <h2>Authenticité et <br/>Saveur à portée de <br/>clic</h2>
-                   <Link to="/collection/tum-urunler">
-                    <Button  className="btn-slide">TEMPETE</Button>
-                    </Link>
+                        <h2>Authenticité et <br/>Saveur à portée de <br/>clic</h2>
+                   
+                        <Button as={Link} to="/collection/tum-urunler"  className="btn">TEMPETE</Button>
+                        
                     </div>
                     <img
                        src="/Bizimkiler-Slide.webp"
@@ -38,8 +38,8 @@ const Slider = () => {
             ))}
         </Swiper>
        
-      </Container>
-      </div>
+
+
   );
 };
 

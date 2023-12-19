@@ -7,7 +7,7 @@ const BottomMenu = () => {
   return (
     <div className='bottom-menu'>
      
-    <div className='bottom-menu-row'>
+
     <Container>
     <Row  >
         <Col className='bottom-col'> 
@@ -53,7 +53,7 @@ const BottomMenu = () => {
             </NavDropdown></Col>
         </Row>
         </Container>
-        </div>
+    
 
     </div>
   );

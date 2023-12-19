@@ -10,23 +10,23 @@ const CategoriesPopulers = () => {
             <Row xs={1}  md={6}  className='categories-row '>
            
                 <Col className='categories-col' >
-                <Link to="/collection/kurutulmus-meyve">
+                 <Link to="/collection/kurutulmus-meyve">
                     <div className='categories-div'>
                         <span className='img-fluid'>6 products</span>
                         <img src='/categories/kuru-meyve-banner-210.avif' alt='banner' />
                         <span className='cat-title'>Fruit sec</span>
                     </div>
-                </Link>  
+                 </Link>  
                 </Col>
                
                 <Col className='categories-col' >
-                <Link to="/collection/unlu-mamuller">
-                <div className='categories-div'> 
-                <span className='img-fluid'>18 products</span>
-                <img src='/categories/unlu-mamuller-210x210.avif' alt='banner' />
-                <span className='cat-title'>Produits Cake-Dessert</span>
-                </div>
-                </Link>
+                  <Link to="/collection/unlu-mamuller">
+                    <div className='categories-div'> 
+                      <span className='img-fluid'>18 products</span>
+                      <img src='/categories/unlu-mamuller-210x210.avif' alt='banner' />
+                      <span className='cat-title'>Produits Cake-Dessert</span>
+                    </div>
+                  </Link>
                 </Col>
                 <Col className='categories-col' >
                 <Link to="/collection/kahvaltiliklar">

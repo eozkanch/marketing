@@ -5,7 +5,7 @@ import TopMenu from './top-menu/top-menu';
 import MiddleMenu from './middle-menu/middle-menu';
 import BottomMenu from './bottom-menu/bottom-menu';
 import "./header.scss";
-import { Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const Header = () => {
   const [isSticky, setSticky] = useState(false);
@@ -26,17 +26,18 @@ const Header = () => {
 
   
     <div  className='header-container'>
+   
       <div className={`header ${isSticky ? 'sticky' : ''}`}>
-    <Row >
+    
+   
     <Col xs={12} lg={12}  >  <TopMenu /></Col>
     <Col xs={12} md={12}  lg={12}> <MiddleMenu className="middle-menu"/></Col>
     <Col md={12} lg={12}> <BottomMenu className="bottom-menu" /></Col>
-    </Row>
     
-     
+ 
  
       </div>
-
+     
     </div>
   );
 }

@@ -21,7 +21,7 @@ $breakpoint: 576px;
             img {
                 object-fit: cover;
                 width: 100%;
-                height: 50vh;
+                height: 60vh;
             }
             
 
@@ -31,7 +31,7 @@ $breakpoint: 576px;
                 top: 25%;
                 left: 25%;
                 transform: translate(-50%);
-                text-align: center;
+                text-align: left;
                 z-index: 5;
               
 
@@ -46,8 +46,10 @@ $breakpoint: 576px;
                     font-size: 2rem;
                    
                 }
-                .btn-slide {
-                  padding: 1rem;
+                .btn {
+            width: 100px;
+                padding: 10px;
+                display: flex-start;
                   &:hover{
                     background-color: red;
                   }

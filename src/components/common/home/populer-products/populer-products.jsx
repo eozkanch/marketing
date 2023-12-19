@@ -15,7 +15,7 @@ const PopulerProducts = () => {
 						<span >NOIX FOLLES</span>
 						
 						
-						<h4 >Délicieux et frais</h4>
+						<h5 >Délicieux et frais</h5>
 						
 						
 						<Button href="/collection/kuruyemisler" className="populer-products-btn ">Acheter</Button>
@@ -31,7 +31,7 @@ const PopulerProducts = () => {
 						<span >PETIT-DÉJEUNER</span>
 						
 						
-						<h4 >Pour des tables nature !</h4>
+						<h5 >Pour des tables nature !</h5>
 						
 						
 						<Button href="/collection/kahvaltiliklar" className="populer-products-btn ">Acheter</Button>
