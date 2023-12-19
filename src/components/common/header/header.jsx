@@ -28,14 +28,11 @@ const Header = () => {
     <div  className='header-container'>
    
       <Container className={`header ${isSticky ? 'sticky' : ''}`}>
-    
-   
-    <Col xs={12} lg={12}  >  <TopMenu /></Col>
-    <Col xs={12} md={12}  lg={12}> <MiddleMenu className="middle-menu"/></Col>
-    <Col md={12} lg={12}> <BottomMenu className="bottom-menu" /></Col>
-    
- 
- 
+        
+          <Col xs={12} lg={12}  >  <TopMenu /></Col>
+          <Col xs={12} md={12}  lg={12}> <MiddleMenu className="middle-menu"/></Col>
+          <Col md={12} lg={12}> <BottomMenu className="bottom-menu" /></Col>
+          
       </Container>
      
     </div>

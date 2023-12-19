@@ -66,7 +66,7 @@ const MiddleMenu = () => {
                             value={searchText} onChange={handleSearch} />
                           <Link to={`/searchresults?query=${encodeURIComponent(searchText ? searchText.trim() : '')}`}>
                             <Button className='search-btn' disabled={!searchText.trim()}>
-                              <IoIosSearch color='black' size={20} onClick={handleSearch} />
+                              <IoIosSearch color='white' size={20} onClick={handleSearch} />
                             </Button>
                           </Link>
                         </InputGroup>

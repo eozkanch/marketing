@@ -40,9 +40,34 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #464344;
+  background-color: rgb(111, 117, 49);
   z-index: 100;
-}
-
+  
+  .search-btn {
+ border-color:white ;
 
   
+
+ 
+  }
+  svg{
+    color:white !important;
+ 
+ 
+  }
+ .favori-btn{
+  color:white !important;
+  border-color:white !important;
+  svg{
+    color:white !important;
+  }
+ }
+ .favori-badge{
+  color:white !important;
+  border-color:white !important;
+  svg{
+    color:white !important;
+  }
+ }
+
+}
