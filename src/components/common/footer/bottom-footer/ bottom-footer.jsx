@@ -8,7 +8,7 @@ const BottomFooter = () => {
       <Container >
         <Row className='d-flex justify-content-between'>
           <Col xs={12} md={4} className='copyright'>
-            <span>Droits d'auteur<span>&copy;</span>2022 Bizimkiler.ch Tous droits réservés</span>
+            <span>Droits d'auteur<span>&copy;</span>2023 Tous droits réservés-Notre Peuple</span>
           </Col>
           <Col xs={12} md={8} className="payment-icon">
             <ul>

@@ -27,7 +27,7 @@ const Header = () => {
   
     <div  className='header-container'>
    
-      <div className={`header ${isSticky ? 'sticky' : ''}`}>
+      <Container className={`header ${isSticky ? 'sticky' : ''}`}>
     
    
     <Col xs={12} lg={12}  >  <TopMenu /></Col>
@@ -36,7 +36,7 @@ const Header = () => {
     
  
  
-      </div>
+      </Container>
      
     </div>
   );
