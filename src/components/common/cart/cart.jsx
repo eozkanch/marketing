@@ -18,7 +18,7 @@ const Cart = () => {
 
   const handleAllDelete = () => {
     utils.functions
-      .swalQuestion('Butun öğeleri silmek istediğinizden emin misiniz?', 'Bu işlemi geri alamayacaksınız!')
+      .swalQuestion('Are you sure you want to delete all items?', 'This action cannot be undone!')
       .then((result) => {
         if (result) {
           dispatch(removeAllItems());
@@ -32,10 +32,10 @@ const Cart = () => {
 
   const handleDelete = (item) => {
     utils.functions
-      .swalQuestion('Bu öğeyi silmek istediğinizden emin misiniz?', 'Bu işlemi geri alamayacaksınız!')
+      .swalQuestion('Are you sure you want to delete all items?', 'This action cannot be undone!')
       .then((result) => {
         if (result && item && item.name) {
-          console.log(`Silme işlemi başlatılıyor: ${item.name}`);
+        
           dispatch(removeItem(item.name));
         }
       });

@@ -21,13 +21,13 @@ const  PopulerItem = ({ product }) => {
   const handleAddToCart = async () => {
     
     dispatch(addItem({ product, quantity: 1 }));
-    utils.functions.swalToast('Urun sepete eklendi', 'success');
+    utils.functions.swalToast('The product has been added to the cart', 'success');
  
   };
   const handleAddToFavori = async () => {
     
     dispatch(addFavorite({ product }));
-    utils.functions.swalToast('Urun favorilere eklendi', 'success');
+    utils.functions.swalToast('The product has been added to favorites', 'success');
  
   };
 const { image_url, details_link, name, old_price, price, sale_title,  } = product;

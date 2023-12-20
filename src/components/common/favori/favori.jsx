@@ -13,7 +13,7 @@ const Favori = () => {
 
   const handleFavoriDelete = (item) => {
     utils.functions
-      .swalQuestion('Bu öğeyi favorilerden silmek istediğinizden emin misiniz?')
+      .swalQuestion('Are you sure you want to delete this item from favorites?')
       .then((result) => {
         if (result && item && item.name) {
           dispatch(removeFavorite(item.name));
@@ -23,7 +23,7 @@ const Favori = () => {
 
   const handleAllFavoriDelete = () => {
     utils.functions
-      .swalQuestion('Butun favori öğeleri silmek istediğinizden emin misiniz?', 'Bu işlemi geri alamayacaksınız!')
+      .swalQuestion('Are you sure you want to delete all favorite items?', 'You will not be able to undo this action!')
       .then((result) => {
         if (result) {
           dispatch(removeAllFavorites());
