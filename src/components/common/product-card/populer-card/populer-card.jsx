@@ -17,9 +17,9 @@ console.log("allcategories",allcategories);
 
   const CategoryButtons = ({ selectedCategory, handleClick }) => {
     const specificCategories = [
-      { categories: "/kuruyemisler", label: "Kuruyemişler" },
-      { categories: "/kahvaltiliklar", label: "Kahvaltılıklar" },
-      { categories: "/bakliyatlar", label: "Bakliyatlar" },
+      { categories: "/kuruyemisler", label: "Des Noisettes" },
+      { categories: "/kahvaltiliklar", label: "Articles de petit-déjeuner" },
+      { categories: "/bakliyatlar", label: "Les Légumineuses" },
     ];
 
     return (

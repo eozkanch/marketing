@@ -22,10 +22,10 @@ const MiniCart = React.memo(({ show, handleClose }) => {
 
   const handleDelete = (item) => {
     utils.functions
-      .swalQuestion('Bu öğeyi silmek istediğinizden emin misiniz?', 'Bu işlemi geri alamayacaksınız!')
+      .swalQuestion('Êtes-vous sûr de vouloir supprimer cet élément ?', 'Vous ne pourrez pas annuler cette action !')
       .then((result) => {
         if (result && item && item.name) {
-          console.log(`Silme işlemi başlatılıyor: ${item.name}`);
+         
           dispatch(removeItem(item.name));
         }
       });
@@ -43,7 +43,7 @@ const MiniCart = React.memo(({ show, handleClose }) => {
   return (
     <Offcanvas show={show} onHide={handleClose} placement="end">
       <Offcanvas.Header closeButton>
-        <Offcanvas.Title className='mini-cart-header'>Sepetinizde {totalQuantity} Ürün var</Offcanvas.Title>
+        <Offcanvas.Title className='mini-cart-header'>Il y a {totalQuantity} articles dans votre panier</Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Container className='mini-cart' >
@@ -81,12 +81,12 @@ const MiniCart = React.memo(({ show, handleClose }) => {
           </Row>
 
           <Row className='gap-1'>
-            <p> Toplam Fiyat: <span>{totalPrice.toFixed(2)} CHF</span></p>
+            <p> Prix ​​total: <span>{totalPrice.toFixed(2)} CHF</span></p>
             <Button className='mini-cart-btn' variant="primary" as={Link} to='/cart'>
-              Sepeti Göster
+            Afficher le panier
             </Button>
             <Button className='mini-cart-btn' variant="primary" as={Link} to='/payment' >
-              Ödeme Yap
+            Payer
             </Button>
           </Row>
 
