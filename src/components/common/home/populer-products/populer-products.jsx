@@ -18,7 +18,7 @@ const PopulerProducts = () => {
 						<h5 >Délicieux et frais</h5>
 						
 						
-						<Button as={Link} href="/collection/kuruyemisler" className="populer-products-btn ">Acheter</Button>
+						<Button as={Link} to="/collection/kuruyemisler" className="populer-products-btn ">Acheter</Button>
 						
 					</div>
  
@@ -34,7 +34,7 @@ const PopulerProducts = () => {
 						<h5 >Pour des tables nature !</h5>
 						
 						
-						<Button as={Link} href="/collection/kahvaltiliklar" className="populer-products-btn ">Acheter</Button>
+						<Button as={Link} to="/collection/kahvaltiliklar" className="populer-products-btn ">Acheter</Button>
 						
 					</div>
        
