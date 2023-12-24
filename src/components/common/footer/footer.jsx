@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Accordion, Col, Container, Row } from 'react-bootstrap'
 import "./footer.scss"
 import { BsPhone } from 'react-icons/bs'
 import { FaRegEnvelope } from 'react-icons/fa'
 import { SiGooglemaps } from "react-icons/si";
 import BottomFooter from './bottom-footer/ bottom-footer'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import ScrollButton from '../scroll-button/scroll-button'
 const Footer = () => {
+
+
   return (
+  
     <div className='footer'>
       <Container >
             <Row className='logo-div'>
@@ -112,8 +116,9 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
-  
+     
     </div>
+   
   )
 }
 

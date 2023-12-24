@@ -24,6 +24,7 @@ import Register from "./common/register/register";
 import Cart from "./common/cart/cart";
 import Favori from "./common/favori/favori";
 import Loading from "./common/loading/loading";
+import ScrollButton from "./common/scroll-button/scroll-button";
 
 export {
     TopMenu,
@@ -52,5 +53,6 @@ export {
     Cart,
     Favori,
     Loading,
+    ScrollButton,
  
 }

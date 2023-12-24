@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import Header from "../../components/common/header/header";
 import Footer from "../../components/common/footer/footer";
 import BottomFooter from "../../components/common/footer/bottom-footer/ bottom-footer";
+import { ScrollButton } from "../../components";
+
 
 const CommonLayout = () => {
     const { pathname } = useLocation();
@@ -20,6 +22,9 @@ const CommonLayout = () => {
             {/* <Outlet /> is a placeholder for child routes to render */}
             <Footer />
             <BottomFooter />
+            <ScrollButton />
+
+           
         </>
     );
 };
