@@ -1,10 +1,12 @@
-.scrollButton {
-    max-width: 50px;
+.scrollWhatsapp {
+  min-width: 250px;
+    max-width: 300px;
     height: 50px;
     padding: 1px 10px;
     position: fixed;
     bottom: 80px;
-    right: 20px;  
+    left: 0;
+   
     z-index: 999;
     display: block; 
    
