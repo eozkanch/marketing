@@ -10,6 +10,7 @@ import MiniCart from '../../../common/mini-cart/mini-cart';
 import { useSelector } from 'react-redux';
 import './middle-menu.scss';
 import { GiHamburgerMenu } from "react-icons/gi";
+import ScrollSelected from '../../scroll-selected/scroll-selected';
 
 const theme = createTheme({
   palette: {
@@ -112,6 +113,7 @@ const MiddleMenu = () => {
               <Badge badgeContent={totalQuantity} showZero color='success' className='favori-badge'>
                 <MdShoppingBasket onClick={showMiniCart} className='icon' />
               </Badge>
+         
 
               <IoIosSearch className='icon ' id='search' onClick={showSearchOffcanvas} />
               <Button className='favori-btn' variant="primary" onClick={showSearchOffcanvas}>
@@ -189,7 +191,7 @@ const MiddleMenu = () => {
           </Row>
         </Container>
       </div>
-
+      
       <MiniCart show={isMiniCartVisible} handleClose={hideMiniCart} style={{ width: '80%' }} />
     </ThemeProvider>
   );

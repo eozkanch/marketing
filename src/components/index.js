@@ -26,6 +26,7 @@ import Favori from "./common/favori/favori";
 import Loading from "./common/loading/loading";
 import ScrollButton from "./common/scroll-button/scroll-button";
 import ScrollWhatsapp from "./common/scroll-whatsapp/scroll-whatsapp";
+import ScrollSelected from "./common/scroll-selected/scroll-selected";
 
 export {
     TopMenu,
@@ -55,6 +56,7 @@ export {
     Favori,
     Loading,
     ScrollButton,
-    ScrollWhatsapp
+    ScrollWhatsapp,
+    ScrollSelected,
  
 }

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Header from "../../components/common/header/header";
 import Footer from "../../components/common/footer/footer";
 import BottomFooter from "../../components/common/footer/bottom-footer/ bottom-footer";
-import { ScrollButton, ScrollWhatsapp } from "../../components";
+import { ScrollButton, ScrollSelected, ScrollWhatsapp } from "../../components";
 
 
 const CommonLayout = () => {
@@ -17,6 +17,7 @@ const CommonLayout = () => {
 
     return (
         <>
+      
             <Header />
             <Outlet />
             {/* <Outlet /> is a placeholder for child routes to render */}
@@ -24,6 +25,7 @@ const CommonLayout = () => {
             <BottomFooter />
             <ScrollButton />
             <ScrollWhatsapp/>
+            <ScrollSelected />
            
         </>
     );
