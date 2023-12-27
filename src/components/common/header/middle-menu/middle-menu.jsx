@@ -89,7 +89,7 @@ const MiddleMenu = () => {
                 </InputGroup>
               </div>
             </Col>
-            <Col xs={6} md={3} className='icon-col'>
+            <Col xs={5} md={3} className='icon-col'>
               <Link to='/favori'>
                 <Button className='favori-btn' variant="primary">
                   <Badge badgeContent={favoriItems.length} showZero >
@@ -114,7 +114,7 @@ const MiddleMenu = () => {
                 <MdShoppingBasket onClick={showMiniCart} className='icon' />
               </Badge>
          
-
+              <ScrollSelected />
               <IoIosSearch className='icon ' id='search' onClick={showSearchOffcanvas} />
               <Button className='favori-btn' variant="primary" onClick={showSearchOffcanvas}>
                 <IoIosSearch className='icon ' id='search' onClick={showSearchOffcanvas} />
@@ -192,7 +192,7 @@ const MiddleMenu = () => {
         </Container>
       </div>
       
-      <MiniCart show={isMiniCartVisible} handleClose={hideMiniCart} style={{ width: '80%' }} />
+      <MiniCart show={isMiniCartVisible} handleClose={hideMiniCart} style={{ width: '70%' }} />
     </ThemeProvider>
   );
 };

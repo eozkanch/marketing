@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Header from "../../components/common/header/header";
 import Footer from "../../components/common/footer/footer";
 import BottomFooter from "../../components/common/footer/bottom-footer/ bottom-footer";
-import { ScrollButton, ScrollSelected, ScrollWhatsapp } from "../../components";
+import { ScrollButton,  ScrollWhatsapp } from "../../components";
 
 
 const CommonLayout = () => {
@@ -25,7 +25,7 @@ const CommonLayout = () => {
             <BottomFooter />
             <ScrollButton />
             <ScrollWhatsapp/>
-            <ScrollSelected />
+         
            
         </>
     );

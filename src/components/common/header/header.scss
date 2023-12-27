@@ -29,9 +29,9 @@
 
 .sticky .middle-menu {
   border-radius: 100px;
-  width: fit-content;
+
   min-width: 80%;
-  max-width: 100%;
+width:fit-content;
   height: 70px;
   margin: 1rem auto; /* Updated to center horizontally */
   display: flex;
@@ -42,6 +42,7 @@
   right: 0;
   background-color: rgb(111, 117, 49);
   z-index: 100;
+
   
   .search-btn {
  border-color:white ;
