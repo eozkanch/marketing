@@ -23,23 +23,30 @@ const Header = () => {
   }, []);
 
   return (
-
-  
-    <div  className='header-container'>
    
-      <Container className={`header ${isSticky ? 'sticky' : ''}`}>
-        
-          <Col xs={12} lg={12}  >  <TopMenu /></Col>
-          <Col xs={12} md={12}  lg={12}> <MiddleMenu className="middle-menu"/></Col>
-          <Col md={12} lg={12}> <BottomMenu className="bottom-menu" /></Col>
-          
-      </Container>
-     
-    </div>
+    <Container fluid className={`header-container ${isSticky ? 'sticky' : ''}`}>
+      
+      <Row className="header">
+ 
+        <Col xs={12} lg={12}>
+          <TopMenu />
+        </Col>
+        <Col xs={12} md={12} lg={12}>
+          <MiddleMenu className="middle-menu" />
+        </Col>
+        <Col md={12} lg={12}>
+          <BottomMenu className="bottom-menu" />
+        </Col>
+    
+      </Row>
+    
+    </Container>
+  
   );
 }
 
 export default Header;
+
 
 
 
