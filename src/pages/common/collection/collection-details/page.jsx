@@ -30,12 +30,12 @@ const CollectionDetailsPage = () => {
 
   const handleAddToFavori = () => {
     dispatch(addFavorite({ product: productDetails }));
-    utils.functions.swalToast('Urun favorilere eklendi', 'success');
+    utils.functions.swalToast('Product added to favorites', 'success');
   };
 
   const handleAddToCart = () => {
     dispatch(addItem({ product: productDetails, quantity: counter }));
-    utils.functions.swalToast('Urun sepete eklendi', 'success');
+    utils.functions.swalToast('The product has been added to the cart', 'success');
   };
 
   const handleCounterPlus = () => {

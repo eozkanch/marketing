@@ -32,15 +32,13 @@ const ScrollSelected = () => {
   return (
     <div className="scroll-selected">
       <select className="custom-select" onChange={handleLanguageChange} value={selectedLanguage}>
+    
         <option className='option' value="tr">🇹🇷 </option>
         <option  className='option' value="de">🇩🇪 </option>
         <option  className='option' value="fr">🇫🇷 </option>
       </select>
+  
 
-     
-
-    
-    
     </div>
   );
 };
