@@ -1,32 +1,28 @@
-.product-image-container,
-.product_detail_img .product_img_top figure {
+.product-image-container {
   overflow: hidden;
   border-radius: 8px;
   border: 1px solid rgb(111, 117, 49);
   position: relative;
   cursor: zoom-in;
+  transition: transform 0.3s ease;
+  object-fit: contain;
 
-
-  &:hover {
-    .product-image,
-    img {
-      transform: scale(1.5);
-    }
-  }
 }
 
-.product-image,
-.product_detail_img .product_img_top figure img {
+.product-image {
   width: 100%;
   height: auto;
   display: block;
+
   transition: transform 0.3s ease;
   transform-origin: 0 0; /* Set the transform origin to the top-left corner */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  &:active {
-    cursor: zoom-out;
-  }
 }
+
+.product-image-container:hover .product-image {
+  cursor: zoom-out;
+}
+
 
 
 
