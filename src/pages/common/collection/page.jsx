@@ -13,8 +13,8 @@ import './style.scss';
 const { categories } = data;
 const { allcategories } = alldata;
 const styles = {
-  backgroundColor: 'rgb(111, 117, 49)',
-  border: '1px solid rgb(111, 117, 49)',
+  backgroundColor: 'v.$color1',
+  border: '1px solid v.$color1',
   color: 'white', // Set your desired text color
 };
 
@@ -134,8 +134,8 @@ const CollectionPage = () => {
                   <Col md={4} className='d-flex justify-content-between align-items-center gap-3'>
                    <span className='filter'> <MdFilterAlt  onClick={handleShow} size={20} /></span>
                     <span className='d-flex gap-3'>
-                    <IoGridOutline color="rgb(111, 117, 49)" size={20} />
-                    <LiaListUlSolid color="rgb(111, 117, 49)" size={20} />
+                    <IoGridOutline color="v.$color1" size={20} />
+                    <LiaListUlSolid color="v.$color1" size={20} />
                   
                     </span>
                     

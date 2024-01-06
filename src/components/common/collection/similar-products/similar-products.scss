@@ -11,12 +11,12 @@ $breakpointmd: 480px;
 
 
   .slick-prev {
-    color: rgb(111, 117, 49);
+    color: v.$color1;
     z-index: 1 ;
   }
 
   .slick-next {
-color: rgb(111, 117, 49);
+color: v.$color1;
     z-index: 1 ;
 
 
@@ -32,17 +32,17 @@ color: rgb(111, 117, 49);
     gap: 1rem;
     padding: 1rem;
     .product-btn{
-   border-color:  rgb(111, 117, 49);
-      color:  rgb(111, 117, 49);
+   border-color:  v.$color1;
+      color:  v.$color1;
       padding: 0.5rem 1rem;
       &:hover{
-        background-color: rgb(111, 117, 49);
+        background-color: v.$color1;
         color: white;
       }
       
     }
     .product-btn.active {
-      background-color: rgb(111, 117, 49);
+      background-color: v.$color1;
       color: white;
     }
 

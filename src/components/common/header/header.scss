@@ -1,4 +1,5 @@
-
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
 
 .header-container {
   width: 100%; /* Make the header container full-width */
@@ -39,7 +40,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(111, 117, 49);
+  background-color: v.$color1;
   z-index: 100;
 
   

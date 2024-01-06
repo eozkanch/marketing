@@ -1,3 +1,7 @@
+@use "../../../../styles/variables" as v;
+@use "../../../../styles/mixins" as m;
+
+
 .product-carousel {
   width: 100%;
   height: 100%;
@@ -8,7 +12,7 @@
 
   .slick-prev,
   .slick-next {
-    color: rgb(111, 117, 49);
+    color: v.$color1;
     z-index: 1;
   }
 
@@ -26,8 +30,8 @@
 
     .product-btn {
     
-      border-color: rgb(111, 117, 49);
-      color: rgb(111, 117, 49);
+      border-color: v.$color1;
+      color: v.$color1;
       padding: 0.5rem 1rem;
       @media screen and (max-width: 768px) {
         width: 100%;
@@ -35,12 +39,12 @@
       }
 
       &:hover {
-        background-color: rgb(111, 117, 49);
+        background-color: v.$color1;
         color: white;
       }
 
       &.active {
-        background-color: rgb(111, 117, 49);
+        background-color: v.$color1;
         color: white;
       }
     }

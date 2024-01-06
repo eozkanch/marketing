@@ -27,8 +27,8 @@ const ScrollWhatsapp = () => {
   return (
     <>
       {showScrollButton && (
-        <Button variant="secondary" className="scrollWhatsapp" onClick={scrollToTop}>
-        <FaWhatsapp  size={30}/>Whatsapp
+        <Button variant="primary" className="scrollWhatsapp" onClick={scrollToTop}>
+        <FaWhatsapp color ='white'  size={30}/>Whatsapp
      
         </Button>
       )}

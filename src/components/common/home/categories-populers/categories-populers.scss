@@ -1,8 +1,13 @@
+@use "../../../../styles/variables" as v;
+@use "../../../../styles/mixins" as m;
+
+
+
 .categories-populers {
    
     h1{
         text-align: center;
-        color: rgb(111, 117, 49);
+        color: v.$color1;
         font-size: 2rem;
         margin-bottom: 1rem ;
     }
@@ -25,7 +30,7 @@
     .categories-col {
       position: relative;
      box-sizing: border-box; 
-      border: 1px solid rgb(111, 117, 49);
+      border: 1px solid v.$color1;
       overflow: hidden; /* This ensures the child elements won't overflow the container */
      max-width: 300px;
     }
@@ -43,7 +48,7 @@
     .img-fluid {
       width: 100%;
       font-size: small;
-      background-color: rgb(111, 117, 49);
+      background-color: v.$color1;
       padding: 0.4rem;
       position: absolute;
       color: white;
@@ -60,7 +65,7 @@
       transition: all 0.2s ease-in-out 0s;
       opacity: 0; /* Initially hidden */
       transform: translateY(100%); /* Move up by the height of the container */
-      color: rgb(111, 117, 49);
+      color: v.$color1;
       white-space: nowrap; 
       overflow: hidden; 
       text-overflow: ellipsis;  

@@ -1,3 +1,9 @@
+
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+
+
+
 .scroll-selected {
 
    
@@ -10,7 +16,7 @@
   border-radius: 5px;
    width: 40px;
     height: 40px;
- background-color: rgb(111, 117, 49);
+ background-color: v.$color1;
     
   }
 

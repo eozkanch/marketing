@@ -26,7 +26,7 @@
         font-weight: 600;
         text-align: left;
         margin-left: 10px;
-        color: rgb(111, 117, 49);
+        color: v.$color1;
         margin-bottom: 2rem;
       }
 
@@ -35,7 +35,7 @@
 
         &:hover {
           cursor: pointer;
-          color: rgb(111, 117, 49);
+          color: v.$color1;
         }
 
         &.active {
@@ -47,11 +47,11 @@
 
         .checkbox {
           margin-right: 10px;
-          color: rgb(111, 117, 49);
+          color: v.$color1;
 
           &:hover {
             cursor: pointer;
-            color: rgb(111, 117, 49);
+            color: v.$color1;
           }
         }
       }
@@ -60,7 +60,7 @@
 
   .collection-right {
     .filter {
-      color: rgb(111, 117, 49);
+      color: v.$color1;
       display: none;
 
       @media screen and (max-width: 768px) {
@@ -71,13 +71,13 @@
     h4 {
       font-size: 20px;
       font-weight: 600;
-      color: rgb(111, 117, 49);
+      color: v.$color1;
       text-align: left;
       margin-bottom: 2rem;
     }
 
     .collection-sort {
-      border-bottom: 1px solid rgb(111, 117, 49);
+      border-bottom: 1px solid v.$color1;
       padding-bottom: 10px;
       margin-bottom: 10px;
     }

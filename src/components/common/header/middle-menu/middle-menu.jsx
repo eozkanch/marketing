@@ -14,9 +14,7 @@ import ScrollSelected from '../../scroll-selected/scroll-selected';
 
 const theme = createTheme({
   palette: {
-    success: {
-      main: 'rgb(111, 117, 49)',
-    },
+    
   },
 });
 
@@ -99,8 +97,8 @@ const MiddleMenu = () => {
               </Link>
 
               <Link to='/favori'>
-                <Badge badgeContent={favoriItems.length} showZero color='success' className='favori-badge'>
-                  <FiHeart className='icon' color='rgb(111, 117, 49)' />
+                <Badge badgeContent={favoriItems.length} showZero color='primary' className='favori-badge'>
+                  <FiHeart className='icon'  />
                 </Badge>
               </Link>
 
@@ -110,7 +108,7 @@ const MiddleMenu = () => {
                 </Badge>
               </Button>
 
-              <Badge badgeContent={totalQuantity} showZero color='success' className='favori-badge'>
+              <Badge badgeContent={totalQuantity} showZero color='primary' className='favori-badge'>
                 <MdShoppingBasket onClick={showMiniCart} className='icon' />
               </Badge>
          

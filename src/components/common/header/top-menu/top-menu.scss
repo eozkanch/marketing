@@ -29,7 +29,7 @@
                 list-style: none;
                 font-weight: 500;
                 &:hover {
-                    color: rgb(111, 117, 49);
+                    color: v.$color1;
                 }
             }
         }
@@ -64,7 +64,7 @@
                     text-transform: uppercase; 
                     font-weight: 500;
                     &:hover {
-                        color: rgb(111, 117, 49);
+                        color: v.$color1;
                     }
                 }
             }
@@ -84,7 +84,7 @@
                 
 
                 &:hover {
-                    color: rgb(111, 117, 49);
+                    color: v.$color1;
                 }
             }
         }

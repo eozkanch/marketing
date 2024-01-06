@@ -1,3 +1,8 @@
+@use "../../../../styles/variables" as v;
+@use "../../../../styles/mixins" as m;
+
+
+
 .populer-item-container {
   position: relative;
   display: flex;
@@ -11,7 +16,7 @@
 
 .populer-item-card {
 
-  border: 1px solid rgb(111, 117, 49);
+  border: 1px solid v.$color1;
  
   overflow: hidden;
   display: flex;
@@ -61,7 +66,7 @@
 
 .populer-item-btn {
   background: white;
-  color: rgb(111, 117, 49);
+  color: v.$color1;
   display: inline-block;
   text-decoration: none;
   transition: all 0.5s ease-in-out 0s;
@@ -74,7 +79,7 @@
 .populer-item-card:hover .populer-item-btn {
   opacity: 1; /* Make the title visible on hover */
   transform: translateY(0); /* Reset the position on hover */
-  background-color: rgb(111, 117, 49);
+  background-color: v.$color1;
  
 }
 
@@ -98,13 +103,13 @@
   font-size: 0.9rem;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(111, 117, 49);
+  color: v.$color1;
 
 }
 .populer-item-price {
   font-size: 16px;
   font-weight: 600;
-  color: rgb(111, 117, 49);
+  color: v.$color1;
 
 
 }

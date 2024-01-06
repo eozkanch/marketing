@@ -67,7 +67,7 @@ const MiniCart = React.memo(({ show, handleClose }) => {
                       </ButtonGroup>
                     </td>
                     <td>
-                      <MdDelete size={30} color="rgb(111, 117, 49)" onClick={() => handleDelete(item)} />
+                      <MdDelete size={30} className='mini-cart-delete' onClick={() => handleDelete(item)} />
                     </td>
                     
                     </tr>

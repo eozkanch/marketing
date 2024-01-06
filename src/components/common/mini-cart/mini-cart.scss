@@ -1,4 +1,5 @@
-/* Global stiller */
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
 body {
   font-family: 'Arial', sans-serif;
   /* Diğer global stiller */
@@ -11,7 +12,7 @@ body {
 }
 
 .mini-cart {
-  border-top: 1px solid rgb(111, 117, 49);
+  border-top: 1px solid v.$color1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,14 +62,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgb(111, 117, 49);
-    border-top: 1px solid rgb(111, 117, 49);
+    border-bottom: 1px solid v.$color1;
+    border-top: 1px solid v.$color1;
   }
 
   /* Span stilleri */
   span {
-    color: rgb(111, 117, 49);
+    color: v.$color1;
     font-weight: bold;
     font-size: 1.2rem;
   }
+  
+}
+mini-cart-delete{
+  color: v.$color1;
 }

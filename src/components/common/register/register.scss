@@ -1,4 +1,6 @@
-/* register-form.scss */
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+
 .register-form{
     display: flex;
     justify-content: flex-end;
@@ -14,7 +16,7 @@
     box-sizing: border-box;
     padding: 50px 60px;
 
-    border: 1px solid rgb(111, 117, 49);
+    border: 1px solid v.$color1;
     border-radius: 3px;
     @media screen and (max-width: 768px) {
         width: 100%;
