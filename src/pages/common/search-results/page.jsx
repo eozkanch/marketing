@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { Col, Container, Row, Card } from 'react-bootstrap';
 import data from '../../../data/allproduct.json';
 import "./style.scss"
+import PopulerItem from '../../../components/common/product-card/populer-item/populeritem';
 const SearchResultsPage = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -59,18 +60,12 @@ const SearchResultsPage = () => {
       ) : (
         <Row className="gy-4">
           {searchResults.map((result) => (
-            <Col sm={6} lg={4} key={result.details_link} className="serch-result-col">
+            <Col sm={12} md={3} lg={2} key={result.details_link} className="serch-result-col">
 
-              <Card>
-                <Card.Img variant="top" src={result.image_url} />
-                <Card.Body>
-                  <Card.Title>{result.name}</Card.Title>
-                  <Card.Text>{result.price}</Card.Text>
-                  <a href={result.details_link} className="btn btn-primary">
-                    Details
-                  </a>
-                </Card.Body>
-              </Card>
+            <PopulerItem
+            key={result.categories}
+            product={result}
+          />
             </Col>
           ))}
         </Row>
