@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gourmet Nuts - E-Commerce Platform
 
-## Getting Started
+Modern, performans odaklı e-ticaret platformu. Next.js 16, TypeScript, Tailwind CSS v4 ve Nanostores ile geliştirilmiştir.
 
-First, run the development server:
+## 🚀 Özellikler
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- ⚡ **Next.js 16** - App Router ile modern React framework
+- 🎨 **Tailwind CSS v4** - Utility-first CSS framework
+- 📦 **Nanostores** - Hafif ve performanslı state management
+- 🌍 **Çoklu Dil Desteği** - TR, FR, EN dil desteği
+- 📱 **Responsive Design** - Mobil uyumlu tasarım
+- 🛒 **Sepet Yönetimi** - Persistent sepet yönetimi
+- ❤️ **Favoriler** - Ürün favorileme sistemi
+- 🔍 **Arama Fonksiyonu** - Gelişmiş ürün arama
+- 🗺️ **Google Maps** - İletişim sayfasında harita entegrasyonu
+- 🖼️ **Image Optimization** - Next.js Image optimization
+
+## 📁 Proje Yapısı
+
+```
+my-app/
+├── app/                          # Next.js App Router
+│   ├── components/               # React bileşenleri
+│   │   └── common/               # Ortak bileşenler
+│   ├── collection/               # Kategori ve ürün sayfaları
+│   ├── cart/                     # Sepet sayfası
+│   ├── favori/                   # Favoriler sayfası
+│   └── ...
+├── data/                         # JSON veri dosyaları
+├── lib/                          # Utility fonksiyonları
+├── stores/                       # Nanostores state yönetimi
+└── public/                       # Statik dosyalar
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Teknolojiler
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: Next.js 16.0.1
+- **UI**: Tailwind CSS v4
+- **State Management**: Nanostores
+- **Icons**: Lucide React
+- **Language**: TypeScript
+- **Package Manager**: pnpm
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Kurulum
 
-## Learn More
+```bash
+# Bağımlılıkları yükle
+pnpm install
 
-To learn more about Next.js, take a look at the following resources:
+# Geliştirme sunucusunu başlat
+pnpm dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Production build
+pnpm build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Production sunucusunu başlat
+pnpm start
+```
 
-## Deploy on Vercel
+## 🌐 Çoklu Dil Desteği
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Uygulama 3 dilde çalışır:
+- 🇹🇷 Türkçe (TR)
+- 🇫🇷 Fransızca (FR)
+- 🇬🇧 İngilizce (EN)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dil değiştirme header'daki dil seçici ile yapılır.
+
+## 📝 Lisans
+
+Bu proje özel bir projedir.
+
+## 👥 İletişim
+
+Gourmet Nuts
+- 📍 Place du Molard, 1204 Genève, SWITZERLAND
+- 📧 info@gourmetnuts.com
+- 📞 +41 00 000 00 00

@@ -1,0 +1,2700 @@
+{
+  "allcategories": [
+    {
+      "categories": "/baklava",
+      "data": [
+        {
+          "vendor_title": "Antepsan",
+          "name": "Özel Kare Baklava 1kg - 2.2kg",
+          "price": "CHF 55.00",
+          "old_price": null,
+          "details_link": "/collection/baklava/products/ozel-kare-baklava",
+          "image_url": "/products/ozel-kare-baklava.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Midye Baklava 1kg - 2.2kg",
+          "price": "CHF 60.00",
+          "old_price": null,
+          "details_link": "/collection/baklava/products/midye-baklava",
+          "image_url": "/products/midye-baklava.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/baharatlar",
+      "data": [
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kimyon 100g • TOZ",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/kimyon",
+          "image_url": "/products/kimyon.png",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kuru Kekik 100g",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/kekik",
+          "image_url": "/products/kekik.png",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bahçe",
+          "name": "Reyhan 50g • KURU",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/reyhan",
+          "image_url": "/products/reyhan.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kuru Fesleğen 200g",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/feslegen-500gr",
+          "image_url": "/products/feslegen-500gr.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Acı Pul Biber 1kg",
+          "price": "CHF 13.00",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/aci-pul-biber",
+          "image_url": "/products/aci-pul-biber.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Tarçın 100g • ÇUBUK",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/cubuk-tarcin",
+          "image_url": "/products/cubuk-tarcin.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "İsot 250g • ACI ve TOZ",
+          "price": "CHF 4.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/isot-250g",
+          "image_url": "/products/isot-250g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Sumak 250g •TOZ",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/sumak-cekilmis-250g",
+          "image_url": "/products/sumak-cekilmis-250g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Tarçın 100g• TOZ",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/toz-tarcin",
+          "image_url": "/products/toz-tarcin.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Izvor",
+          "name": "Himalaya Tuzu",
+          "price": "CHF 4.00",
+          "old_price": "CHF 5.90",
+          "details_link": "/collection/baharatlar/products/himalaya-tuzu",
+          "image_url": "/products/himalaya-tuzu.jpg",
+          "description": "",
+          "sale_title": "-32%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Vegotat",
+          "name": "Sebzeli Çeşni - Tuzotu",
+          "price": "CHF 2.50",
+          "old_price": "CHF 3.50",
+          "details_link": "/collection/baharatlar/products/sebzeli-cesni-tuzotu",
+          "image_url": "/products/sebzeli-cesni-tuzotu.jpg",
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Safram",
+          "name": "Limon Tuzu 100g",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/limon-tuzu-100g",
+          "image_url": "/products/limon-tuzu-100g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Safram",
+          "name": "Kırmızıbiber • TATLI ve Öğütülmüş",
+          "price": "CHF 4.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/kirmizibiber-ogutulmus",
+          "image_url": "/products/kirmizibiber-ogutulmus.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Safram",
+          "name": "Kırmızıbiber • ACI ve Öğütülmüş",
+          "price": "CHF 4.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/kirmizibiber-aci-ve-ogutulmus",
+          "image_url": "/products/kirmizibiber-aci-ve-ogutulmus.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Safram",
+          "name": "Kırmızı Pulbiber 500g • ACI",
+          "price": "CHF 9.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/kirmizi-pulbiber-aci",
+          "image_url": "/products/kirmizi-pulbiber-aci.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Karabiber • Öğütülmüş",
+          "price": "CHF 4.90",
+          "old_price": null,
+          "details_link": "/collection/baharatlar/products/karabiber-ogutulmus",
+          "image_url": "/products/karabiber-ogutulmus.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/bakliyatlar",
+      "data": [
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Tarhana 500g • Ev Yapımı, Katkısız, Ege Usulü",
+          "price": "CHF 6.90",
+          "old_price": "CHF 7.90",
+          "details_link": "/collection/bakliyatlar/products/ev-yapimi-katkisiz-tarhana-ege",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Erişte 500g • SADE, Katkısız ve Ev Yapımı",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/bakliyatlar/products/eriste-sade",
+          "image_url": "/products/eriste-sade.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Tarhana 500g • TOZ ve MARAŞ USULÜ",
+          "price": "CHF 4.90",
+          "old_price": "CHF 5.90",
+          "details_link": "/collection/bakliyatlar/products/maras-usulu-toz-tarhana-corbasi-sade-acili",
+          "image_url": "/products/maras-usulu-toz-tarhana-corbasi-sade-acili.jpg",
+          "description": "",
+          "sale_title": "-17%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Reis",
+          "name": "Fasülye 500g • ŞEKER",
+          "price": "CHF 4.90",
+          "old_price": "CHF 5.90",
+          "details_link": "/collection/bakliyatlar/products/fasulye-500g-seker",
+          "image_url": "/products/fasulye-500g-seker.jpg",
+          "description": "",
+          "sale_title": "-17%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Reis",
+          "name": "Nohut 1kg • Beyaz",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/bakliyatlar/products/nohut-1kg-beyaz",
+          "image_url": "/products/nohut-1kg-beyaz.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Erzurum İspir Fasülyesi 1 kg",
+          "price": "CHF 8.90",
+          "old_price": "CHF 9.90",
+          "details_link": "/collection/bakliyatlar/products/erzurum-i%CC%87spir-fasulyesi",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-10%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Erişte 500g • PANCARLI , Katkısız ve Ev Yapımı",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/bakliyatlar/products/eriste-500g-pancarli-katkisiz-ve-ev-yapimi",
+          "image_url": "/products/eriste-500g-pancarli-katkisiz-ve-ev-yapimi.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Erişte 500g • HAVUÇLU, Katkısız ve Ev Yapımı",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/bakliyatlar/products/eriste-500g-sade-katkisiz-ve-ev-yapimi-urununun-kopyasi",
+          "image_url": "/products/eriste-500g-sade-katkisiz-ve-ev-yapimi-urununun-kopyasi.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Erişte 500g • DOMATESLİ , Katkısız ve Ev Yapımı",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/bakliyatlar/products/eriste-500g-domatesli%CC%87-katkisiz-ve-ev-yapimi-urununun-kopyasi",
+          "image_url": "/products/eriste-500g-domatesli-cc-87-katkisiz-ve-ev-yapimi-urununun-kopyasi.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/bal",
+      "data": [
+        {
+          "vendor_title": "Meray",
+          "name": "Bal 430g • Petek’te ve Çiçek Balı",
+          "price": "CHF 6.90",
+          "old_price": "CHF 8.90",
+          "details_link": "/collection/bal/products/bal-cicek-bali-430g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-22%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/bal-tahin-pekmez",
+      "data": [
+        {
+          "vendor_title": "Sebahat",
+          "name": "Helva 350g • ANTEPFISTIKLI",
+          "price": "CHF 4.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/bal-tahin-pekmez/products/sebahat-antep-fistikli-helva-350g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Antep Fıstıklı Tahin Helvası 300g - Abdurrahman Tatlıcı",
+          "price": "CHF 7.90",
+          "old_price": "CHF 9.90",
+          "details_link": "/collection/bal-tahin-pekmez/products/antep-fistikli-tahin-helvasi-300g-abdurrahman-tatlici",
+          "image_url": "/products/antep-fistikli-tahin-helvasi-300g-abdurrahman-tatlici.jpg",
+          "description": "",
+          "sale_title": "-20%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Meray",
+          "name": "Bal 430g • Petek’te ve Çiçek Balı",
+          "price": "CHF 6.90",
+          "old_price": "CHF 8.90",
+          "details_link": "/collection/bal-tahin-pekmez/products/bal-cicek-bali-430g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-22%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Antebella",
+          "name": "Kahvaltılık Antep Fıstık Ezmesi (%85 Antep Fıstıklı) 200 g • VEGAN",
+          "price": "CHF 9.90",
+          "old_price": null,
+          "details_link": "/collection/bal-tahin-pekmez/products/kahvaltilik-antep-fistik-ezmesi-83-antep-fistikli-200-g",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/caylar",
+      "data": [
+        {
+          "vendor_title": "Çaykur",
+          "name": "Çay 500g • Çaykur Altınbaş Çay",
+          "price": "CHF 6.90",
+          "old_price": "CHF 7.90",
+          "details_link": "/collection/caylar/products/cay-500g-caykur-altinbas-cay",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Ihlamur 40g • Kuru",
+          "price": "CHF 4.90",
+          "old_price": null,
+          "details_link": "/collection/caylar/products/ihlamur-50g",
+          "image_url": "/products/ihlamur-50g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Çaykur",
+          "name": "Çay 125g • Çaykur Tomurcuk",
+          "price": "CHF 2.90",
+          "old_price": "CHF 3.90",
+          "details_link": "/collection/caylar/products/cay-tomurcuk",
+          "image_url": "/products/cay-tomurcuk.jpg",
+          "description": "",
+          "sale_title": "-26%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Çaykur",
+          "name": "Çay 500g • Çaykur Tiryaki Çay",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/caylar/products/cay-500g-caykur-tiryaki-cay",
+          "image_url": "/products/cay-500g-caykur-tiryaki-cay.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Çaykur",
+          "name": "Çay 500g • Çaykur Filiz Çay",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/caylar/products/cay-500g-caykur-filiz-cay",
+          "image_url": "/products/cay-500g-caykur-filiz-cay.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Çaykur",
+          "name": "Çay 500g • Çaykur Çay Çiçeği",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/caylar/products/cay-500g-caykur-cay-cicegi",
+          "image_url": "/products/cay-500g-caykur-cay-cicegi.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/cok-satanlar",
+      "data": [
+        {
+          "vendor_title": "Karia",
+          "name": "Zeytin • Zeytinyağı içinde ve Alyanak Çizik",
+          "price": "CHF 16.00",
+          "old_price": null,
+          "details_link": "/collection/cok-satanlar/products/zeytin-alyanak-cizik",
+          "image_url": "/products/zeytin-alyanak-cizik.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Domates Salçası 720g • Güneşte Kurutulmuş ve 50-55 Brix",
+          "price": "CHF 9.90",
+          "old_price": "CHF 13.90",
+          "details_link": "/collection/cok-satanlar/products/guneste-kurutulmus-antep-domates-salcasi-50-55-brix-720g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Yenigün",
+          "name": "Ceviz Tatlısı 450g • KATKISIZ",
+          "price": "CHF 6.90",
+          "old_price": "CHF 7.90",
+          "details_link": "/collection/cok-satanlar/products/katkisiz-ceviz-tatlisi-450-g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/helva",
+      "data": [
+        {
+          "vendor_title": "Sebahat",
+          "name": "Helva 350g • ANTEPFISTIKLI",
+          "price": "CHF 4.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/helva/products/sebahat-antep-fistikli-helva-350g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/i̇cecekler",
+      "data": [
+        {
+          "vendor_title": "Çaykur",
+          "name": "Çay 500g • Çaykur Altınbaş Çay",
+          "price": "CHF 6.90",
+          "old_price": "CHF 7.90",
+          "details_link": "/collection/i̇cecekler/products/cay-500g-caykur-altinbas-cay",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "AntepGourmet",
+          "name": "Türk Kahvesi 200g • Taze kavrulmuş, çekilmiş ve %100 Doğal",
+          "price": "CHF 3.50",
+          "old_price": "CHF 4.00",
+          "details_link": "/collection/i̇cecekler/products/turk-kahvesi-200g-taze-kavrulmus-cekilmis-ve-100-dogal",
+          "image_url": "/products/turk-kahvesi-200g-taze-kavrulmus-cekilmis-ve-100-dogal.jpg",
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Çaykur",
+          "name": "Çay 125g • Çaykur Tomurcuk",
+          "price": "CHF 2.90",
+          "old_price": "CHF 3.90",
+          "details_link": "/collection/i̇cecekler/products/cay-tomurcuk",
+          "image_url": "/products/cay-tomurcuk.jpg",
+          "description": "",
+          "sale_title": "-26%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Alibaba",
+          "name": "Osmanlı Kahvesi 200g",
+          "price": "CHF 6.90",
+          "old_price": "CHF 7.90",
+          "details_link": "/collection/i̇cecekler/products/kahve-osmanli",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Alibaba",
+          "name": "Fıstık Parçacıklı Kahve 150g",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/i̇cecekler/products/fistik-parcacikli-kahve-150g",
+          "image_url": "/products/fistik-parcacikli-kahve-150g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Alibaba",
+          "name": "Fındık Parçacıklı Kahve 150g",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/i̇cecekler/products/findik-parcacikli-kahve-150g",
+          "image_url": "/products/findik-parcacikli-kahve-150g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Çaykur",
+          "name": "Çay 500g • Çaykur Tiryaki Çay",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/i̇cecekler/products/cay-500g-caykur-tiryaki-cay",
+          "image_url": "/products/cay-500g-caykur-tiryaki-cay.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Çaykur",
+          "name": "Çay 500g • Çaykur Çay Çiçeği",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/i̇cecekler/products/cay-500g-caykur-cay-cicegi",
+          "image_url": "/products/cay-500g-caykur-cay-cicegi.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Çaykur",
+          "name": "Çay 500g • Çaykur Filiz Çay",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/i̇cecekler/products/cay-500g-caykur-filiz-cay",
+          "image_url": "/products/cay-500g-caykur-filiz-cay.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/kahvaltiliklar",
+      "data": [
+        {
+          "vendor_title": "Köy Sefasi",
+          "name": "Zeytin • Siyah, Sele ve Doğal Yağlı",
+          "price": "CHF 7.90",
+          "old_price": null,
+          "details_link": "/collection/kahvaltiliklar/products/zeytin-750g-siyah-sele-ve-dogal-yagli",
+          "image_url": "/products/zeytin-750g-siyah-sele-ve-dogal-yagli.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Sebahat",
+          "name": "Helva 350g • ANTEPFISTIKLI",
+          "price": "CHF 4.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/kahvaltiliklar/products/sebahat-antep-fistikli-helva-350g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Karia",
+          "name": "Zeytin • Zeytinyağı içinde ve Alyanak Çizik",
+          "price": "CHF 16.00",
+          "old_price": null,
+          "details_link": "/collection/kahvaltiliklar/products/zeytin-alyanak-cizik",
+          "image_url": "/products/zeytin-alyanak-cizik.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Karia",
+          "name": "Zeytin • Zeytinyağı içinde ve Yeşil Kırma",
+          "price": "CHF 16.00",
+          "old_price": null,
+          "details_link": "/collection/kahvaltiliklar/products/zeytin-yesil-kirma",
+          "image_url": "/products/zeytin-yesil-kirma.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kuşburnu Marmelatı 350g • EVYAPIMI ve %100 DOĞAL",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/kahvaltiliklar/products/marmelat-kusburnu",
+          "image_url": "/products/marmelat-kusburnu.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Karia",
+          "name": "Zeytin • Zeytinyağı içinde ve Yeşil Çizik",
+          "price": "CHF 16.00",
+          "old_price": null,
+          "details_link": "/collection/kahvaltiliklar/products/zeytin-yesil-cizik",
+          "image_url": "/products/zeytin-yesil-cizik.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Şeker İlavesiz Turunç Kabuğu Reçeli 290 g",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/kahvaltiliklar/products/seker-i%CC%87lavesiz-turunc-kabugu-receli-290-g",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Yenigün",
+          "name": "Ceviz Tatlısı 450g • KATKISIZ",
+          "price": "CHF 6.90",
+          "old_price": "CHF 7.90",
+          "details_link": "/collection/kahvaltiliklar/products/katkisiz-ceviz-tatlisi-450-g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Antep Fıstıklı Tahin Helvası 300g - Abdurrahman Tatlıcı",
+          "price": "CHF 7.90",
+          "old_price": "CHF 9.90",
+          "details_link": "/collection/kahvaltiliklar/products/antep-fistikli-tahin-helvasi-300g-abdurrahman-tatlici",
+          "image_url": "/products/antep-fistikli-tahin-helvasi-300g-abdurrahman-tatlici.jpg",
+          "description": "",
+          "sale_title": "-20%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Yeşil İncir Reçeli 450g • KATKISIZ",
+          "price": "CHF 7.90",
+          "old_price": null,
+          "details_link": "/collection/kahvaltiliklar/products/i%CC%87ncir-receli-450g",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Meray",
+          "name": "Bal 430g • Petek’te ve Çiçek Balı",
+          "price": "CHF 6.90",
+          "old_price": "CHF 8.90",
+          "details_link": "/collection/kahvaltiliklar/products/bal-cicek-bali-430g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-22%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Sebahat",
+          "name": "İncir Ezmesi 255g",
+          "price": "CHF 3.90",
+          "old_price": "CHF 4.90",
+          "details_link": "/collection/kahvaltiliklar/products/i%CC%87ncir-ezmesi-255g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-20%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Sebahat",
+          "name": "İncir Reçeli 360g",
+          "price": "CHF 3.90",
+          "old_price": "CHF 4.90",
+          "details_link": "/collection/kahvaltiliklar/products/i%CC%87ncir-receli-360g",
+          "image_url": "/products/i-cc-87ncir-receli-360g.jpg",
+          "description": "",
+          "sale_title": "-20%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Şeker İlavesiz Şeftali Receli 290 g",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/kahvaltiliklar/products/seker-i%CC%87lavesiz-seftali-receli-290-g",
+          "image_url": "/products/seker-i-cc-87lavesiz-seftali-receli-290-g.png",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "De'Lazza",
+          "name": "Harnup (Keçi Boynuzu) Özü -  350g • ORGANİK",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/kahvaltiliklar/products/delazza-organik-harnup-ozu",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/kahveler",
+      "data": [
+        {
+          "vendor_title": "AntepGourmet",
+          "name": "Türk Kahvesi 200g • Taze kavrulmuş, çekilmiş ve %100 Doğal",
+          "price": "CHF 3.50",
+          "old_price": "CHF 4.00",
+          "details_link": "/collection/kahveler/products/turk-kahvesi-200g-taze-kavrulmus-cekilmis-ve-100-dogal",
+          "image_url": "/products/turk-kahvesi-200g-taze-kavrulmus-cekilmis-ve-100-dogal.jpg",
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Alibaba",
+          "name": "Osmanlı Kahvesi 200g",
+          "price": "CHF 6.90",
+          "old_price": "CHF 7.90",
+          "details_link": "/collection/kahveler/products/kahve-osmanli",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Alibaba",
+          "name": "Fıstık Parçacıklı Kahve 150g",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/kahveler/products/fistik-parcacikli-kahve-150g",
+          "image_url": "/products/fistik-parcacikli-kahve-150g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Alibaba",
+          "name": "Fındık Parçacıklı Kahve 150g",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/kahveler/products/findik-parcacikli-kahve-150g",
+          "image_url": "/products/findik-parcacikli-kahve-150g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/kek-pasta",
+      "data": [
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Taze el açması Yufka • 1 paket ve 5 adet",
+          "price": "CHF 9.90",
+          "old_price": null,
+          "details_link": "/collection/kek-pasta/products/taze-el-acmasi-yufka-5-adet",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kuru Mantı 1kg - Bohça Tipi ve ETSİZ",
+          "price": "CHF 8.90",
+          "old_price": "CHF 9.90",
+          "details_link": "/collection/kek-pasta/products/kuru-bohca-manti-500g-etsiz",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-10%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Marlenka • Ballı ve Cevizli Pasta",
+          "price": "CHF 4.90",
+          "old_price": "CHF 5.90",
+          "details_link": "/collection/kek-pasta/products/marlenka-balli-ve-cevizli-pasta",
+          "image_url": "/products/marlenka-balli-ve-cevizli-pasta.jpg",
+          "description": "",
+          "sale_title": "-17%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Muhallebilik Kadayıf 200g",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/kek-pasta/products/muhallebilik-kadayif-200g",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kuru Kadayıf 500g",
+          "price": "CHF 4.90",
+          "old_price": null,
+          "details_link": "/collection/kek-pasta/products/kuru-kadayif-500g",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Marlenka • Ballı,Cevizli ve Kakaolu Pasta",
+          "price": "CHF 4.90",
+          "old_price": "CHF 5.90",
+          "details_link": "/collection/kek-pasta/products/marlenka-balli-cevizli-ve-kakaolu-pasta",
+          "image_url": "/products/marlenka-balli-cevizli-ve-kakaolu-pasta.jpg",
+          "description": "",
+          "sale_title": "-17%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Marlenka • Cevizli Bal Topu 235g",
+          "price": "CHF 8.90",
+          "old_price": "CHF 9.90",
+          "details_link": "/collection/kek-pasta/products/marlenka-balli-ve-cevizli-pasta-urununun-kopyasi",
+          "image_url": "/products/marlenka-balli-ve-cevizli-pasta-urununun-kopyasi.jpg",
+          "description": "",
+          "sale_title": "-10%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Marlenka • Cevizli ve Kakaolu Bal Topu 235g",
+          "price": "CHF 8.90",
+          "old_price": "CHF 9.90",
+          "details_link": "/collection/kek-pasta/products/marlenka-cevizli-ve-kakaolu-bal-topu",
+          "image_url": "/products/marlenka-cevizli-ve-kakaolu-bal-topu.jpg",
+          "description": "",
+          "sale_title": "-10%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/kozmetik-bakim",
+      "data": [
+        {
+          "vendor_title": "Naturlife",
+          "name": "Susam yağı 50 ml",
+          "price": "CHF 3.90",
+          "old_price": "CHF 5.90",
+          "details_link": "/collection/kozmetik-bakim/products/susam-yagi",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-34%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Talya",
+          "name": "Sarı Kantaron Yağı 100ml",
+          "price": "CHF 7.90",
+          "old_price": "CHF 9.90",
+          "details_link": "/collection/kozmetik-bakim/products/sari-kantaron-yagi",
+          "image_url": "/products/sari-kantaron-yagi.jpg",
+          "description": "",
+          "sale_title": "-20%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Çörek Otu Yağı 250ml",
+          "price": "CHF 16.90",
+          "old_price": null,
+          "details_link": "/collection/kozmetik-bakim/products/corek-otu-yagi",
+          "image_url": "/products/corek-otu-yagi.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/kurutulmus-meyve",
+      "data": [
+        {
+          "vendor_title": "Grand Bazaar",
+          "name": "Mecdül Hurması 500g • KUDÜS ve JUMBO",
+          "price": "CHF 12.90",
+          "old_price": "CHF 13.90",
+          "details_link": "/collection/kurutulmus-meyve/products/mecdul-hurmasi-kudus-500g-jumbo",
+          "image_url": "/products/mecdul-hurmasi-kudus-500g-jumbo.jpg",
+          "description": "",
+          "sale_title": "-7%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Sarı Kuru Kayısı 400g • JUMBO",
+          "price": "CHF 9.90",
+          "old_price": null,
+          "details_link": "/collection/kurutulmus-meyve/products/sari-kuru-kayisi",
+          "image_url": "/products/sari-kuru-kayisi.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Hacı Kamil",
+          "name": "Aydın Dağ İnciri 500 g",
+          "price": "CHF 8.90",
+          "old_price": "CHF 9.90",
+          "details_link": "/collection/kurutulmus-meyve/products/aydin-dag-inciri",
+          "image_url": "/products/aydin-dag-inciri.jpg",
+          "description": "",
+          "sale_title": "-10%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kara Erik Kurusu 500g • Yaş ve Çekirdeksiz",
+          "price": "CHF 8.90",
+          "old_price": "CHF 9.90",
+          "details_link": "/collection/kurutulmus-meyve/products/kara-erik-kurusu-1-kg-cekirdeksiz",
+          "image_url": "/products/kara-erik-kurusu-1-kg-cekirdeksiz.jpg",
+          "description": "",
+          "sale_title": "-10%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Fındık 300g • TUZLU, KAVRULMUŞ ve KABUKLU",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/kurutulmus-meyve/products/findik-500g-tuzlu-kavrulmus-ve-kabuklu",
+          "image_url": "/products/findik-500g-tuzlu-kavrulmus-ve-kabuklu.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Fındık 500g • SADE ve KABUKLU",
+          "price": "CHF 7.90",
+          "old_price": "CHF 8.90",
+          "details_link": "/collection/kurutulmus-meyve/products/findik-kavrulmus-giresun-1kg",
+          "image_url": "/products/findik-kavrulmus-giresun-1kg.jpg",
+          "description": "",
+          "sale_title": "-11%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/kurutulmus-sebze",
+      "data": [
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Üzüm Yaprağı • Asma",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/kurutulmus-sebze/products/uzum-yapragi-asma",
+          "image_url": "/products/uzum-yapragi-asma.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/kuruyemisler",
+      "data": [
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Antep fıstığı 1kg",
+          "price": "CHF 29.00",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/antep-fistigi-1kg",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Fındık 500g • Birinci Kalite ve Çifte Kavrulmuş",
+          "price": "CHF 11.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/birinci-kalite-cifte-kavrulmus-findik-1000g",
+          "image_url": "/products/birinci-kalite-cifte-kavrulmus-findik-1000g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Ceviz 350g - KABUKLU",
+          "price": "CHF 4.00",
+          "old_price": "CHF 5.00",
+          "details_link": "/collection/kuruyemisler/products/ceviz-kabuklu",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-20%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Çorum Leblebisi 200g • DAĞLI",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/corum-leblebisi-1-kg-odun-atesinde-kavrulmus",
+          "image_url": "/products/corum-leblebisi-1-kg-odun-atesinde-kavrulmus.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "DELUXE MIX - Karışık Kuruyemiş 500g",
+          "price": "CHF 14.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/karisik-kuruyemis-antepfisigi-findik-badem-kaju-500g",
+          "image_url": "/products/karisik-kuruyemis-antepfisigi-findik-badem-kaju-500g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Kerem",
+          "name": "Karpuz Çekirdeği 350g • KAVRULMUŞ ve TUZLU",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/kerem-karpuz-cekirdegi-200g",
+          "image_url": "/products/kerem-karpuz-cekirdegi-200g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kaju 500g • Kavrulmuş",
+          "price": "CHF 12.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/kaju-500g-kavrulmus-tuzlu",
+          "image_url": "/products/kaju-500g-kavrulmus-tuzlu.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Ceviz içi 1kg •  İri Tane",
+          "price": "CHF 19.90",
+          "old_price": "CHF 22.90",
+          "details_link": "/collection/kuruyemisler/products/ceviz-ici-iri-tane",
+          "image_url": "/products/ceviz-ici-iri-tane.jpg",
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Meray",
+          "name": "Mısır Kavurgası 200g",
+          "price": "CHF 2.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/meray-soslu-misir-150-gr",
+          "image_url": "/products/meray-soslu-misir-150-gr.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "İç Fıstık 1kg • BOZ ve ANTEP",
+          "price": "CHF 49.00",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/antep-boz-ic-fistik",
+          "image_url": "/products/antep-boz-ic-fistik.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Badem 200g • Kavrulmuş",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/cig-badem-1kg",
+          "image_url": "/products/cig-badem-1kg.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Yer Fıstığı 350g • TUZLU ve KAVRULMUŞ",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/kavrulmus-tuzlu-fistik",
+          "image_url": "/products/kavrulmus-tuzlu-fistik.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Grand Bazaar",
+          "name": "Mecdül Hurması 500g • KUDÜS ve JUMBO",
+          "price": "CHF 12.90",
+          "old_price": "CHF 13.90",
+          "details_link": "/collection/kuruyemisler/products/mecdul-hurmasi-kudus-500g-jumbo",
+          "image_url": "/products/mecdul-hurmasi-kudus-500g-jumbo.jpg",
+          "description": "",
+          "sale_title": "-7%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Badem 1kg • ÇİĞ",
+          "price": "CHF 18.90",
+          "old_price": "CHF 19.90",
+          "details_link": "/collection/kuruyemisler/products/badem-1kg-cig",
+          "image_url": "/products/badem-1kg-cig.webp",
+          "description": "",
+          "sale_title": "-5%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Sarı Kuru Kayısı 400g • JUMBO",
+          "price": "CHF 9.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/sari-kuru-kayisi",
+          "image_url": "/products/sari-kuru-kayisi.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Meray",
+          "name": "Kabak Çekirdeği, Tuzlu 350g • NEVŞEHİR",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/meray-kabak-cekirdegi-nevsehir-tuzlu-400gr",
+          "image_url": "/products/meray-kabak-cekirdegi-nevsehir-tuzlu-400gr.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kavrulmuş Soslu Mısır 200g",
+          "price": "CHF 2.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/kavrulmus-soslu-misir",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Antep Gourmet",
+          "name": "Dakota Ayçekirdeği, Kavrulmuş 250g • TUZLU",
+          "price": "CHF 2.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/dakota-aycekirdegi-250g-tuzlu",
+          "image_url": "/products/dakota-aycekirdegi-250g-tuzlu.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Antep Gourmet",
+          "name": "Ayçekirdeği, Kavrulmuş 250g • TAKO BAHARATLI",
+          "price": "CHF 2.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/aycekirdegi-kavrulmus-250g-tako-baharatli",
+          "image_url": "/products/aycekirdegi-kavrulmus-250g-tako-baharatli.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Meray",
+          "name": "Kabak Çekirdeği, Tuzlu 350g • ÜRGÜP",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/kabak-cekirdegi-350g-urgup",
+          "image_url": "/products/kabak-cekirdegi-350g-urgup.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "KOKTEYL Karışık Kuruyemiş",
+          "price": "CHF 12.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/kokteyl-karisik-kuruyemis",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Fındık 300g • TUZLU, KAVRULMUŞ ve KABUKLU",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/kuruyemisler/products/findik-500g-tuzlu-kavrulmus-ve-kabuklu",
+          "image_url": "/products/findik-500g-tuzlu-kavrulmus-ve-kabuklu.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Fındık 500g • SADE ve KABUKLU",
+          "price": "CHF 7.90",
+          "old_price": "CHF 8.90",
+          "details_link": "/collection/kuruyemisler/products/findik-kavrulmus-giresun-1kg",
+          "image_url": "/products/findik-kavrulmus-giresun-1kg.jpg",
+          "description": "",
+          "sale_title": "-11%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/lokum",
+      "data": [
+        {
+          "vendor_title": "Keyifce",
+          "name": "Cevizli Sucuk 400g",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/lokum/products/cevizli-sucuk",
+          "image_url": "/products/cevizli-sucuk.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Keyifce",
+          "name": "Muska 400g • SADE ve ANTEPFISTIKLI PESTİL",
+          "price": "CHF 7.90",
+          "old_price": null,
+          "details_link": "/collection/lokum/products/pekmezli-muska",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Bohça Lokum 500g • HİNDİSTAN CEVİZLİ ve ÇİKOLATALI",
+          "price": "CHF 9.90",
+          "old_price": "CHF 12.90",
+          "details_link": "/collection/lokum/products/hindistan-cevizli-bohca-lokum-500g-10-parca-urununun-kopyasi",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-23%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Badem ve Krema Dolgulu Sarma Lokum 500 g",
+          "price": "CHF 13.90",
+          "old_price": "CHF 17.90",
+          "details_link": "/collection/lokum/products/badem-ve-krema-dolgulu-sarma-lokum-500-g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-22%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Gül Yapraklı Narlı Antep Fıstıklı Fitil Lokum 500 g",
+          "price": "CHF 13.90",
+          "old_price": "CHF 17.90",
+          "details_link": "/collection/lokum/products/gul-yaprakli-narli-antep-fistikli-fitil-lokum-500-g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-22%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/recel",
+      "data": [
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kuşburnu Marmelatı 350g • EVYAPIMI ve %100 DOĞAL",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/recel/products/marmelat-kusburnu",
+          "image_url": "/products/marmelat-kusburnu.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Yenigün",
+          "name": "Ceviz Tatlısı 450g • KATKISIZ",
+          "price": "CHF 6.90",
+          "old_price": "CHF 7.90",
+          "details_link": "/collection/recel/products/katkisiz-ceviz-tatlisi-450-g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Şeker İlavesiz Turunç Kabuğu Reçeli 290 g",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/recel/products/seker-i%CC%87lavesiz-turunc-kabugu-receli-290-g",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Yeşil İncir Reçeli 450g • KATKISIZ",
+          "price": "CHF 7.90",
+          "old_price": null,
+          "details_link": "/collection/recel/products/i%CC%87ncir-receli-450g",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Sebahat",
+          "name": "İncir Ezmesi 255g",
+          "price": "CHF 3.90",
+          "old_price": "CHF 4.90",
+          "details_link": "/collection/recel/products/i%CC%87ncir-ezmesi-255g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-20%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Sebahat",
+          "name": "İncir Reçeli 360g",
+          "price": "CHF 3.90",
+          "old_price": "CHF 4.90",
+          "details_link": "/collection/recel/products/i%CC%87ncir-receli-360g",
+          "image_url": "/products/i-cc-87ncir-receli-360g.jpg",
+          "description": "",
+          "sale_title": "-20%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Şeker İlavesiz Şeftali Receli 290 g",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/recel/products/seker-i%CC%87lavesiz-seftali-receli-290-g",
+          "image_url": "/products/seker-i-cc-87lavesiz-seftali-receli-290-g.png",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/salcalar",
+      "data": [
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Domates Salçası 720g • Güneşte Kurutulmuş ve 50-55 Brix",
+          "price": "CHF 9.90",
+          "old_price": "CHF 13.90",
+          "details_link": "/collection/salcalar/products/guneste-kurutulmus-antep-domates-salcasi-50-55-brix-720g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Tomart",
+          "name": "Tatlı Biber Salçası 720g • Güneşte Kurutulmuş ve 50-55 Brix",
+          "price": "CHF 9.90",
+          "old_price": "CHF 13.90",
+          "details_link": "/collection/salcalar/products/guneste-kurutulmus-tatli-biber-salcasi-50-55-brix-720g",
+          "image_url": "/products/guneste-kurutulmus-tatli-biber-salcasi-50-55-brix-720g.jpg",
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Tomart",
+          "name": "Salça 720g • KARIŞIK, Güneşte kurutulmuş Biber-Domates ve 50-55 Brix",
+          "price": "CHF 9.90",
+          "old_price": "CHF 13.90",
+          "details_link": "/collection/salcalar/products/guneste-kurutulmus-karisik-salca-50-55-brix-glas",
+          "image_url": "/products/guneste-kurutulmus-karisik-salca-50-55-brix-glas.jpg",
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Tomart",
+          "name": "Biber Salçası 720g • ACI, Güneşte Kurutulmuş ve 50-55 Brix",
+          "price": "CHF 9.90",
+          "old_price": "CHF 13.90",
+          "details_link": "/collection/salcalar/products/guneste-kurutulmus-aci-biber-salcasi-50-55-brix-720g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/sarkuteri",
+      "data": [
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kuru Kekik 100g",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/kekik",
+          "image_url": "/products/kekik.png",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kimyon 100g • TOZ",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/kimyon",
+          "image_url": "/products/kimyon.png",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Üzüm Yaprağı • Asma",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/sarkuteri/products/uzum-yapragi-asma",
+          "image_url": "/products/uzum-yapragi-asma.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Nar Ekşisi 500ml • Katkısız",
+          "price": "CHF 7.90",
+          "old_price": "CHF 8.90",
+          "details_link": "/collection/sarkuteri/products/nar-eksisi-ev-yapimi",
+          "image_url": "/products/nar-eksisi-ev-yapimi.jpg",
+          "description": "",
+          "sale_title": "-11%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Sumak 250g •TOZ",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/sumak-cekilmis-250g",
+          "image_url": "/products/sumak-cekilmis-250g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Domates Salçası 720g • Güneşte Kurutulmuş ve 50-55 Brix",
+          "price": "CHF 9.90",
+          "old_price": "CHF 13.90",
+          "details_link": "/collection/sarkuteri/products/guneste-kurutulmus-antep-domates-salcasi-50-55-brix-720g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Tomart",
+          "name": "Tatlı Biber Salçası 720g • Güneşte Kurutulmuş ve 50-55 Brix",
+          "price": "CHF 9.90",
+          "old_price": "CHF 13.90",
+          "details_link": "/collection/sarkuteri/products/guneste-kurutulmus-tatli-biber-salcasi-50-55-brix-720g",
+          "image_url": "/products/guneste-kurutulmus-tatli-biber-salcasi-50-55-brix-720g.jpg",
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Tomart",
+          "name": "Salça 720g • KARIŞIK, Güneşte kurutulmuş Biber-Domates ve 50-55 Brix",
+          "price": "CHF 9.90",
+          "old_price": "CHF 13.90",
+          "details_link": "/collection/sarkuteri/products/guneste-kurutulmus-karisik-salca-50-55-brix-glas",
+          "image_url": "/products/guneste-kurutulmus-karisik-salca-50-55-brix-glas.jpg",
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Vegotat",
+          "name": "Sebzeli Çeşni - Tuzotu",
+          "price": "CHF 2.50",
+          "old_price": "CHF 3.50",
+          "details_link": "/collection/sarkuteri/products/sebzeli-cesni-tuzotu",
+          "image_url": "/products/sebzeli-cesni-tuzotu.jpg",
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Tarçın 100g• TOZ",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/toz-tarcin",
+          "image_url": "/products/toz-tarcin.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Sumak Ekşisi 250ml • %100 Katkısız ve Ev yapımı",
+          "price": "CHF 7.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/sumak-eksisi-250ml-100-katkisiz-ve-ev-yapimi",
+          "image_url": "/products/sumak-eksisi-250ml-100-katkisiz-ve-ev-yapimi.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Safram",
+          "name": "Kırmızı Pulbiber 500g • ACI",
+          "price": "CHF 9.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/kirmizi-pulbiber-aci",
+          "image_url": "/products/kirmizi-pulbiber-aci.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Izvor",
+          "name": "Himalaya Tuzu",
+          "price": "CHF 4.00",
+          "old_price": "CHF 5.90",
+          "details_link": "/collection/sarkuteri/products/himalaya-tuzu",
+          "image_url": "/products/himalaya-tuzu.jpg",
+          "description": "",
+          "sale_title": "-32%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Tomart",
+          "name": "Biber Salçası 720g • ACI, Güneşte Kurutulmuş ve 50-55 Brix",
+          "price": "CHF 9.90",
+          "old_price": "CHF 13.90",
+          "details_link": "/collection/sarkuteri/products/guneste-kurutulmus-aci-biber-salcasi-50-55-brix-720g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Üzüm Sirkesi 500ml • Doğal ve Katkısız",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/uzum-sirkesi-500ml-dogal-ve-katkisiz",
+          "image_url": "/products/uzum-sirkesi-500ml-dogal-ve-katkisiz.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Safram",
+          "name": "Limon Tuzu 100g",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/limon-tuzu-100g",
+          "image_url": "/products/limon-tuzu-100g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Karabiber • Öğütülmüş",
+          "price": "CHF 4.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/karabiber-ogutulmus",
+          "image_url": "/products/karabiber-ogutulmus.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Safram",
+          "name": "Kırmızıbiber • TATLI ve Öğütülmüş",
+          "price": "CHF 4.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/kirmizibiber-ogutulmus",
+          "image_url": "/products/kirmizibiber-ogutulmus.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Tarçın 100g • ÇUBUK",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/cubuk-tarcin",
+          "image_url": "/products/cubuk-tarcin.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Hurma Sirkesi 500ml • Doğal ve Katkısız",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/hurma-sirkesi-500ml-dogal-ve-katkisiz",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Limon Sirkesi 500ml • Doğal ve Katkısız",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/limon-sirkesi-500ml-organik-ve-organik",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Balzamik Sirke 500ml • Organik",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/balzamik-sirke-500ml-organik",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Cicek",
+          "name": "Limon Sosu 500ml",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/limon-sosu-500ml",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Safram",
+          "name": "Kırmızıbiber • ACI ve Öğütülmüş",
+          "price": "CHF 4.90",
+          "old_price": null,
+          "details_link": "/collection/sarkuteri/products/kirmizibiber-aci-ve-ogutulmus",
+          "image_url": "/products/kirmizibiber-aci-ve-ogutulmus.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/sekerlemeler",
+      "data": [
+        {
+          "vendor_title": "Hacı Kamil",
+          "name": "Kestane Şekeri 500g",
+          "price": "CHF 8.90",
+          "old_price": "CHF 11.90",
+          "details_link": "/collection/sekerlemeler/products/kestane-sekeri-500g",
+          "image_url": "/products/kestane-sekeri-500g.jpg",
+          "description": "",
+          "sale_title": "-25%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/sos-nar-eksisi",
+      "data": [
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Nar Ekşisi 500ml • Katkısız",
+          "price": "CHF 7.90",
+          "old_price": "CHF 8.90",
+          "details_link": "/collection/sos-nar-eksisi/products/nar-eksisi-ev-yapimi",
+          "image_url": "/products/nar-eksisi-ev-yapimi.jpg",
+          "description": "",
+          "sale_title": "-11%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Sumak Ekşisi 250ml • %100 Katkısız ve Ev yapımı",
+          "price": "CHF 7.90",
+          "old_price": null,
+          "details_link": "/collection/sos-nar-eksisi/products/sumak-eksisi-250ml-100-katkisiz-ve-ev-yapimi",
+          "image_url": "/products/sumak-eksisi-250ml-100-katkisiz-ve-ev-yapimi.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Üzüm Sirkesi 500ml • Doğal ve Katkısız",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/sos-nar-eksisi/products/uzum-sirkesi-500ml-dogal-ve-katkisiz",
+          "image_url": "/products/uzum-sirkesi-500ml-dogal-ve-katkisiz.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "De'Lazza",
+          "name": "Harnup (Keçi Boynuzu) Özü -  350g • ORGANİK",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/sos-nar-eksisi/products/delazza-organik-harnup-ozu",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Hurma Sirkesi 500ml • Doğal ve Katkısız",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/sos-nar-eksisi/products/hurma-sirkesi-500ml-dogal-ve-katkisiz",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Limon Sirkesi 500ml • Doğal ve Katkısız",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/sos-nar-eksisi/products/limon-sirkesi-500ml-organik-ve-organik",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Balzamik Sirke 500ml • Organik",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/sos-nar-eksisi/products/balzamik-sirke-500ml-organik",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Cicek",
+          "name": "Limon Sosu 500ml",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/sos-nar-eksisi/products/limon-sosu-500ml",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/tatlilar",
+      "data": [
+        {
+          "vendor_title": "Yenigün",
+          "name": "Ceviz Tatlısı 450g • KATKISIZ",
+          "price": "CHF 6.90",
+          "old_price": "CHF 7.90",
+          "details_link": "/collection/tatlilar/products/katkisiz-ceviz-tatlisi-450-g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Antepsan",
+          "name": "Özel Kare Baklava 1kg - 2.2kg",
+          "price": "CHF 55.00",
+          "old_price": null,
+          "details_link": "/collection/tatlilar/products/ozel-kare-baklava",
+          "image_url": "/products/ozel-kare-baklava.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Midye Baklava 1kg - 2.2kg",
+          "price": "CHF 60.00",
+          "old_price": null,
+          "details_link": "/collection/tatlilar/products/midye-baklava",
+          "image_url": "/products/midye-baklava.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/tum-urunler",
+      "data": [
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Antep fıstığı 1kg",
+          "price": "CHF 29.00",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/antep-fistigi-1kg",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Keyifce",
+          "name": "Cevizli Sucuk 400g",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/cevizli-sucuk",
+          "image_url": "/products/cevizli-sucuk.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kuru Kekik 100g",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/kekik",
+          "image_url": "/products/kekik.png",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Fındık 500g • Birinci Kalite ve Çifte Kavrulmuş",
+          "price": "CHF 11.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/birinci-kalite-cifte-kavrulmus-findik-1000g",
+          "image_url": "/products/birinci-kalite-cifte-kavrulmus-findik-1000g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kimyon 100g • TOZ",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/kimyon",
+          "image_url": "/products/kimyon.png",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Taze el açması Yufka • 1 paket ve 5 adet",
+          "price": "CHF 9.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/taze-el-acmasi-yufka-5-adet",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Ceviz 350g - KABUKLU",
+          "price": "CHF 4.00",
+          "old_price": "CHF 5.00",
+          "details_link": "/collection/tum-urunler/products/ceviz-kabuklu",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-20%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Çorum Leblebisi 200g • DAĞLI",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/corum-leblebisi-1-kg-odun-atesinde-kavrulmus",
+          "image_url": "/products/corum-leblebisi-1-kg-odun-atesinde-kavrulmus.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "DELUXE MIX - Karışık Kuruyemiş 500g",
+          "price": "CHF 14.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/karisik-kuruyemis-antepfisigi-findik-badem-kaju-500g",
+          "image_url": "/products/karisik-kuruyemis-antepfisigi-findik-badem-kaju-500g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Kerem",
+          "name": "Karpuz Çekirdeği 350g • KAVRULMUŞ ve TUZLU",
+          "price": "CHF 5.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/kerem-karpuz-cekirdegi-200g",
+          "image_url": "/products/kerem-karpuz-cekirdegi-200g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Köy Sefasi",
+          "name": "Zeytin • Siyah, Sele ve Doğal Yağlı",
+          "price": "CHF 7.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/zeytin-750g-siyah-sele-ve-dogal-yagli",
+          "image_url": "/products/zeytin-750g-siyah-sele-ve-dogal-yagli.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kaju 500g • Kavrulmuş",
+          "price": "CHF 12.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/kaju-500g-kavrulmus-tuzlu",
+          "image_url": "/products/kaju-500g-kavrulmus-tuzlu.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Tarhana 500g • Ev Yapımı, Katkısız, Ege Usulü",
+          "price": "CHF 6.90",
+          "old_price": "CHF 7.90",
+          "details_link": "/collection/tum-urunler/products/ev-yapimi-katkisiz-tarhana-ege",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Ceviz içi 1kg •  İri Tane",
+          "price": "CHF 19.90",
+          "old_price": "CHF 22.90",
+          "details_link": "/collection/tum-urunler/products/ceviz-ici-iri-tane",
+          "image_url": "/products/ceviz-ici-iri-tane.jpg",
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Erişte 500g • SADE, Katkısız ve Ev Yapımı",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/tum-urunler/products/eriste-sade",
+          "image_url": "/products/eriste-sade.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Üzüm Yaprağı • Asma",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/tum-urunler/products/uzum-yapragi-asma",
+          "image_url": "/products/uzum-yapragi-asma.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Meray",
+          "name": "Mısır Kavurgası 200g",
+          "price": "CHF 2.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/meray-soslu-misir-150-gr",
+          "image_url": "/products/meray-soslu-misir-150-gr.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Nar Ekşisi 500ml • Katkısız",
+          "price": "CHF 7.90",
+          "old_price": "CHF 8.90",
+          "details_link": "/collection/tum-urunler/products/nar-eksisi-ev-yapimi",
+          "image_url": "/products/nar-eksisi-ev-yapimi.jpg",
+          "description": "",
+          "sale_title": "-11%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Karia",
+          "name": "Zeytin • Zeytinyağı içinde ve Alyanak Çizik",
+          "price": "CHF 16.00",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/zeytin-alyanak-cizik",
+          "image_url": "/products/zeytin-alyanak-cizik.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Keyifce",
+          "name": "Muska 400g • SADE ve ANTEPFISTIKLI PESTİL",
+          "price": "CHF 7.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/pekmezli-muska",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Sebahat",
+          "name": "Helva 350g • ANTEPFISTIKLI",
+          "price": "CHF 4.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/tum-urunler/products/sebahat-antep-fistikli-helva-350g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-29%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Karia",
+          "name": "Zeytin • Zeytinyağı içinde ve Yeşil Kırma",
+          "price": "CHF 16.00",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/zeytin-yesil-kirma",
+          "image_url": "/products/zeytin-yesil-kirma.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Sumak 250g •TOZ",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/sumak-cekilmis-250g",
+          "image_url": "/products/sumak-cekilmis-250g.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "İç Fıstık 1kg • BOZ ve ANTEP",
+          "price": "CHF 49.00",
+          "old_price": null,
+          "details_link": "/collection/tum-urunler/products/antep-boz-ic-fistik",
+          "image_url": "/products/antep-boz-ic-fistik.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/tursu",
+      "data": [
+        {
+          "vendor_title": "Çiçek",
+          "name": "Turşu 370g • SÜS BİBERİ",
+          "price": "CHF 2.90",
+          "old_price": "CHF 3.90",
+          "details_link": "/collection/tursu/products/tursu-720g-sus-bi%CC%87beri%CC%87",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-26%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Çiçek",
+          "name": "Turşu 720g • SEBZE, TÜRLÜ ve Acılı",
+          "price": "CHF 3.90",
+          "old_price": "CHF 4.90",
+          "details_link": "/collection/tursu/products/tursu-720g-turlu-ve-acili",
+          "image_url": "/products/tursu-720g-turlu-ve-acili.jpg",
+          "description": "",
+          "sale_title": "-20%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Çiçek",
+          "name": "Turşu 720g • LAHANA",
+          "price": "CHF 3.90",
+          "old_price": "CHF 4.90",
+          "details_link": "/collection/tursu/products/tursu-720g-lahana",
+          "image_url": "/products/tursu-720g-lahana.jpg",
+          "description": "",
+          "sale_title": "-20%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/unlu-mamuller",
+      "data": [
+        {
+          "vendor_title": "Keyifce",
+          "name": "Cevizli Sucuk 400g",
+          "price": "CHF 6.90",
+          "old_price": null,
+          "details_link": "/collection/unlu-mamuller/products/cevizli-sucuk",
+          "image_url": "/products/cevizli-sucuk.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Taze el açması Yufka • 1 paket ve 5 adet",
+          "price": "CHF 9.90",
+          "old_price": null,
+          "details_link": "/collection/unlu-mamuller/products/taze-el-acmasi-yufka-5-adet",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Erişte 500g • SADE, Katkısız ve Ev Yapımı",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/unlu-mamuller/products/eriste-sade",
+          "image_url": "/products/eriste-sade.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Keyifce",
+          "name": "Muska 400g • SADE ve ANTEPFISTIKLI PESTİL",
+          "price": "CHF 7.90",
+          "old_price": null,
+          "details_link": "/collection/unlu-mamuller/products/pekmezli-muska",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Hacı Kamil",
+          "name": "Kestane Şekeri 500g",
+          "price": "CHF 8.90",
+          "old_price": "CHF 11.90",
+          "details_link": "/collection/unlu-mamuller/products/kestane-sekeri-500g",
+          "image_url": "/products/kestane-sekeri-500g.jpg",
+          "description": "",
+          "sale_title": "-25%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kuru Mantı 1kg - Bohça Tipi ve ETSİZ",
+          "price": "CHF 8.90",
+          "old_price": "CHF 9.90",
+          "details_link": "/collection/unlu-mamuller/products/kuru-bohca-manti-500g-etsiz",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-10%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Marlenka • Ballı ve Cevizli Pasta",
+          "price": "CHF 4.90",
+          "old_price": "CHF 5.90",
+          "details_link": "/collection/unlu-mamuller/products/marlenka-balli-ve-cevizli-pasta",
+          "image_url": "/products/marlenka-balli-ve-cevizli-pasta.jpg",
+          "description": "",
+          "sale_title": "-17%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Bohça Lokum 500g • HİNDİSTAN CEVİZLİ ve ÇİKOLATALI",
+          "price": "CHF 9.90",
+          "old_price": "CHF 12.90",
+          "details_link": "/collection/unlu-mamuller/products/hindistan-cevizli-bohca-lokum-500g-10-parca-urununun-kopyasi",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-23%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Muhallebilik Kadayıf 200g",
+          "price": "CHF 3.90",
+          "old_price": null,
+          "details_link": "/collection/unlu-mamuller/products/muhallebilik-kadayif-200g",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Gül Yapraklı Narlı Antep Fıstıklı Fitil Lokum 500 g",
+          "price": "CHF 13.90",
+          "old_price": "CHF 17.90",
+          "details_link": "/collection/unlu-mamuller/products/gul-yaprakli-narli-antep-fistikli-fitil-lokum-500-g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-22%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Badem ve Krema Dolgulu Sarma Lokum 500 g",
+          "price": "CHF 13.90",
+          "old_price": "CHF 17.90",
+          "details_link": "/collection/unlu-mamuller/products/badem-ve-krema-dolgulu-sarma-lokum-500-g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-22%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Kuru Kadayıf 500g",
+          "price": "CHF 4.90",
+          "old_price": null,
+          "details_link": "/collection/unlu-mamuller/products/kuru-kadayif-500g",
+          "image_url": null,
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Marlenka • Cevizli Bal Topu 235g",
+          "price": "CHF 8.90",
+          "old_price": "CHF 9.90",
+          "details_link": "/collection/unlu-mamuller/products/marlenka-balli-ve-cevizli-pasta-urununun-kopyasi",
+          "image_url": "/products/marlenka-balli-ve-cevizli-pasta-urununun-kopyasi.jpg",
+          "description": "",
+          "sale_title": "-10%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Marlenka • Ballı,Cevizli ve Kakaolu Pasta",
+          "price": "CHF 4.90",
+          "old_price": "CHF 5.90",
+          "details_link": "/collection/unlu-mamuller/products/marlenka-balli-cevizli-ve-kakaolu-pasta",
+          "image_url": "/products/marlenka-balli-cevizli-ve-kakaolu-pasta.jpg",
+          "description": "",
+          "sale_title": "-17%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Erişte 500g • PANCARLI , Katkısız ve Ev Yapımı",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/unlu-mamuller/products/eriste-500g-pancarli-katkisiz-ve-ev-yapimi",
+          "image_url": "/products/eriste-500g-pancarli-katkisiz-ve-ev-yapimi.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Erişte 500g • HAVUÇLU, Katkısız ve Ev Yapımı",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/unlu-mamuller/products/eriste-500g-sade-katkisiz-ve-ev-yapimi-urununun-kopyasi",
+          "image_url": "/products/eriste-500g-sade-katkisiz-ve-ev-yapimi-urununun-kopyasi.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Erişte 500g • DOMATESLİ , Katkısız ve Ev Yapımı",
+          "price": "CHF 5.90",
+          "old_price": "CHF 6.90",
+          "details_link": "/collection/unlu-mamuller/products/eriste-500g-domatesli%CC%87-katkisiz-ve-ev-yapimi-urununun-kopyasi",
+          "image_url": "/products/eriste-500g-domatesli-cc-87-katkisiz-ve-ev-yapimi-urununun-kopyasi.jpg",
+          "description": "",
+          "sale_title": "-14%",
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Bizimkiler",
+          "name": "Marlenka • Cevizli ve Kakaolu Bal Topu 235g",
+          "price": "CHF 8.90",
+          "old_price": "CHF 9.90",
+          "details_link": "/collection/unlu-mamuller/products/marlenka-cevizli-ve-kakaolu-bal-topu",
+          "image_url": "/products/marlenka-cevizli-ve-kakaolu-bal-topu.jpg",
+          "description": "",
+          "sale_title": "-10%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/zeytin-peynir",
+      "data": [
+        {
+          "vendor_title": "Köy Sefasi",
+          "name": "Zeytin • Siyah, Sele ve Doğal Yağlı",
+          "price": "CHF 7.90",
+          "old_price": null,
+          "details_link": "/collection/zeytin-peynir/products/zeytin-750g-siyah-sele-ve-dogal-yagli",
+          "image_url": "/products/zeytin-750g-siyah-sele-ve-dogal-yagli.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Karia",
+          "name": "Zeytin • Zeytinyağı içinde ve Alyanak Çizik",
+          "price": "CHF 16.00",
+          "old_price": null,
+          "details_link": "/collection/zeytin-peynir/products/zeytin-alyanak-cizik",
+          "image_url": "/products/zeytin-alyanak-cizik.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Karia",
+          "name": "Zeytin • Zeytinyağı içinde ve Yeşil Kırma",
+          "price": "CHF 16.00",
+          "old_price": null,
+          "details_link": "/collection/zeytin-peynir/products/zeytin-yesil-kirma",
+          "image_url": "/products/zeytin-yesil-kirma.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        },
+        {
+          "vendor_title": "Karia",
+          "name": "Zeytin • Zeytinyağı içinde ve Yeşil Çizik",
+          "price": "CHF 16.00",
+          "old_price": null,
+          "details_link": "/collection/zeytin-peynir/products/zeytin-yesil-cizik",
+          "image_url": "/products/zeytin-yesil-cizik.jpg",
+          "description": "",
+          "sale_title": null,
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "categories": "/zeytinyagi",
+      "data": [
+        {
+          "vendor_title": "Yenigün",
+          "name": "Ceviz Tatlısı 450g • KATKISIZ",
+          "price": "CHF 6.90",
+          "old_price": "CHF 7.90",
+          "details_link": "/collection/zeytinyagi/products/katkisiz-ceviz-tatlisi-450-g",
+          "image_url": null,
+          "description": "",
+          "sale_title": "-13%",
+          "data_rating": null,
+          "rating": null
+        }
+      ]
+    }
+  ]
+}

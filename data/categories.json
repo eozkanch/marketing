@@ -1,0 +1,32 @@
+{
+  "categories": [
+    { "name": "Antep Baklavası", "url": "/baklava", "count": 2, "checked": true },
+    { "name": "Baharatlar", "url": "/baharatlar", "count": 16, "checked": false },
+    { "name": "Bakliyatlar", "url": "/bakliyatlar", "count": 9, "checked": false },
+    { "name": "Bal", "url": "/bal", "count": 1, "checked": false },
+    { "name": "Bal-Tahin-Pekmez", "url": "/bal-tahin-pekmez", "count": 3, "checked": false },
+    { "name": "Çaylar", "url": "/caylar", "count": 7, "checked": false },
+    { "name": "Çok Satanlar", "url": "/cok-satanlar", "count": 3, "checked": false },
+    { "name": "Helva", "url": "/helva", "count": 1, "checked": false },
+    { "name": "İçecekler", "url": "/i%CC%87cecekler", "count": 8, "checked": false },
+    { "name": "Kahvaltılıklar", "url": "/kahvaltiliklar", "count": 15, "checked": false },
+    { "name": "Kahveler", "url": "/kahveler", "count": 2, "checked": false },
+    { "name": "Kek & Pasta", "url": "/kek-pasta", "count": 8, "checked": false },
+    { "name": "Kozmetik & Sağlık", "url": "/kozmetik-bakim", "count": 3, "checked": false },
+    { "name": "Kurutulmuş Meyve", "url": "/kurutulmus-meyve", "count": 6, "checked": false },
+    { "name": "Kurutulmuş Sebze", "url": "/kurutulmus-sebze", "count": 1, "checked": false },
+    { "name": "Kuruyemişler", "url": "/kuruyemisler", "count": 23, "checked": false },
+    { "name": "Lokum", "url": "/lokum", "count": 5, "checked": false },
+    { "name": "Reçel", "url": "/recel", "count": 7, "checked": false },
+    { "name": "Salçalar", "url": "/salcalar", "count": 4, "checked": false },
+    { "name": "Şarküteri", "url": "/sarkuteri", "count": 24, "checked": false },
+    { "name": "Şekerlemeler", "url": "/sekerlemeler", "count": 1, "checked": false },
+    { "name": "Soslar", "url": "/sos-nar-eksisi", "count": 8, "checked": false },
+    { "name": "Tatlılar", "url": "/tatlilar", "count": 3, "checked": false },
+    { "name": "Tüm Ürünler", "url": "/tum-urunler", "count": 108, "checked": false },
+    { "name": "Turşu", "url": "/tursu", "count": 3, "checked": false },
+    { "name": "Unlu Mamüller", "url": "/unlu-mamuller", "count": 18, "checked": false },
+    { "name": "Zeytin-Acuka-Ezme", "url": "/zeytin-peynir", "count": 4, "checked": false },
+    { "name": "Zeytinyağı", "url": "/zeytinyagi", "count": 1, "checked": false }
+  ]
+}
