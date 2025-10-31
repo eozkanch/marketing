@@ -2,6 +2,9 @@ import { persistentAtom } from "@nanostores/persistent";
 import { computed } from "nanostores";
 import type { Locale } from "@/lib/types";
 
+// Re-export Locale type for convenience
+export type { Locale };
+
 export const localeStore = persistentAtom<Locale>("locale", "tr", {
   encode: (v) => v,
   decode: (v) => (v === "fr" || v === "en" ? v : "tr"),

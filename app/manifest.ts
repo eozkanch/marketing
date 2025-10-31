@@ -17,7 +17,7 @@ export default function manifest(): MetadataRoute.Manifest {
         src: "/vite.svg",
         sizes: "any",
         type: "image/svg+xml",
-        purpose: "any maskable",
+        purpose: "any",
       },
     ],
     categories: ["food", "shopping", "ecommerce"],
@@ -25,4 +25,3 @@ export default function manifest(): MetadataRoute.Manifest {
     dir: "ltr",
   };
 }
-

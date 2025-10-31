@@ -1,4 +1,4 @@
-import { persistentMap } from "@nanostores/persistent";
+import { persistentAtom } from "@nanostores/persistent";
 import { computed } from "nanostores";
 
 export type FavoriteItem = {
@@ -11,7 +11,7 @@ type FavoritesState = {
   items: Record<string, FavoriteItem>;
 };
 
-export const favoritesStore = persistentMap<FavoritesState>(
+export const favoritesStore = persistentAtom<FavoritesState>(
   "favorites",
   { items: {} },
   {
@@ -20,7 +20,12 @@ export const favoritesStore = persistentMap<FavoritesState>(
     },
     decode(value) {
       try {
-        return JSON.parse(value || "{}") as FavoritesState;
+        const parsed = JSON.parse(value || "{}");
+        // Ensure we always return a valid FavoritesState
+        if (parsed && typeof parsed === "object" && "items" in parsed) {
+          return parsed as FavoritesState;
+        }
+        return { items: {} };
       } catch {
         return { items: {} };
       }
@@ -34,13 +39,13 @@ export const favoritesCountStore = computed(favoritesStore, (s) =>
 
 export function addFavorite(item: FavoriteItem) {
   const state = favoritesStore.get();
-  favoritesStore.setKey("items", { ...state.items, [item.id]: item });
+  favoritesStore.set({ ...state, items: { ...state.items, [item.id]: item } });
 }
 
 export function removeFavorite(id: string) {
   const state = favoritesStore.get();
   const { [id]: _, ...rest } = state.items;
-  favoritesStore.setKey("items", rest);
+  favoritesStore.set({ ...state, items: rest });
 }
 
 export function toggleFavorite(item: FavoriteItem) {
@@ -48,5 +53,3 @@ export function toggleFavorite(item: FavoriteItem) {
   if (state.items[item.id]) removeFavorite(item.id);
   else addFavorite(item);
 }
-
-
