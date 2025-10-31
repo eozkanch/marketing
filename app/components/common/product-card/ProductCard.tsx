@@ -76,9 +76,18 @@ export default function ProductCard({ product, onAdd }: Props) {
   };
 
   return (
-    <div 
+    <article
       onClick={handleCardClick}
-      className="group relative cursor-pointer rounded-lg border border-zinc-200 bg-white p-3 shadow-sm transition hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950"
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          handleCardClick();
+        }
+      }}
+      className="group relative cursor-pointer rounded-lg border border-zinc-200 bg-white p-3 shadow-sm transition hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+      tabIndex={0}
+      role="article"
+      aria-label={`${product.name}, ${product.price.toFixed(2)} ₺`}
     >
       <div className="relative flex aspect-square w-full items-center justify-center overflow-hidden rounded-md bg-zinc-100 dark:bg-zinc-900">
         {shouldShowImage ? (
@@ -89,6 +98,8 @@ export default function ProductCard({ product, onAdd }: Props) {
             className="object-cover transition-transform group-hover:scale-105" 
             onError={handleImageError}
             onLoadingComplete={() => setImageError(false)}
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            loading="lazy"
           />
         ) : (
           <NoImageIcon />
@@ -124,9 +135,11 @@ export default function ProductCard({ product, onAdd }: Props) {
         </div>
       </div>
       <div className="mt-3 space-y-1">
-        <div className="line-clamp-1 text-sm font-medium">{product.name}</div>
-        <div className="text-sm text-zinc-600 dark:text-zinc-400">{product.price.toFixed(2)} ₺</div>
+        <h3 className="line-clamp-1 text-sm font-medium">{product.name}</h3>
+        <div className="text-sm text-zinc-600 dark:text-zinc-400" aria-label={`Fiyat: ${product.price.toFixed(2)} Türk Lirası`}>
+          {product.price.toFixed(2)} ₺
+        </div>
       </div>
-    </div>
+    </article>
   );
 }

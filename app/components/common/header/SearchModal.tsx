@@ -64,12 +64,15 @@ export default function SearchModal({ isOpen, onClose }: Props) {
               placeholder={dict.header_search_placeholder}
               className="flex-1 border-0 bg-transparent text-lg outline-none placeholder:text-zinc-400"
               autoFocus
+              aria-label="Ürün ara"
+              aria-describedby={searchQuery.length > 0 && searchQuery.length < 2 ? "search-hint" : undefined}
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => setSearchQuery("")}
                 className="p-1 text-zinc-400 hover:text-zinc-600"
+                aria-label="Aramayı temizle"
               >
                 <X className="h-5 w-5" />
               </button>
@@ -78,6 +81,7 @@ export default function SearchModal({ isOpen, onClose }: Props) {
               type="submit"
               disabled={searchQuery.trim().length < 2}
               className="rounded-lg bg-emerald-600 px-4 py-2 text-white transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-50"
+              aria-label="Ürün ara"
             >
               {dict.send || "Ara"}
             </button>
@@ -91,7 +95,9 @@ export default function SearchModal({ isOpen, onClose }: Props) {
           </button>
         </div>
         {searchQuery.length > 0 && searchQuery.length < 2 && (
-          <p className="mt-2 text-sm text-zinc-500">En az 2 karakter girin</p>
+          <p id="search-hint" className="mt-2 text-sm text-zinc-500" role="alert">
+            En az 2 karakter girin
+          </p>
         )}
       </div>
     </div>

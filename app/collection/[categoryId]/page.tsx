@@ -91,6 +91,8 @@ export default function CollectionPage() {
             <button
               onClick={() => setShowFilter(!showFilter)}
               className="flex items-center gap-2 rounded-lg border px-3 py-2 text-sm lg:hidden"
+              aria-label="Filtre menüsünü aç"
+              aria-expanded={showFilter}
             >
               <Filter className="h-4 w-4" />
               {dict.collection_filter}

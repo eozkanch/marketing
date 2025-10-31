@@ -50,13 +50,31 @@ export default function Cart() {
                 <div>
                   <div className="text-sm font-medium">{it.name}</div>
                   <div className="text-xs text-zinc-600 dark:text-zinc-400">{it.price.toFixed(2)} ₺</div>
-                  <div className="mt-2 inline-flex items-center gap-2">
-                    <button className="h-6 w-6 rounded border" onClick={() => setQty(it.id, it.qty - 1)}>-</button>
-                    <span className="text-sm">{it.qty}</span>
-                    <button className="h-6 w-6 rounded border" onClick={() => setQty(it.id, it.qty + 1)}>+</button>
+                  <div className="mt-2 inline-flex items-center gap-2" role="group" aria-label={`${it.name} miktarı`}>
+                    <button 
+                      className="h-6 w-6 rounded border" 
+                      onClick={() => setQty(it.id, it.qty - 1)}
+                      aria-label={`${it.name} miktarını azalt`}
+                    >
+                      -
+                    </button>
+                    <span className="text-sm" aria-live="polite">{it.qty}</span>
+                    <button 
+                      className="h-6 w-6 rounded border" 
+                      onClick={() => setQty(it.id, it.qty + 1)}
+                      aria-label={`${it.name} miktarını artır`}
+                    >
+                      +
+                    </button>
                   </div>
                 </div>
-                <button className="text-red-600" onClick={() => removeFromCart(it.id)}>{dict.remove}</button>
+                <button 
+                  className="text-red-600" 
+                  onClick={() => removeFromCart(it.id)}
+                  aria-label={`${it.name} ürününü sepetten kaldır`}
+                >
+                  {dict.remove}
+                </button>
               </div>
             );
           })}

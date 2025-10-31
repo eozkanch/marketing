@@ -114,17 +114,19 @@ export default function CollectionDetailsPage() {
           <div className="mb-6 space-y-4">
             <div className="flex items-center gap-3">
               <span className="text-sm">{mounted ? dict.product_quantity : "Adet"}:</span>
-              <div className="flex items-center gap-2 rounded-lg border">
+              <div className="flex items-center gap-2 rounded-lg border" role="group" aria-label="Ürün miktarı">
                 <button
                   onClick={() => setCounter(Math.max(1, counter - 1))}
                   className="px-3 py-1 hover:bg-zinc-100 dark:hover:bg-zinc-900"
+                  aria-label="Miktarı azalt"
                 >
                   -
                 </button>
-                <span className="px-4">{counter}</span>
+                <span className="px-4" aria-live="polite">{counter}</span>
                 <button
                   onClick={() => setCounter(counter + 1)}
                   className="px-3 py-1 hover:bg-zinc-100 dark:hover:bg-zinc-900"
+                  aria-label="Miktarı artır"
                 >
                   +
                 </button>
@@ -137,6 +139,8 @@ export default function CollectionDetailsPage() {
                 className={`flex items-center gap-2 rounded-lg border px-4 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900 ${
                   isFavorite ? "text-red-500" : ""
                 }`}
+                aria-label={isFavorite ? "Favorilerden kaldır" : "Favorilere ekle"}
+                aria-pressed={isFavorite}
               >
                 <Heart className={`h-4 w-4 ${isFavorite ? "fill-current" : ""}`} />
               </button>
