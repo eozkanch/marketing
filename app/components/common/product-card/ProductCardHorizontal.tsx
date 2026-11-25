@@ -1,8 +1,10 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
-import NoImageIcon from "./NoImageIcon";
+import { useRouter } from "@/i18n/navigation";
+import { toHref } from "@/lib/href";
+import { formatPrice } from "@/lib/format";
+import { useLocaleCode } from "@/app/components/common/i18n/LocaleProvider";
+import { addToCart } from "@/stores/cart";
+import ImageWithFallback from "./ImageWithFallback";
 import { Heart, ShoppingCart, Eye } from "lucide-react";
 import { useStore } from "@nanostores/react";
 import { favoritesStore, toggleFavorite } from "@/stores/favorites";
@@ -15,7 +17,7 @@ type Props = {
 };
 
 export default function ProductCardHorizontal({ product, onAdd }: Props) {
-  const [imageError, setImageError] = useState(false);
+  const locale = useLocaleCode();
   const router = useRouter();
   const { items } = useStore(favoritesStore);
   const isFavorite = !!items[product.id];
@@ -28,24 +30,24 @@ export default function ProductCardHorizontal({ product, onAdd }: Props) {
     if (categoryMatch) {
       productHref = `/collection/${encodeURIComponent(categoryMatch[1])}/products/${encodeURIComponent(productSlug)}`;
     } else {
-      productHref = `/collection/products/${encodeURIComponent(productSlug)}`;
+      productHref = `/collection/tum-urunler/products/${encodeURIComponent(productSlug)}`;
     }
   }
   productHref = productHref || "#";
   
   // Resmin gösterilip gösterilmeyeceğini kontrol et
-  const shouldShowImage = product.image && !imageError && product.image.trim() !== "";
+  const shouldShowImage = !!product.image && product.image.trim() !== "";
   
   const handleCardClick = () => {
     if (productHref !== "#") {
-      router.push(productHref);
+      router.push(toHref(productHref));
     }
   };
 
   const handleView = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (productHref !== "#") {
-      router.push(productHref);
+      router.push(toHref(productHref));
     }
   };
   
@@ -54,15 +56,10 @@ export default function ProductCardHorizontal({ product, onAdd }: Props) {
     toggleFavorite({ id: product.id, name: product.name, image: product.image });
   };
 
+  const defaultAdd = (p: Product) => addToCart({ id: p.id, name: p.name, price: p.price, image: p.image, qty: 1 });
   const handleAddToCart = (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (onAdd) {
-      onAdd(product);
-    }
-  };
-
-  const handleImageError = () => {
-    setImageError(true);
+    (onAdd ?? defaultAdd)(product);
   };
 
   return (
@@ -73,27 +70,26 @@ export default function ProductCardHorizontal({ product, onAdd }: Props) {
       {/* Image - Sol */}
       <div className="relative flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-md bg-zinc-100 dark:bg-zinc-900">
         {shouldShowImage ? (
-          <Image 
-            src={product.image!} 
-            alt={product.name} 
-            fill 
-            className="object-cover transition-transform group-hover:scale-105" 
-            onError={handleImageError}
-            onLoadingComplete={() => setImageError(false)}
+          <ImageWithFallback
+            src={product.image!}
+            alt={product.name}
+            fill
+            className="object-cover transition-transform group-hover:scale-105"
+            sizes="96px"
           />
         ) : (
-          <NoImageIcon />
+          <ImageWithFallback src="" alt={product.name} fill className="object-cover" sizes="96px" />
         )}
       </div>
 
       {/* Content - Sağ */}
       <div className="flex flex-1 flex-col justify-between">
         <div>
-          <h3 className="mb-1 text-base font-medium line-clamp-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400">
+          <span className="mb-1 block text-base font-medium line-clamp-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400">
             {product.name}
-          </h3>
+          </span>
           <div className="mb-2 text-lg font-semibold text-emerald-600 dark:text-emerald-400">
-            {product.price.toFixed(2)} ₺
+            {formatPrice(product.price, locale)}
           </div>
         </div>
 
@@ -117,7 +113,7 @@ export default function ProductCardHorizontal({ product, onAdd }: Props) {
           >
             <Heart className={`h-4 w-4 ${isFavorite ? "fill-current" : ""}`} />
           </button>
-          {onAdd && (
+          {(
             <button
               onClick={handleAddToCart}
               className="ml-auto flex items-center gap-2 rounded-lg bg-emerald-600 px-4 py-2 text-sm text-white transition hover:bg-emerald-700 dark:bg-emerald-500 dark:hover:bg-emerald-600"

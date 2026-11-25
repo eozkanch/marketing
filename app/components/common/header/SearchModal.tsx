@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useDict } from "@/app/components/common/i18n/LocaleProvider";
+import { useRouter } from "@/i18n/navigation";
 import { useStore } from "@nanostores/react";
-import { dictStore } from "@/stores/i18n";
 import { Search, X } from "lucide-react";
 
 type Props = {
@@ -13,7 +13,7 @@ type Props = {
 export default function SearchModal({ isOpen, onClose }: Props) {
   const [searchQuery, setSearchQuery] = useState("");
   const router = useRouter();
-  const dict = useStore(dictStore);
+  const dict = useDict();
 
   useEffect(() => {
     if (isOpen) {
@@ -29,7 +29,7 @@ export default function SearchModal({ isOpen, onClose }: Props) {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim().length >= 2) {
-      router.push(`/search-results?q=${encodeURIComponent(searchQuery.trim())}`);
+      router.push({ pathname: "/search-results", query: { q: searchQuery.trim() } });
       onClose();
       setSearchQuery("");
     }

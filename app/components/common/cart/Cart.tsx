@@ -1,17 +1,20 @@
 "use client";
 import { useState } from "react";
+import { toHref } from "@/lib/href";
+import { formatPrice } from "@/lib/format";
+import { useDict, useLocaleCode } from "@/app/components/common/i18n/LocaleProvider";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useStore } from "@nanostores/react";
 import { cartStore, cartTotalStore, setQty, removeFromCart } from "../../../../stores/cart";
-import { dictStore } from "@/stores/i18n";
 import NoImageIcon from "../product-card/NoImageIcon";
 
 export default function Cart() {
+  const locale = useLocaleCode();
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   const { items } = useStore(cartStore);
   const total = useStore(cartTotalStore);
-  const dict = useStore(dictStore);
+  const dict = useDict();
 
   const values = Object.values(items);
 
@@ -32,7 +35,7 @@ export default function Cart() {
             
             return (
               <div key={it.id} className="grid grid-cols-[80px_1fr_auto] items-center gap-4 rounded border border-zinc-200 p-3 dark:border-zinc-800">
-                <Link href={productHref} className="block">
+                <Link href={toHref(productHref)} className="block">
                   <div className="relative h-16 w-16 overflow-hidden rounded bg-zinc-100 dark:bg-zinc-900">
                     {shouldShowImage ? (
                       <Image
@@ -49,7 +52,7 @@ export default function Cart() {
                 </Link>
                 <div>
                   <div className="text-sm font-medium">{it.name}</div>
-                  <div className="text-xs text-zinc-600 dark:text-zinc-400">{it.price.toFixed(2)} ₺</div>
+                  <div className="text-xs text-zinc-600 dark:text-zinc-400">{formatPrice(it.price, locale)}</div>
                   <div className="mt-2 inline-flex items-center gap-2" role="group" aria-label={`${it.name} miktarı`}>
                     <button 
                       className="h-6 w-6 rounded border" 
@@ -80,7 +83,7 @@ export default function Cart() {
           })}
           <div className="flex items-center justify-end gap-6 border-t border-zinc-200 pt-4 text-base dark:border-zinc-800">
             <div className="text-zinc-600 dark:text-zinc-400">{dict.total}</div>
-            <div className="font-semibold">{total.toFixed(2)} ₺</div>
+            <div className="font-semibold">{formatPrice(total, locale)}</div>
           </div>
         </div>
       )}

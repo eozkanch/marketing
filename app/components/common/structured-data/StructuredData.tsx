@@ -1,5 +1,6 @@
 import { getWebsite } from "@/lib/constants";
-import { localeStore } from "@/stores/i18n";
+import { jsonLdString, baseUrl as seoBase } from "@/lib/seo";
+import { getPathname } from "@/i18n/navigation";
 import type { Locale } from "@/lib/types";
 
 type Props = {
@@ -15,7 +16,7 @@ type Props = {
 
 export default function StructuredData({ locale = "tr", type = "website", product }: Props) {
   const website = getWebsite(locale);
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://gourmetnuts.com";
+  const baseUrl = seoBase;
 
   const organizationSchema = {
     "@context": "https://schema.org",
@@ -52,14 +53,14 @@ export default function StructuredData({ locale = "tr", type = "website", produc
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: website.name,
-    url: baseUrl,
+    url: `${baseUrl}/${locale}`,
     description: website.desc,
     inLanguage: locale,
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `${baseUrl}/search-results?q={search_term_string}`,
+        urlTemplate: `${baseUrl}${getPathname({ locale, href: "/search-results" })}?q={search_term_string}`,
       },
       "query-input": "required name=search_term_string",
     },
@@ -86,7 +87,7 @@ export default function StructuredData({ locale = "tr", type = "website", produc
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: jsonLdString(schema) }}
     />
   );
 }

@@ -1,8 +1,10 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
-import NoImageIcon from "./NoImageIcon";
+import { useRouter } from "@/i18n/navigation";
+import { toHref } from "@/lib/href";
+import { formatPrice } from "@/lib/format";
+import { useLocaleCode } from "@/app/components/common/i18n/LocaleProvider";
+import { addToCart } from "@/stores/cart";
+import ImageWithFallback from "./ImageWithFallback";
 import { Heart, ShoppingCart, Eye } from "lucide-react";
 import { useStore } from "@nanostores/react";
 import { favoritesStore, toggleFavorite } from "@/stores/favorites";
@@ -25,7 +27,7 @@ type Props = {
 };
 
 export default function ProductCard({ product, onAdd }: Props) {
-  const [imageError, setImageError] = useState(false);
+  const locale = useLocaleCode();
   const router = useRouter();
   const { items } = useStore(favoritesStore);
   const isFavorite = !!items[product.id];
@@ -38,24 +40,24 @@ export default function ProductCard({ product, onAdd }: Props) {
     if (categoryMatch) {
       productHref = `/collection/${encodeURIComponent(categoryMatch[1])}/products/${encodeURIComponent(productSlug)}`;
     } else {
-      productHref = `/collection/products/${encodeURIComponent(productSlug)}`;
+      productHref = `/collection/tum-urunler/products/${encodeURIComponent(productSlug)}`;
     }
   }
   productHref = productHref || "#";
   
   // Resmin gösterilip gösterilmeyeceğini kontrol et
-  const shouldShowImage = product.image && !imageError && product.image.trim() !== "";
+  const shouldShowImage = !!product.image && product.image.trim() !== "";
   
   const handleCardClick = () => {
     if (productHref !== "#") {
-      router.push(productHref);
+      router.push(toHref(productHref));
     }
   };
 
   const handleView = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (productHref !== "#") {
-      router.push(productHref);
+      router.push(toHref(productHref));
     }
   };
   
@@ -64,15 +66,10 @@ export default function ProductCard({ product, onAdd }: Props) {
     toggleFavorite({ id: product.id, name: product.name, image: product.image });
   };
 
+  const defaultAdd = (p: Product) => addToCart({ id: p.id, name: p.name, price: p.price, image: p.image, qty: 1 });
   const handleAddToCart = (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (onAdd) {
-      onAdd(product);
-    }
-  };
-
-  const handleImageError = () => {
-    setImageError(true);
+    (onAdd ?? defaultAdd)(product);
   };
 
   return (
@@ -87,22 +84,20 @@ export default function ProductCard({ product, onAdd }: Props) {
       className="group relative cursor-pointer rounded-lg border border-zinc-200 bg-white p-3 shadow-sm transition hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
       tabIndex={0}
       role="article"
-      aria-label={`${product.name}, ${product.price.toFixed(2)} ₺`}
+      aria-label={`${product.name}, ${formatPrice(product.price, locale)}`}
     >
       <div className="relative flex aspect-square w-full items-center justify-center overflow-hidden rounded-md bg-zinc-100 dark:bg-zinc-900">
         {shouldShowImage ? (
-          <Image 
-            src={product.image!} 
-            alt={product.name} 
-            fill 
-            className="object-cover transition-transform group-hover:scale-105" 
-            onError={handleImageError}
-            onLoadingComplete={() => setImageError(false)}
+          <ImageWithFallback
+            src={product.image!}
+            alt={product.name}
+            fill
+            className="object-cover transition-transform group-hover:scale-105"
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             loading="lazy"
           />
         ) : (
-          <NoImageIcon />
+          <ImageWithFallback src="" alt={product.name} fill className="object-cover" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" />
         )}
         
         {/* Hover overlay with icons */}
@@ -123,7 +118,7 @@ export default function ProductCard({ product, onAdd }: Props) {
           >
             <Heart className={`h-5 w-5 ${isFavorite ? "fill-current" : ""}`} />
           </button>
-          {onAdd && (
+          {(
             <button
               onClick={handleAddToCart}
               className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-zinc-900 shadow-lg transition hover:bg-zinc-100"
@@ -135,9 +130,9 @@ export default function ProductCard({ product, onAdd }: Props) {
         </div>
       </div>
       <div className="mt-3 space-y-1">
-        <h3 className="line-clamp-1 text-sm font-medium">{product.name}</h3>
-        <div className="text-sm text-zinc-600 dark:text-zinc-400" aria-label={`Fiyat: ${product.price.toFixed(2)} Türk Lirası`}>
-          {product.price.toFixed(2)} ₺
+        <span className="line-clamp-1 block text-sm font-medium">{product.name}</span>
+        <div className="text-sm text-zinc-600 dark:text-zinc-400" >
+          {formatPrice(product.price, locale)}
         </div>
       </div>
     </article>

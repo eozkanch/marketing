@@ -1,4 +1,6 @@
 import type { Category, ProductLegacy } from "./types";
+import { normalizeProductName } from "./product-normalize";
+import { createProductSlug, createCategorySlug } from "./utils";
 
 // JSON dosyaları build-time'da içe aktarılır (tree-shakable, tip güvenli)
 import categoriesJson from "../data/categories.json" assert { type: "json" };
@@ -47,7 +49,7 @@ function legacyToSimple(p: ProductLegacy, index: number): SimpleProduct {
   
   return {
     id: p.details_link || String(index),
-    name: p.name,
+    name: normalizeProductName(p.name),
     image: imageUrl,
     price: parseChfPrice(p.price),
     legacy: p,
@@ -75,3 +77,39 @@ export function getAllProducts(): SimpleProduct[] {
 }
 
 
+
+// Ürün detay sayfası için dil-bağımsız iç yol ("/collection/[kategori]/products/[slug]").
+// Dile göre yerelleştirme i18n/navigation Link'i ile yapılır.
+export function getProductHref(p: SimpleProduct): string {
+  const link = p.legacy?.details_link;
+  const categoryMatch = link?.match(/\/collection\/([^/]+)/);
+  const slug = createProductSlug(link, p.name);
+  if (categoryMatch) {
+    return `/collection/${encodeURIComponent(categoryMatch[1])}/products/${encodeURIComponent(slug)}`;
+  }
+  return `/collection/tum-urunler/products/${encodeURIComponent(slug)}`;
+}
+
+export function findProductBySlug(slug: string): SimpleProduct | undefined {
+  return getAllProducts().find((p) => createProductSlug(p.legacy?.details_link, p.name) === slug);
+}
+
+export function findCategoryBySlug(slug: string): Category | undefined {
+  const wanted = createCategorySlug(slug);
+  return getCategories().find((c) => createCategorySlug(c.url) === wanted);
+}
+
+export function getProductsByCategory(category: Category): SimpleProduct[] {
+  const key = category.url.replace("/", "");
+  return getAllProducts().filter((p) => {
+    const link = p.legacy?.details_link || p.id;
+    return category.url === "/tum-urunler" || link.includes(key);
+  });
+}
+
+export type SlimProduct = { id: string; name: string; price: number; image?: string; href: string };
+
+// İstemciye giden minimal ürün listesi (tüm JSON yerine ~15 KB)
+export function getSlimProducts(): SlimProduct[] {
+  return getAllProducts().map((p) => ({ id: p.id, name: p.name, price: p.price, image: p.image, href: getProductHref(p) }));
+}

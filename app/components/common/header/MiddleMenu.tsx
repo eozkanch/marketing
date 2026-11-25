@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
+import { useDict } from "@/app/components/common/i18n/LocaleProvider";
+import { useRouter } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { useStore } from "@nanostores/react";
-import { dictStore } from "@/stores/i18n";
 import { favoritesCountStore } from "@/stores/favorites";
 import { cartCountStore } from "@/stores/cart";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -16,7 +16,7 @@ export default function MiddleMenu() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const router = useRouter();
-  const dict = useStore(dictStore);
+  const dict = useDict();
   const favoritesCount = useStore(favoritesCountStore);
   const cartCount = useStore(cartCountStore);
 
@@ -27,7 +27,7 @@ export default function MiddleMenu() {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim().length >= 2) {
-      router.push(`/search-results?q=${encodeURIComponent(searchQuery.trim())}`);
+      router.push({ pathname: "/search-results", query: { q: searchQuery.trim() } });
       setSearchQuery("");
     }
   };
@@ -44,7 +44,7 @@ export default function MiddleMenu() {
               type="search"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder={mounted ? dict.header_search_placeholder : "Search..."}
+              placeholder={dict.header_search_placeholder}
               className="w-full rounded-md border border-zinc-300 bg-white px-3 py-2 pl-10 text-sm outline-none ring-0 focus:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900"
               suppressHydrationWarning
             />
@@ -62,7 +62,7 @@ export default function MiddleMenu() {
         </button>
 
         <div className="flex items-center gap-4 text-sm">
-          <Link href="/favori" className="relative hover:underline">
+          <Link href="/favori" className="relative hover:underline" aria-label={dict.favorites}>
             <Heart className="h-5 w-5" />
             {mounted && favoritesCount > 0 && (
               <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs text-white">
@@ -70,7 +70,7 @@ export default function MiddleMenu() {
               </span>
             )}
           </Link>
-          <Link href="/cart" className="relative hover:underline">
+          <Link href="/cart" className="relative hover:underline" aria-label={dict.cart}>
             <ShoppingCart className="h-5 w-5" />
             {mounted && cartCount > 0 && (
               <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs text-white">

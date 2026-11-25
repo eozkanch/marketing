@@ -1,7 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
+import { toHref } from "@/lib/href";
+import { formatPrice } from "@/lib/format";
+import { useLocaleCode } from "@/app/components/common/i18n/LocaleProvider";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/navigation";
 import NoImageIcon from "../../product-card/NoImageIcon";
 import { Heart, ShoppingCart } from "lucide-react";
 import { useStore } from "@nanostores/react";
@@ -26,6 +29,7 @@ type Props = {
 };
 
 export default function SimilarProducts({ items, onAdd, onClick }: Props) {
+  const locale = useLocaleCode();
   const [mounted, setMounted] = useState(false);
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   const router = useRouter();
@@ -50,11 +54,11 @@ export default function SimilarProducts({ items, onAdd, onClick }: Props) {
         if (categoryMatch) {
           productHref = `/collection/${encodeURIComponent(categoryMatch[1])}/products/${encodeURIComponent(productSlug)}`;
         } else {
-          productHref = `/collection/products/${encodeURIComponent(productSlug)}`;
+          productHref = `/collection/tum-urunler/products/${encodeURIComponent(productSlug)}`;
         }
       }
       if (productHref && productHref !== "#") {
-        router.push(productHref);
+        router.push(toHref(productHref));
       }
     }
   };
@@ -115,7 +119,7 @@ export default function SimilarProducts({ items, onAdd, onClick }: Props) {
                 </div>
               </div>
               <div className="mt-2 line-clamp-1 text-sm font-medium">{p.name}</div>
-              <div className="text-xs text-zinc-600 dark:text-zinc-400">{p.price.toFixed(2)} ₺</div>
+              <div className="text-xs text-zinc-600 dark:text-zinc-400">{formatPrice(p.price, locale)}</div>
             </div>
           </div>
         );

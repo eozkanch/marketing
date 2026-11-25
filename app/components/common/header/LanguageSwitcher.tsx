@@ -1,24 +1,31 @@
 "use client";
-import { useStore } from "@nanostores/react";
-import { localeStore, setLocale, type Locale } from "../../../../stores/i18n";
 import { Globe, ChevronDown } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
+import { useParams } from "next/navigation";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { type AppLocale } from "@/i18n/routing";
+import { useLocaleCode } from "@/app/components/common/i18n/LocaleProvider";
 
-const options: { code: Locale; label: string }[] = [
+const options: { code: AppLocale; label: string }[] = [
   { code: "tr", label: "TR" },
   { code: "fr", label: "FR" },
   { code: "en", label: "EN" },
 ];
 
 export default function LanguageSwitcher() {
-  const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const current = useStore(localeStore);
+  const current = useLocaleCode();
+  const pathname = usePathname();
+  const router = useRouter();
+  const params = useParams();
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const switchTo = (locale: AppLocale) => {
+    const { locale: _ignored, ...rest } = params as Record<string, string | string[]>;
+    void _ignored;
+    const query = Object.fromEntries(new URLSearchParams(window.location.search));
+    router.replace({ pathname, params: rest, query } as never, { locale });
+  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -32,17 +39,6 @@ export default function LanguageSwitcher() {
       return () => document.removeEventListener("mousedown", handleClickOutside);
     }
   }, [isOpen]);
-
-  if (!mounted) {
-    return (
-      <div className="relative inline-flex items-center">
-        <button className="inline-flex items-center gap-1 rounded-md border border-zinc-300 bg-white px-2 py-1 text-xs dark:border-zinc-700 dark:bg-zinc-900">
-          <Globe className="h-3.5 w-3.5 text-zinc-500" aria-hidden />
-          <span>TR</span>
-        </button>
-      </div>
-    );
-  }
 
   const currentOption = options.find((o) => o.code === current) || options[0];
 
@@ -74,7 +70,7 @@ export default function LanguageSwitcher() {
               <button
                 key={o.code}
                 onClick={() => {
-                  setLocale(o.code);
+                  switchTo(o.code);
                   setIsOpen(false);
                 }}
                 className={`w-full rounded px-3 py-2 text-left text-xs transition ${

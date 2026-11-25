@@ -4,7 +4,7 @@ import TopMenu from "./TopMenu";
 import MiddleMenu from "./MiddleMenu";
 import BottomMenu from "./BottomMenu";
 
-export default function Header() {
+export default function Header({ categories }: { categories: { name: string; url: string }[] }) {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export default function Header() {
         <div className="flex flex-col gap-2 py-2">
           <TopMenu />
           <MiddleMenu />
-          <BottomMenu />
+          <BottomMenu categories={categories} />
         </div>
       </div>
     </div>

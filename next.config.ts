@@ -1,4 +1,7 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
+
+const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 const nextConfig: NextConfig = {
   images: {
@@ -20,33 +23,23 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   experimental: {
+    inlineCss: true, // render-blocking CSS isteğini kaldırır
     optimizePackageImports: ["lucide-react", "@nanostores/react"],
   },
-  headers: async () => {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          {
-            key: "X-DNS-Prefetch-Control",
-            value: "on",
-          },
-          {
-            key: "X-Frame-Options",
-            value: "SAMEORIGIN",
-          },
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "Referrer-Policy",
-            value: "origin-when-cross-origin",
-          },
-        ],
-      },
-    ];
-  },
+  // Eski (dil önekisiz) adresler -> /tr altındaki yerelleştirilmiş adreslere kalıcı yönlendirme
+  redirects: async () => [
+    { source: "/home", destination: "/tr", permanent: true },
+    { source: "/collection/:cat/products/:slug", destination: "/tr/koleksiyon/:cat/urunler/:slug", permanent: true },
+    { source: "/collection/:cat", destination: "/tr/koleksiyon/:cat", permanent: true },
+    { source: "/about", destination: "/tr/hakkimizda", permanent: true },
+    { source: "/contact", destination: "/tr/iletisim", permanent: true },
+    { source: "/cart", destination: "/tr/sepet", permanent: true },
+    { source: "/favori", destination: "/tr/favoriler", permanent: true },
+    { source: "/use-agreement", destination: "/tr/kullanim-sozlesmesi", permanent: true },
+    { source: "/confidentiality-agreement", destination: "/tr/gizlilik-politikasi", permanent: true },
+    { source: "/search-results", destination: "/tr/arama", permanent: true },
+  ],
+  // Güvenlik başlıkları proxy.ts içinde (lib/security-headers.ts)
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

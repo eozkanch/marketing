@@ -1,24 +1,23 @@
 "use client";
+import Image from "next/image";
+import { useDict } from "@/app/components/common/i18n/LocaleProvider";
 import { useStore } from "@nanostores/react";
-import { dictStore } from "@/stores/i18n";
 
 export default function Slider() {
-  const dict = useStore(dictStore);
+  const dict = useDict();
 
   return (
     <div className="relative h-[240px] w-full overflow-hidden rounded-lg bg-zinc-200 dark:bg-zinc-800 sm:h-[300px] md:h-[400px] lg:aspect-16/3 lg:h-auto">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="metadata"
-        className="h-full w-full object-cover"
-        aria-label={dict.slider_title}
-      >
-        <source src="/banner.mp4" type="video/mp4" />
-        Tarayıcınız video oynatmayı desteklemiyor.
-      </video>
+      <Image
+        src="/images/hero.webp"
+        alt={dict.slider_title}
+        fill
+        priority
+        fetchPriority="high"
+        quality={70}
+        sizes="100vw"
+        className="object-cover"
+      />
       
       {/* Overlay Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 px-4 text-center">
